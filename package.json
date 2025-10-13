@@ -1,0 +1,15 @@
+{
+  "name": "Bus-System-Improvement-Monorepo",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "start:mobile": "pnpm --filter mobile start",
+    "start:backend": "pnpm --filter backend start"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "turborepo": "latest"
+  },
+  "packageManager": "pnpm@8.6.0"
+}
