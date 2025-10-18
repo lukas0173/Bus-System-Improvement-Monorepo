@@ -4,7 +4,7 @@
   "scripts": {
     "dev:web": "pnpm --filter web dev",
     "start:mobile": "pnpm --filter mobile start",
-    "start:backend": "pnpm --filter backend start"
+    "start:backend": "cd backend && ./pocketbase serve --http=0.0.0.0:9090"
   },
   "devDependencies": {
     "prettier": "^3.0.0",
