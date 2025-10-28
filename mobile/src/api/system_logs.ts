@@ -5,7 +5,7 @@ const abortController = new AbortController();
 
 export const fetch_system_logs = async (device_id: string) => {
   try {
-    const systemLogsURL = `${apiURL}?filter=(device_id="${device_id}"`;
+    const systemLogsURL = `${apiURL}?filter=(device_id="${device_id}")`;
     const response = await axios.get(systemLogsURL, {
       signal: abortController.signal,
     });

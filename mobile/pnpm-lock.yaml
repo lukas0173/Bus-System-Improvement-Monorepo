@@ -59,6 +59,9 @@ importers:
       expo-web-browser:
         specifier: ~15.0.8
         version: 15.0.8(expo@54.0.13)(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))
+      pocketbase:
+        specifier: ^0.26.3
+        version: 0.26.3
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -3427,6 +3430,9 @@ packages:
   pngjs@3.4.0:
     resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==}
     engines: {node: '>=4.0.0'}
+
+  pocketbase@0.26.3:
+    resolution: {integrity: sha512-5deUKRoEczpxxuHzwr6/DHVmgbggxylEVig8CKN+MjvtYxPUqX/C6puU0yaR2yhTi8zrh7J9s7Ty+qBGwVzWOQ==}
 
   possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
@@ -8511,6 +8517,8 @@ snapshots:
       xmlbuilder: 15.1.1
 
   pngjs@3.4.0: {}
+
+  pocketbase@0.26.3: {}
 
   possible-typed-array-names@1.1.0: {}
 
