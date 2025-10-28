@@ -12,7 +12,7 @@ export default function RootLayout() {
     const loadLogs = async () => {
       try {
         setIsLoading(true);
-        const returnedSystemLogs = await fetch_system_logs("tes");
+        const returnedSystemLogs = await fetch_system_logs("test");
         setSystemLogs(returnedSystemLogs);
       } catch (error: any) {
         setError(error);
