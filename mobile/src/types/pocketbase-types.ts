@@ -79,7 +79,7 @@ export interface Trip extends BaseRecord {
 }
 
 // Enum for collection names to ensure type-safe queries
-export enum Collections {
+export enum CollectionsName {
   BusLocations = "bus_locations",
   Buses = "buses",
   Notifications = "notifications",
@@ -89,4 +89,31 @@ export enum Collections {
   Stations = "stations",
   SystemLogs = "system_logs",
   Trips = "trips",
+}
+
+export interface RequestOptions {
+  // The page (aka. offset) of the paginated list.
+  page?: number;
+
+  // The max number of records returned per page.
+  perPage?: number;
+
+  // A string to specify how to sort the results. Use a minus sign prefix for descending order.
+  sort?: string;
+
+  // The filter expression to apply to the list.
+  filter?: string;
+
+  // A comma-separated list of relation fields to expand in the response. Supports up to 6 levels of nested relations.
+  expand?: string;
+
+  // A comma-separated list of fields to return in the response, which can help reduce the response size.
+  fields?: string;
+
+  /**
+   * If set to true, the total counts query (`totalItems` and `totalPages`)
+   * will be skipped, which can significantly speed up search queries.
+   * It is set to true by default for `getFullList()` and `getFirstListItem()`.
+   */
+  skipTotal?: boolean;
 }
