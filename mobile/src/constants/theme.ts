@@ -3,49 +3,29 @@ import { Platform } from "react-native";
 // This is drived directly from the Eldritch theme
 // https://github.com/eldritch-theme
 export const Colors = {
-  greyDarker: {
-    name: "Sunken Depths Grey",
-    hex: "#212337",
+  primary: {
+    950: "#FDFCFC",
+    300: "#D4D4D4",
   },
-  grey: {
-    name: "Shallow Depths Grey",
-    hex: "#323449",
+  secondary: {
+    800: "#878787",
+    700: "#6E6E6E",
+    500: "#3F4040",
+    400: "#383939",
   },
-  white: {
-    name: "Lighthouse White",
-    hex: "#ebfafa	",
+  info: {
+    950: "#ECF8FE",
+    600: "#57C2F6",
+    400: "#0DA6F2",
+    300: "0B8DCD",
+    50: "#05405D",
   },
-  cyan: {
-    name: "Watery Tomb Blue",
-    hex: "#04d1f9",
+  success: {
+    900: "#CAFFE8",
+    50: "#14532D",
   },
-  green: {
-    name: "Great Old One Green",
-    hex: "#37f499",
-  },
-  orange: {
-    name: "Dreaming Orange",
-    hex: "#f7c67f",
-  },
-  pink: {
-    name: "Pustule Pink",
-    hex: "#f265b5",
-  },
-  purple: {
-    name: "Lovecraft Purple",
-    hex: "#a48cf2",
-  },
-  purpleDarker: {
-    name: "The Old One Purple",
-    hex: "#7081d0	",
-  },
-  red: {
-    name: "R'lyeh' Red",
-    hex: "#f16c75",
-  },
-  yellow: {
-    name: "Gold of Yuggoth",
-    hex: "#f1fc79",
+  error: {
+    400: "#E63535",
   },
 };
 

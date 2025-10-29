@@ -1,23 +1,26 @@
 import { Tabs } from "expo-router";
-import { View, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { House, Wallet, ScanQrCode, History, User } from "lucide-react-native";
+import { Colors } from "@constants/theme";
 
 const iconSize = 25;
 
 const CustomScanButton = ({ children, onPress }: any) => {
   return (
-    <View style={styles.customScanButtonContainer}>
-      <View style={styles.customScanButton}>{children}</View>
-    </View>
+    <TouchableOpacity onPress={() => onPress()}>
+      <View style={styles.customScanButtonContainer}>
+        <View style={styles.customScanButton}>{children}</View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const tabScreenOptions: any = {
   tabBarShowLabel: true,
-  tabBarActiveTintColor: "#2196F3",
-  tabBarInactiveTintColor: "gray",
+  tabBarActiveTintColor: Colors.info[400],
+  tabBarInactiveTintColor: Colors.secondary[700],
   headerShown: false,
+  tabBarPosition: "bottom",
   tabBarStyle: {
     position: "absolute",
     left: 20,
@@ -25,8 +28,6 @@ const tabScreenOptions: any = {
     paddingTop: 10,
     backgroundColor: "#ffffff",
     height: 90,
-    alignItems: "center",
-    justifyContent: "center",
   },
   tabBarLabelStyle: {
     fontSize: 12,
@@ -61,7 +62,9 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <ScanQrCode size={iconSize} color="#fff" />
           ),
-          tabBarButton: (props) => <CustomScanButton {...props} />,
+          tabBarButton: (props) => {
+            return <CustomScanButton {...props} />;
+          },
         }}
       />
       <Tabs.Screen
