@@ -5,30 +5,29 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  SafeAreaView,
   StatusBar,
 } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox";
-
-// Define color constants based on the image
-const COLORS = {
-  white: "#FFFFFF",
-  black: "#000000",
-  primary: "#007AFF", // A standard bright blue
-  secondary: "#003F5C", // A dark blue for titles
-  grey: "#CCCCCC",
-  lightGrey: "#F3F4F6",
-};
+import { Colors } from "@constants/theme";
 
 export default function LoginScreen() {
+  const insets = useSafeAreaInsets();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isPasswordShown, setIsPasswordShown] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View
+      style={{
+        ...styles.container,
+        marginTop: insets.top,
+        marginBottom: insets.bottom,
+      }}
+    >
       <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <View style={styles.header}>
@@ -46,7 +45,7 @@ export default function LoginScreen() {
           <TextInput
             style={styles.input}
             placeholder="abc@gmail.com"
-            placeholderTextColor={COLORS.grey}
+            placeholderTextColor={Colors.secondary[800]}
             keyboardType="email-address"
             value={email}
             onChangeText={setEmail}
@@ -59,7 +58,7 @@ export default function LoginScreen() {
             <TextInput
               style={styles.passwordInput}
               placeholder="Mật khẩu của bạn"
-              placeholderTextColor={COLORS.grey}
+              placeholderTextColor={Colors.secondary[800]}
               secureTextEntry={!isPasswordShown}
               value={password}
               onChangeText={setPassword}
@@ -71,7 +70,7 @@ export default function LoginScreen() {
               <Ionicons
                 name={isPasswordShown ? "eye-off" : "eye"}
                 size={24}
-                color={COLORS.grey}
+                color={Colors.secondary[800]}
               />
             </TouchableOpacity>
           </View>
@@ -83,7 +82,7 @@ export default function LoginScreen() {
               style={styles.checkbox}
               value={isChecked}
               onValueChange={setIsChecked}
-              color={isChecked ? COLORS.primary : undefined}
+              color={isChecked ? Colors.info[300] : undefined}
             />
             <Text style={styles.checkboxLabel}>Lưu thông tin</Text>
           </View>
@@ -111,14 +110,14 @@ export default function LoginScreen() {
           </TouchableOpacity>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
+    backgroundColor: Colors.primary[950],
   },
   content: {
     flex: 1,
@@ -131,7 +130,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: "bold",
-    color: COLORS.secondary,
+    color: Colors.info[50],
     marginBottom: 8,
   },
   subtitleContainer: {
@@ -139,10 +138,10 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    color: COLORS.black,
+    color: Colors.secondary[400],
   },
   link: {
-    color: COLORS.primary,
+    color: Colors.info[300],
   },
   inputContainer: {
     marginBottom: 12,
@@ -151,12 +150,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 8,
-    color: COLORS.black,
+    color: Colors.secondary[400],
   },
   input: {
     width: "100%",
     height: 48,
-    borderColor: COLORS.grey,
+    borderColor: Colors.secondary[800],
     borderWidth: 1,
     borderRadius: 8,
     paddingLeft: 16,
@@ -165,7 +164,7 @@ const styles = StyleSheet.create({
   passwordInputWrapper: {
     width: "100%",
     height: 48,
-    borderColor: COLORS.grey,
+    borderColor: Colors.secondary[800],
     borderWidth: 1,
     borderRadius: 8,
     flexDirection: "row",
@@ -196,7 +195,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   loginButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: Colors.info[400],
     paddingVertical: 14,
     borderRadius: 8,
     alignItems: "center",
@@ -204,7 +203,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   loginButtonText: {
-    color: COLORS.white,
+    color: Colors.primary[950],
     fontSize: 18,
     fontWeight: "bold",
   },
@@ -216,11 +215,11 @@ const styles = StyleSheet.create({
   separatorLine: {
     flex: 1,
     height: 1,
-    backgroundColor: COLORS.grey,
+    backgroundColor: Colors.secondary[800],
   },
   separatorText: {
     marginHorizontal: 10,
-    color: COLORS.grey,
+    color: Colors.secondary[800],
     fontSize: 14,
   },
   socialLoginContainer: {
@@ -235,12 +234,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     height: 52,
     borderWidth: 1,
-    borderColor: COLORS.grey,
+    borderColor: Colors.secondary[800],
     borderRadius: 10,
   },
   socialIcon: {
     fontSize: 24,
     fontWeight: "bold",
-    color: COLORS.black,
+    color: Colors.secondary[400],
   },
 });
