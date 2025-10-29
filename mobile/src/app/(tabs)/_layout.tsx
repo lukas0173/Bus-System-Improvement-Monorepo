@@ -1,6 +1,9 @@
 import { Tabs } from "expo-router";
 import { View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { House, Wallet, ScanQrCode, History, User } from "lucide-react-native";
+
+const iconSize = 25;
 
 const CustomScanButton = ({ children, onPress }: any) => {
   return (
@@ -17,21 +20,16 @@ const tabScreenOptions: any = {
   headerShown: false,
   tabBarStyle: {
     position: "absolute",
-    bottom: 15,
     left: 20,
     right: 20,
-    elevation: 5,
+    paddingTop: 10,
     backgroundColor: "#ffffff",
-    borderRadius: 15,
-    height: 70,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+    height: 90,
+    alignItems: "center",
+    justifyContent: "center",
   },
   tabBarLabelStyle: {
     fontSize: 12,
-    marginTop: -5,
   },
 };
 
@@ -41,13 +39,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="home/index"
         options={{
-          title: "Homeads ",
+          title: "Home",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "home" : "home-outline"}
-              size={28}
-              color={color}
-            />
+            <House size={iconSize} color={color} />
           ),
         }}
       />
@@ -56,11 +50,7 @@ export default function TabLayout() {
         options={{
           title: "Ticket",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "wallet" : "wallet-outline"}
-              size={28}
-              color={color}
-            />
+            <Wallet size={iconSize} color={color} />
           ),
         }}
       />
@@ -69,7 +59,7 @@ export default function TabLayout() {
         options={{
           title: "", // Hide label for the scan button
           tabBarIcon: ({ focused }) => (
-            <Ionicons name="qr-code" size={34} color="#fff" />
+            <ScanQrCode size={iconSize} color="#fff" />
           ),
           tabBarButton: (props) => <CustomScanButton {...props} />,
         }}
@@ -79,11 +69,7 @@ export default function TabLayout() {
         options={{
           title: "History",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "time" : "time-outline"}
-              size={28}
-              color={color}
-            />
+            <History size={iconSize} color={color} />
           ),
         }}
       />
@@ -92,11 +78,7 @@ export default function TabLayout() {
         options={{
           title: "Profile",
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "person" : "person-outline"}
-              size={28}
-              color={color}
-            />
+            <User size={iconSize} color={color} />
           ),
         }}
       />
@@ -106,21 +88,15 @@ export default function TabLayout() {
 
 const styles = StyleSheet.create({
   customScanButtonContainer: {
-    top: -20,
     justifyContent: "center",
     alignItems: "center",
   },
   customScanButton: {
-    width: 70,
-    height: 70,
+    width: 60,
+    aspectRatio: 1,
     borderRadius: 100,
     backgroundColor: "#2196F3",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
-    elevation: 5,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
   },
 });
