@@ -3,14 +3,15 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput,
   TouchableOpacity,
   StatusBar,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
-import Checkbox from "expo-checkbox";
 import { Colors } from "@constants/theme";
+import HeaderLogin from "./Header.Login";
+import EmailLogin from "./Email.Login";
+import PasswordLogin from "./Password.Login";
+import OptionsContainerLogin from "./OptionsContainer.Login";
 
 export default function LoginScreen() {
   const insets = useSafeAreaInsets();
@@ -30,66 +31,20 @@ export default function LoginScreen() {
     >
       <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
-        <View style={styles.header}>
-          <Text style={styles.title}>Đăng nhập</Text>
-          <View style={styles.subtitleContainer}>
-            <Text style={styles.subtitle}>Chưa có tài khoản? </Text>
-            <TouchableOpacity>
-              <Text style={[styles.subtitle, styles.link]}>Đăng ký</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
+        <HeaderLogin />
 
-        <View style={styles.inputContainer}>
-          <Text style={styles.label}>Email</Text>
-          <TextInput
-            style={styles.input}
-            placeholder="abc@gmail.com"
-            placeholderTextColor={Colors.secondary[800]}
-            keyboardType="email-address"
-            value={email}
-            onChangeText={setEmail}
-          />
-        </View>
+        <EmailLogin email={email} setEmail={setEmail} />
+        <PasswordLogin
+          password={password}
+          setPassword={setPassword}
+          isPasswordShown={isPasswordShown}
+          setIsPasswordShown={setIsPasswordShown}
+        />
 
-        <View style={styles.inputContainer}>
-          <Text style={styles.label}>Mật khẩu</Text>
-          <View style={styles.passwordInputWrapper}>
-            <TextInput
-              style={styles.passwordInput}
-              placeholder="Mật khẩu của bạn"
-              placeholderTextColor={Colors.secondary[800]}
-              secureTextEntry={!isPasswordShown}
-              value={password}
-              onChangeText={setPassword}
-            />
-            <TouchableOpacity
-              onPress={() => setIsPasswordShown(!isPasswordShown)}
-              style={styles.eyeIcon}
-            >
-              <Ionicons
-                name={isPasswordShown ? "eye-off" : "eye"}
-                size={24}
-                color={Colors.secondary[800]}
-              />
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <View style={styles.optionsContainer}>
-          <View style={styles.checkboxContainer}>
-            <Checkbox
-              style={styles.checkbox}
-              value={isChecked}
-              onValueChange={setIsChecked}
-              color={isChecked ? Colors.info[300] : undefined}
-            />
-            <Text style={styles.checkboxLabel}>Lưu thông tin</Text>
-          </View>
-          <TouchableOpacity>
-            <Text style={styles.link}>Quên mật khẩu</Text>
-          </TouchableOpacity>
-        </View>
+        <OptionsContainerLogin
+          isChecked={isChecked}
+          setIsChecked={setIsChecked}
+        />
 
         <TouchableOpacity style={styles.loginButton}>
           <Text style={styles.loginButtonText}>Đăng nhập</Text>
@@ -124,43 +79,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 22,
     justifyContent: "center",
   },
-  header: {
-    marginBottom: 24,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: "bold",
-    color: Colors.info[50],
-    marginBottom: 8,
-  },
-  subtitleContainer: {
-    flexDirection: "row",
-  },
-  subtitle: {
-    fontSize: 16,
-    color: Colors.secondary[400],
-  },
-  link: {
-    color: Colors.info[300],
-  },
-  inputContainer: {
-    marginBottom: 12,
-  },
-  label: {
-    fontSize: 16,
-    fontWeight: "600",
-    marginBottom: 8,
-    color: Colors.secondary[400],
-  },
-  input: {
-    width: "100%",
-    height: 48,
-    borderColor: Colors.secondary[800],
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingLeft: 16,
-    fontSize: 16,
-  },
   passwordInputWrapper: {
     width: "100%",
     height: 48,
@@ -173,25 +91,6 @@ const styles = StyleSheet.create({
   },
   passwordInput: {
     flex: 1,
-    fontSize: 16,
-  },
-  eyeIcon: {
-    paddingHorizontal: 12,
-  },
-  optionsContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginVertical: 16,
-  },
-  checkboxContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  checkbox: {
-    marginRight: 8,
-  },
-  checkboxLabel: {
     fontSize: 16,
   },
   loginButton: {
