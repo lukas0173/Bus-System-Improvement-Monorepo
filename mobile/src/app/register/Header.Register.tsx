@@ -1,19 +1,12 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "@constants/theme";
-import { useRouter } from "expo-router";
 
 const HeaderLogin = () => {
-  const router = useRouter();
   return (
     <View style={styles.header}>
-      <Text style={styles.title}>Đăng nhập</Text>
-      <View style={styles.subtitleContainer}>
-        <Text style={styles.subtitle}>Chưa có tài khoản? </Text>
-        <TouchableOpacity onPress={() => router.navigate("/register")}>
-          <Text style={[styles.subtitle, styles.link]}>Đăng ký</Text>
-        </TouchableOpacity>
-      </View>
+      <Text style={styles.title}>Đăng Ký</Text>
+      <View style={styles.subtitleContainer}></View>
     </View>
   );
 };
