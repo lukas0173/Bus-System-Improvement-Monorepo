@@ -29,6 +29,22 @@ export const Colors = {
   },
 };
 
+export const Spacing = {
+  xs: 5,
+  sm: 10,
+  md: 15,
+  lg: 25,
+  xl: 40,
+};
+
+export const BorderRadius = {
+  xs: 5,
+  sm: 10,
+  md: 15,
+  lg: 25,
+  xl: 40,
+};
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
