@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import { View, StyleSheet, StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+// import MapboxGL from "@rnmapbox/maps";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors } from "@constants/theme";
@@ -18,6 +19,10 @@ const ActionButtons = () => (
     <ActionButtonHome icon={<Bus color="white" size={28} />} label="Xe buýt" />
   </View>
 );
+
+// MapboxGL.setAccessToken(
+//   "pk.eyJ1IjoidHVhbmtpZXQxNyIsImEiOiJjbHAzcnFpbDUxMHN1MmxxdmV3cnNybGp2In0.FiDRtJK610zAw-odSgifKg",
+// );
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();

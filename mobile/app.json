@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lukas-x.BusSystemImprovement"
     },
     "android": {
       "adaptiveIcon": {
@@ -19,13 +20,20 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.lukas_x.BusSystemImprovement"
     },
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoidHVhbmtpZXQxNyIsImEiOiJjbWhrMmpmNXowMjJzMnFxazhmaXBpbW5lIn0.3Yas6itbY3C1euKQsn82zw"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
