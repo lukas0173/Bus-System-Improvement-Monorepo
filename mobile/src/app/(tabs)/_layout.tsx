@@ -22,11 +22,8 @@ const tabScreenOptions: any = {
   headerShown: false,
   tabBarPosition: "bottom",
   tabBarStyle: {
-    position: "absolute",
-    left: 20,
-    right: 20,
     paddingTop: 10,
-    backgroundColor: "#ffffff",
+    backgroundColor: "white",
     height: 90,
   },
   tabBarLabelStyle: {

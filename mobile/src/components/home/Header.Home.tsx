@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { Bell } from "lucide-react-native";
 import { Colors } from "@constants/theme";
 
 const HeaderHome = () => (
   <View style={styles.headerContainer}>
     <View style={styles.userInfoContainer}>
-      {/*<Image source={require("")} style={styles.avatar} />*/}
+      <Image
+        source={require("@/assets/images/home/User.jpeg")}
+        style={styles.avatar}
+      />
       <View>
         <Text style={styles.userName}>John Smith</Text>
         <Text style={styles.userLocation}>Da Nang</Text>

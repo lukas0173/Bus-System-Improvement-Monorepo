@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-// import MapboxGL from "@rnmapbox/maps";
+import Mapbox from "@rnmapbox/maps";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors } from "@constants/theme";
@@ -20,9 +20,8 @@ const ActionButtons = () => (
   </View>
 );
 
-// MapboxGL.setAccessToken(
-//   "pk.eyJ1IjoidHVhbmtpZXQxNyIsImEiOiJjbHAzcnFpbDUxMHN1MmxxdmV3cnNybGp2In0.FiDRtJK610zAw-odSgifKg",
-// );
+// Mapbox configuration
+Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
@@ -34,23 +33,12 @@ export default function HomeScreen() {
         marginBottom: insets.bottom,
       }}
     >
-      <StatusBar
-        barStyle="dark-content"
-        backgroundColor={Colors.primary[950]}
-      />
+      <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <HeaderHome />
         <SearchBarHome />
         <ActionButtons />
-        {/*<MapView
-          style={styles.map}
-          initialRegion={{
-            latitude: 16.0544, // Da Nang Latitude
-            longitude: 108.2022, // Da Nang Longitude
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
-        />*/}
+        <Mapbox.MapView style={styles.map} />
       </View>
     </View>
   );
