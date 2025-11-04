@@ -1,83 +1,34 @@
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  TouchableOpacity,
-  StatusBar,
-} from "react-native";
-import {
-  List,
-  Shuffle,
-  Pause,
-  Bus,
-  Home,
-  Wallet,
-  QrCode,
-  History,
-  User,
-} from "lucide-react-native";
+import { View, StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors } from "@constants/theme";
 import SearchBarHome from "@/src/components/home/SearchBar.Home";
-
-// Improvement: Each action button is an instance of this component,
-// reducing code duplication.
-const ActionButton = ({
-  icon,
-  label,
-}: {
-  icon: React.ReactNode;
-  label: string;
-}) => (
-  <View style={styles.actionButton}>
-    <TouchableOpacity style={styles.actionButtonIconContainer}>
-      {icon}
-    </TouchableOpacity>
-    <Text style={styles.actionButtonLabel}>{label}</Text>
-  </View>
-);
+import ActionButtonHome from "@components/home/ActionButton.Home";
 
 const ActionButtons = () => (
   <View style={styles.actionsContainer}>
-    <ActionButton icon={<List color="white" size={28} />} label="Tra cứu" />
-    <ActionButton
+    <ActionButtonHome icon={<List color="white" size={28} />} label="Tra cứu" />
+    <ActionButtonHome
       icon={<Shuffle color="white" size={28} />}
       label="Tuyến đường"
     />
-    <ActionButton icon={<Pause color="white" size={28} />} label="Trạm" />
-    <ActionButton icon={<Bus color="white" size={28} />} label="Xe buýt" />
-  </View>
-);
-
-// Improvement: The bottom tab bar is a custom component, giving you full control over its appearance.
-const BottomTabBar = () => (
-  <View style={styles.tabBarContainer}>
-    <View style={styles.tabBar}>
-      <TouchableOpacity style={styles.tabItem}>
-        <Home color={Colors.info[400]} size={28} />
-        <Text style={[styles.tabLabel, styles.activeTabLabel]}>Home</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <Wallet color={Colors.secondary[500]} size={28} />
-      </TouchableOpacity>
-      <TouchableOpacity style={[styles.tabItem, styles.qrCodeButton]}>
-        <QrCode color="white" size={32} />
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <History color={Colors.secondary[500]} size={28} />
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <User color={Colors.secondary[500]} size={28} />
-      </TouchableOpacity>
-    </View>
+    <ActionButtonHome icon={<Pause color="white" size={28} />} label="Trạm" />
+    <ActionButtonHome icon={<Bus color="white" size={28} />} label="Xe buýt" />
   </View>
 );
 
 export default function HomeScreen() {
+  const insets = useSafeAreaInsets();
   return (
-    <SafeAreaView style={styles.container}>
+    <View
+      style={{
+        ...styles.container,
+        marginTop: insets.top,
+        marginBottom: insets.bottom,
+      }}
+    >
       <StatusBar
         barStyle="dark-content"
         backgroundColor={Colors.primary[950]}
@@ -96,8 +47,7 @@ export default function HomeScreen() {
           }}
         />*/}
       </View>
-      <BottomTabBar />
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -141,60 +91,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     marginVertical: 20,
   },
-  actionButton: {
-    alignItems: "center",
-  },
-  actionButtonIconContainer: {
-    backgroundColor: Colors.info[400],
-    width: 60,
-    height: 60,
-    borderRadius: 15,
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 8,
-  },
-  actionButtonLabel: {
-    fontSize: 14,
-    color: Colors.secondary[500],
-  },
   map: {
     flex: 1,
     borderRadius: 15,
     overflow: "hidden",
-  },
-  tabBarContainer: {
-    backgroundColor: Colors.primary[950],
-    borderTopWidth: 1,
-    borderTopColor: "#E0E0E0",
-  },
-  tabBar: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: 80,
-    paddingBottom: 10,
-  },
-  tabItem: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  tabLabel: {
-    fontSize: 12,
-    marginTop: 4,
-  },
-  activeTabLabel: {
-    color: Colors.info[400],
-    fontWeight: "600",
-  },
-  qrCodeButton: {
-    backgroundColor: Colors.info[400],
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    justifyContent: "center",
-    alignItems: "center",
-    bottom: 30, // This elevates the button
-    borderWidth: 5,
-    borderColor: "white",
   },
 });

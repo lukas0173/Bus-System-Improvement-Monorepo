@@ -8,10 +8,10 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Colors } from "@constants/theme";
-import HeaderLogin from "./Header.Login";
-import EmailLogin from "./Email.Login";
-import PasswordLogin from "./Password.Login";
-import OptionsContainerLogin from "./OptionsContainer.Login";
+import HeaderLogin from "@components/login/Header.Login";
+import EmailLogin from "@components/login/Email.Login";
+import PasswordLogin from "@components/login/Password.Login";
+import OptionsContainerLogin from "@components/login/OptionsContainer.Login";
 
 export default function LoginScreen() {
   const insets = useSafeAreaInsets();

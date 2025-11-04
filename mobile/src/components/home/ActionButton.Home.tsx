@@ -1,0 +1,39 @@
+import React from "react";
+import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { Colors } from "@constants/theme";
+
+const ActionButtonHome = ({
+  icon,
+  label,
+}: {
+  icon: React.ReactNode;
+  label: string;
+}) => (
+  <View style={styles.actionButton}>
+    <TouchableOpacity style={styles.actionButtonIconContainer}>
+      {icon}
+    </TouchableOpacity>
+    <Text style={styles.actionButtonLabel}>{label}</Text>
+  </View>
+);
+
+export default ActionButtonHome;
+
+const styles = StyleSheet.create({
+  actionButton: {
+    alignItems: "center",
+  },
+  actionButtonIconContainer: {
+    backgroundColor: Colors.info[400],
+    width: 60,
+    height: 60,
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 8,
+  },
+  actionButtonLabel: {
+    fontSize: 14,
+    color: Colors.secondary[500],
+  },
+});
