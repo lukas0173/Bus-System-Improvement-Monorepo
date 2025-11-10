@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 import { Search } from "lucide-react-native";
 
-import { Colors } from "@constants/theme";
+import { Colors, Spacing, FontSize, BorderRadius } from "@constants/theme";
 
 const SearchBarHome = () => (
   <View style={styles.searchContainer}>
@@ -26,29 +26,29 @@ export default SearchBarHome;
 
 const styles = StyleSheet.create({
   searchContainer: {
-    marginVertical: 10,
+    marginVertical: Spacing.sm,
   },
   searchLabel: {
-    fontSize: 16,
+    fontSize: FontSize.md,
     fontWeight: "600",
     color: Colors.secondary[500],
-    marginBottom: 8,
+    marginBottom: Spacing.xs,
   },
   searchInputWrapper: {
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "white",
-    borderRadius: 12,
+    borderRadius: BorderRadius.sm,
     borderWidth: 1,
     borderColor: "#E0E0E0",
     height: 50,
-    paddingHorizontal: 10,
+    paddingHorizontal: Spacing.sm,
   },
   searchIcon: {
-    marginRight: 10,
+    marginRight: Spacing.sm,
   },
   searchInput: {
     flex: 1,
-    fontSize: 16,
+    fontSize: FontSize.sm,
   },
 });

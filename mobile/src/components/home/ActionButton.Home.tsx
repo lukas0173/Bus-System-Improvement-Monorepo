@@ -1,6 +1,6 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-import { Colors } from "@constants/theme";
+import { Colors, BorderRadius, Spacing, FontSize } from "@constants/theme";
 
 const ActionButtonHome = ({
   icon,
@@ -27,13 +27,13 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.info[400],
     width: 60,
     height: 60,
-    borderRadius: 15,
+    borderRadius: BorderRadius.md,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: Spacing.xs,
   },
   actionButtonLabel: {
-    fontSize: 14,
+    fontSize: FontSize.sm,
     color: Colors.secondary[500],
   },
 });

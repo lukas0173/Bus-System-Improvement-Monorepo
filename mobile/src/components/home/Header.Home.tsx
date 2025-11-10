@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { Bell } from "lucide-react-native";
-import { Colors } from "@constants/theme";
+import { Colors, Spacing, FontSize } from "@constants/theme";
 
 const HeaderHome = () => (
   <View style={styles.headerContainer}>
@@ -16,7 +16,7 @@ const HeaderHome = () => (
       </View>
     </View>
     <TouchableOpacity>
-      <Bell color={Colors.secondary[500]} size={24} />
+      <Bell color={Colors.secondary[500]} size={23} />
     </TouchableOpacity>
   </View>
 );
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 10,
+    paddingVertical: Spacing.md,
   },
   userInfoContainer: {
     flexDirection: "row",
@@ -35,16 +35,16 @@ const styles = StyleSheet.create({
   avatar: {
     width: 50,
     height: 50,
-    borderRadius: 25,
-    marginRight: 12,
+    borderRadius: 100,
+    marginRight: Spacing.sm,
   },
   userName: {
-    fontSize: 18,
+    fontSize: FontSize.lg,
     fontWeight: "bold",
     color: Colors.secondary[500],
   },
   userLocation: {
-    fontSize: 14,
+    fontSize: FontSize.sm,
     color: Colors.secondary[700],
   },
 });
