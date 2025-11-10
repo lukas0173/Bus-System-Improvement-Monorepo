@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Mapbox from "@rnmapbox/maps";
+import Mapbox, { Camera } from "@rnmapbox/maps";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors, Spacing, BorderRadius } from "@constants/theme";
@@ -38,7 +38,14 @@ export default function HomeScreen() {
         <HeaderHome />
         <SearchBarHome />
         <ActionButtons />
-        <Mapbox.MapView style={styles.map} />
+        <Mapbox.MapView
+          style={styles.map}
+          logoEnabled={false}
+          scaleBarEnabled={false}
+          attributionEnabled={false}
+        >
+          <Camera zoomLevel={14} centerCoordinate={[108.149929, 16.074512]} />
+        </Mapbox.MapView>
       </View>
     </View>
   );
