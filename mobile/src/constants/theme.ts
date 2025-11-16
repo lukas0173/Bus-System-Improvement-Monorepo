@@ -5,9 +5,13 @@ import { Platform } from "react-native";
 export const Colors = {
   primary: {
     950: "#FDFCFC",
+    500: "#e6e6e6",
     300: "#D4D4D4",
+    100: "#bababa",
   },
   secondary: {
+    950: "#a4a4a4",
+    900: "#969696",
     800: "#878787",
     700: "#6E6E6E",
     500: "#3F4040",
@@ -18,6 +22,7 @@ export const Colors = {
     600: "#57C2F6",
     400: "#0DA6F2",
     300: "#0B8DCD",
+    200: "#0973a8",
     50: "#05405D",
   },
   success: {

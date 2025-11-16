@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, StatusBar } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Mapbox, { Camera } from "@rnmapbox/maps";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
@@ -24,15 +23,8 @@ const ActionButtons = () => (
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
 
 export default function HomeScreen() {
-  const insets = useSafeAreaInsets();
   return (
-    <View
-      style={{
-        ...styles.container,
-        marginTop: insets.top,
-        marginBottom: insets.bottom,
-      }}
-    >
+    <View style={styles.container}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <HeaderHome />

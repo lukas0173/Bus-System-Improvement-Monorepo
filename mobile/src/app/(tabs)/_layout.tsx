@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { House, Wallet, ScanQrCode, History, User } from "lucide-react-native";
 import { Colors } from "@constants/theme";
 
-const iconSize = 25;
+const iconSize = 22;
 
 const CustomScanButton = ({ children, onPress }: any) => {
   return (
@@ -22,9 +22,9 @@ const tabScreenOptions: any = {
   headerShown: false,
   tabBarPosition: "bottom",
   tabBarStyle: {
-    paddingTop: 10,
+    paddingTop: 5,
     backgroundColor: "white",
-    height: 90,
+    height: 70,
   },
   tabBarLabelStyle: {
     fontSize: 12,
@@ -55,7 +55,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="scan/index"
         options={{
-          title: "", // Hide label for the scan button
+          tabBarLabel: () => null, // Disable icon title
           tabBarIcon: ({ focused }) => (
             <ScanQrCode size={iconSize} color="#fff" />
           ),
@@ -88,15 +88,16 @@ export default function TabLayout() {
 
 const styles = StyleSheet.create({
   customScanButtonContainer: {
+    marginTop: 2,
     justifyContent: "center",
     alignItems: "center",
   },
   customScanButton: {
-    width: 60,
+    width: 55,
     aspectRatio: 1,
     borderRadius: 100,
-    backgroundColor: "#2196F3",
-    justifyContent: "flex-end",
+    backgroundColor: Colors.info[400],
+    justifyContent: "center",
     alignItems: "center",
   },
 });

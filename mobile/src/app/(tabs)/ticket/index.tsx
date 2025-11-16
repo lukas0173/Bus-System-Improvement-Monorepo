@@ -11,8 +11,9 @@ import {
 } from "react-native";
 import { Search, Filter, Tag, Clock, QrCode } from "lucide-react-native";
 
+import { Colors } from "@constants/theme";
+
 // --- Types & Interfaces ---
-// Improvement: Define shapes for your data to prevent bugs
 interface Ticket {
   id: string;
   title: string;
@@ -45,8 +46,6 @@ const TicketManagementScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<"All" | "Single" | "Inter">("All");
 
-  // --- Sub-Components ---
-
   const RenderTab = ({
     label,
     isActive,
@@ -69,33 +68,34 @@ const TicketManagementScreen = () => {
   const RenderTicketCard = ({ item }: { item: Ticket }) => {
     return (
       <View style={styles.card}>
-        {/* Left Content */}
-        <View style={styles.cardContent}>
-          <View style={styles.cardHeader}>
-            <Text style={styles.cardTitle}>{item.title}</Text>
-            <Text style={styles.cardCode}>{item.code}</Text>
-          </View>
-
-          <View style={styles.infoRow}>
-            <Tag size={16} color="#005F8F" style={styles.icon} />
-            <Text style={styles.infoText}>{item.type}</Text>
-          </View>
-
-          <View style={styles.infoRow}>
-            <Clock size={16} color="#005F8F" style={styles.icon} />
-            <Text style={styles.infoText}>{item.month}</Text>
-          </View>
-
-          {item.routeInfo && (
-            <Text style={styles.routeText}>{item.routeInfo}</Text>
-          )}
+        <View style={styles.cardHeader}>
+          <Text style={styles.cardTitle}>{item.title}</Text>
+          <Text style={styles.cardCode}>{item.code}</Text>
         </View>
+        <View style={styles.cardContentContainer}>
+          {/* Left Content */}
+          <View style={styles.cardContent}>
+            <View style={styles.infoRow}>
+              <Tag size={16} color="#005F8F" style={styles.icon} />
+              <Text style={styles.infoText}>{item.type}</Text>
+            </View>
 
-        {/* Right Action (QR) */}
-        <View style={styles.qrContainer}>
-          <TouchableOpacity style={styles.qrButton}>
-            <QrCode size={24} color="#005F8F" />
-          </TouchableOpacity>
+            <View style={styles.infoRow}>
+              <Clock size={16} color="#005F8F" style={styles.icon} />
+              <Text style={styles.infoText}>{item.month}</Text>
+            </View>
+
+            {item.routeInfo && (
+              <Text style={styles.routeText}>{item.routeInfo}</Text>
+            )}
+          </View>
+
+          {/* Right Action (QR) */}
+          <View style={styles.qrContainer}>
+            <TouchableOpacity style={styles.qrButton}>
+              <QrCode size={24} color="#005F8F" />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     );
@@ -163,11 +163,10 @@ export default TicketManagementScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: Colors.primary[950],
   },
-  // Header Styles
   headerContainer: {
-    backgroundColor: "#0085C8", // Primary Blue from design
+    backgroundColor: Colors.info[200], // Primary Blue from design
     paddingHorizontal: 16,
     paddingBottom: 16,
     paddingTop: 10, // Adjust based on status bar preference
@@ -175,14 +174,14 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 20,
     fontWeight: "600",
-    color: "#FFFFFF",
+    color: "white",
     textAlign: "center",
     marginBottom: 16,
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "white",
     borderRadius: 8,
     height: 44,
     paddingHorizontal: 12,
@@ -193,25 +192,24 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     fontSize: 15,
-    color: "#333",
+    color: Colors.secondary[800],
     height: "100%",
   },
   searchDivider: {
     width: 1,
     height: 24,
-    backgroundColor: "#E0E0E0",
+    backgroundColor: Colors.primary[300],
     marginHorizontal: 10,
   },
   filterButton: {
     padding: 4,
   },
 
-  // Tab Styles
   tabsContainer: {
     flexDirection: "row",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: Colors.primary[950],
     borderBottomWidth: 1,
-    borderBottomColor: "#F0F0F0",
+    borderBottomColor: Colors.primary[500],
   },
   tabItem: {
     flex: 1,
@@ -221,15 +219,15 @@ const styles = StyleSheet.create({
     borderBottomColor: "transparent",
   },
   tabItemActive: {
-    borderBottomColor: "#0085C8",
+    borderBottomColor: Colors.info[300],
   },
   tabText: {
     fontSize: 15,
     fontWeight: "500",
-    color: "#666666",
+    color: Colors.secondary[400],
   },
   tabTextActive: {
-    color: "#0085C8",
+    color: Colors.info[300],
     fontWeight: "600",
   },
 
@@ -239,18 +237,13 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   card: {
-    backgroundColor: "#F0F9FF", // Very light blue background
+    backgroundColor: Colors.info[950],
     borderRadius: 12,
     padding: 16,
-    flexDirection: "row",
     alignItems: "center",
-    // Optional: Add slight shadow if desired, though design looks flat/clean
-  },
-  cardContent: {
-    flex: 1,
-    marginRight: 12,
   },
   cardHeader: {
+    width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -258,12 +251,19 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 16,
-    fontWeight: "700", // Bold title
-    color: "#004060", // Darker blue for text
+    fontWeight: "700",
+    color: Colors.info[50],
   },
   cardCode: {
     fontSize: 14,
-    color: "#555",
+    color: Colors.info[50],
+  },
+  cardContentContainer: {
+    flexDirection: "row",
+  },
+  cardContent: {
+    flex: 1,
+    marginRight: 12,
   },
   infoRow: {
     flexDirection: "row",
