@@ -75,11 +75,9 @@ const styles = StyleSheet.create({
 
   tabsContainer: {
     flexDirection: "row",
-    backgroundColor: Colors.primary[950],
     borderBottomWidth: 1,
     borderBottomColor: Colors.primary[500],
   },
-  // Card Styles
   listContent: {
     padding: Spacing.md,
     gap: Spacing.md,

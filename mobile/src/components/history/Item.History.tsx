@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { Clock, Bus, SquarePauseIcon } from "lucide-react-native";
+import { Clock, Bus } from "lucide-react-native";
 
 import { HistoryItem } from "@/src/types/history";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";

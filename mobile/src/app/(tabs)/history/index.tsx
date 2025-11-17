@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet, FlatList, StatusBar } from "react-native";
 
+import { Spacing, Colors } from "@constants/theme";
 import { HistoryItem } from "@/src/types/history";
 import HeaderHistory from "@components/history/Header.History";
 import TabHistory from "@components/history/Tab.History";
@@ -121,16 +122,15 @@ export default HistoryScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFFFFF", // Changed from dark theme to match History.png
+    backgroundColor: Colors.primary[950],
   },
   tabsContainer: {
     flexDirection: "row",
-    backgroundColor: "#FFFFFF",
     borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9", // Lighter border than search divider
+    borderBottomColor: Colors.primary[500],
   },
   listContent: {
-    paddingBottom: 16,
-    // No horizontal padding, cards are full-width
+    paddingBottom: Spacing.md,
+    marginHorizontal: Spacing.md,
   },
 });
