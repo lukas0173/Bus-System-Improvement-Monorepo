@@ -8,21 +8,12 @@ import {
   FlatList,
   StatusBar,
 } from "react-native";
-import { Search, Filter, Tag, Clock, QrCode } from "lucide-react-native";
+import { Search, Filter } from "lucide-react-native";
 
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
+import { Ticket } from "@/src/types/ticket";
+import CardTicket from "@components/ticket/Card.Ticket";
 
-// --- Types & Interfaces ---
-interface Ticket {
-  id: string;
-  title: string;
-  code: string;
-  type: "Liên tuyến" | "Đơn tuyến";
-  month: string;
-  routeInfo?: string;
-}
-
-// --- Mock Data ---
 const MOCK_TICKETS: Ticket[] = [
   {
     id: "1",
@@ -41,7 +32,7 @@ const MOCK_TICKETS: Ticket[] = [
   },
 ];
 
-const TicketManagementScreen = () => {
+const TicketScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<"All" | "Single" | "Inter">("All");
 
@@ -63,42 +54,6 @@ const TicketManagementScreen = () => {
       </Text>
     </TouchableOpacity>
   );
-
-  const RenderTicketCard = ({ item }: { item: Ticket }) => {
-    return (
-      <View style={styles.card}>
-        <View style={styles.cardHeader}>
-          <Text style={styles.cardTitle}>{item.title}</Text>
-          <Text style={styles.cardCode}>{item.code}</Text>
-        </View>
-        <View style={styles.cardContentContainer}>
-          {/* Left Content */}
-          <View style={styles.cardContent}>
-            <View style={styles.infoRow}>
-              <Tag size={16} color={Colors.info[50]} style={styles.icon} />
-              <Text style={styles.infoText}>{item.type}</Text>
-            </View>
-
-            <View style={styles.infoRow}>
-              <Clock size={16} color={Colors.info[50]} style={styles.icon} />
-              <Text style={styles.infoText}>{item.month}</Text>
-            </View>
-
-            {item.routeInfo && (
-              <Text style={styles.routeText}>{item.routeInfo}</Text>
-            )}
-          </View>
-
-          {/* Right Action (QR) */}
-          <View style={styles.qrContainer}>
-            <TouchableOpacity style={styles.qrButton}>
-              <QrCode size={24} color={Colors.info[50]} />
-            </TouchableOpacity>
-          </View>
-        </View>
-      </View>
-    );
-  };
 
   return (
     <View style={styles.container}>
@@ -152,7 +107,7 @@ const TicketManagementScreen = () => {
       {/* --- List Section --- */}
       <FlatList
         data={MOCK_TICKETS}
-        renderItem={({ item }) => <RenderTicketCard item={item} />}
+        renderItem={({ item }) => <CardTicket item={item} />}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
@@ -161,7 +116,7 @@ const TicketManagementScreen = () => {
   );
 };
 
-export default TicketManagementScreen;
+export default TicketScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -237,65 +192,5 @@ const styles = StyleSheet.create({
   listContent: {
     padding: Spacing.md,
     gap: Spacing.md,
-  },
-  card: {
-    backgroundColor: Colors.info[950],
-    borderRadius: BorderRadius.sm,
-    padding: Spacing.md,
-    alignItems: "center",
-  },
-  cardHeader: {
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: Spacing.xs,
-  },
-  cardTitle: {
-    fontSize: FontSize.md,
-    fontWeight: "bold",
-    color: Colors.info[50],
-  },
-  cardCode: {
-    fontSize: FontSize.sm,
-    color: Colors.info[50],
-  },
-  cardContentContainer: {
-    flexDirection: "row",
-  },
-  cardContent: {
-    flex: 1,
-  },
-  infoRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginTop: Spacing.xs,
-  },
-  icon: {
-    marginRight: Spacing.xs,
-  },
-  infoText: {
-    fontSize: FontSize.sm,
-    color: Colors.info[50],
-  },
-  routeText: {
-    marginTop: FontSize.xs,
-    fontSize: FontSize.sm,
-    color: Colors.info[50],
-    opacity: 0.7,
-  },
-
-  // QR Button Styles
-  qrContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  qrButton: {
-    width: 45,
-    height: 45,
-    backgroundColor: `rgba(87,194,246, 0.4)`,
-    borderRadius: BorderRadius.sm,
-    justifyContent: "center",
-    alignItems: "center",
   },
 });
