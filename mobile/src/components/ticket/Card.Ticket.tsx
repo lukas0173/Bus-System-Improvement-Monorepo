@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.info[950],
     borderRadius: BorderRadius.sm,
     padding: Spacing.md,
-    alignItems: "center",
+    boxShadow: "0px 1.5px 2px 0px rgba(0, 0, 0, 0.25)",
   },
   cardHeader: {
     width: "100%",
