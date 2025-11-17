@@ -82,8 +82,6 @@ const HistoryScreen = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#0284c7" />
-
       <HeaderHistory searchText={searchText} setSearchText={setSearchText} />
 
       {/* --- Tabs Section --- */}

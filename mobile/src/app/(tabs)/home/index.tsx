@@ -1,11 +1,11 @@
 import React from "react";
 import { View, StyleSheet, StatusBar } from "react-native";
-import Mapbox, { Camera } from "@rnmapbox/maps";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
-import { Colors, Spacing, BorderRadius } from "@constants/theme";
+import { Colors, Spacing } from "@constants/theme";
 import SearchBarHome from "@/src/components/home/SearchBar.Home";
 import ActionButtonHome from "@components/home/ActionButton.Home";
+import MapHome from "@components/home/Map.Home";
 
 const ActionButtons = () => (
   <View style={styles.actionsContainer}>
@@ -19,9 +19,6 @@ const ActionButtons = () => (
   </View>
 );
 
-// Mapbox configuration
-Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
-
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
@@ -30,14 +27,7 @@ const HomeScreen = () => {
         <HeaderHome />
         <SearchBarHome />
         <ActionButtons />
-        <Mapbox.MapView
-          style={styles.map}
-          logoEnabled={false}
-          scaleBarEnabled={false}
-          attributionEnabled={false}
-        >
-          <Camera zoomLevel={14} centerCoordinate={[108.149929, 16.074512]} />
-        </Mapbox.MapView>
+        <MapHome />
       </View>
     </View>
   );
@@ -58,10 +48,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     marginVertical: Spacing.md,
-  },
-  map: {
-    flex: 1,
-    borderRadius: BorderRadius.md,
-    overflow: "hidden",
   },
 });
