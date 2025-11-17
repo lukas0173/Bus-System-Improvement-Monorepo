@@ -1,29 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { Clock, Bus } from "lucide-react-native";
+import { Clock, Bus, SquarePauseIcon } from "lucide-react-native";
 
 import { HistoryItem } from "@/src/types/history";
+import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 
 const ItemHistory = ({ item }: { item: HistoryItem }) => {
   // Helper to get styles based on status
   const getStatusStyles = (status: HistoryItem["status"]) => {
     if (status === "Hoàn thành") {
       return {
-        badge: { backgroundColor: "#dcfce7" },
-        text: { color: "#16a34a" },
+        badge: { backgroundColor: Colors.success[900] },
+        text: { color: Colors.success[50] },
       };
     }
     if (status === "Đã hủy") {
       return {
-        badge: { backgroundColor: "#fee2e2" },
-        text: { color: "#dc2626" },
+        badge: { backgroundColor: Colors.error[900] },
+        text: { color: Colors.error[50] },
       };
     }
     // Default/fallback style
-    return {
-      badge: { backgroundColor: "#e2e8f0" },
-      text: { color: "#334155" },
-    };
+    return {};
   };
 
   const statusStyle = getStatusStyles(item.status);
@@ -40,12 +38,12 @@ const ItemHistory = ({ item }: { item: HistoryItem }) => {
       </View>
 
       <View style={styles.infoRow}>
-        <Clock size={16} color="#64748b" style={styles.icon} />
+        <Clock size={16} color={Colors.info[50]} style={styles.icon} />
         <Text style={styles.infoText}>{item.date}</Text>
       </View>
 
       <View style={styles.infoRow}>
-        <Bus size={16} color="#64748b" style={styles.icon} />
+        <Bus size={16} color={Colors.info[50]} style={styles.icon} />
         <Text style={styles.infoText}>{item.route}</Text>
       </View>
     </View>
@@ -56,42 +54,40 @@ export default ItemHistory;
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#FFFFFF",
-    paddingVertical: 16,
-    paddingHorizontal: 16,
+    paddingVertical: Spacing.md,
     borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9", // Very light separator
+    borderBottomColor: Colors.primary[300],
   },
   cardTopRow: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: Spacing.xs,
   },
   cardTitle: {
-    fontSize: 16,
+    fontSize: FontSize.md,
     fontWeight: "bold",
-    color: "#1e293b",
+    color: Colors.info[50],
   },
   statusBadge: {
-    paddingVertical: 4,
-    paddingHorizontal: 10,
-    borderRadius: 20, // Fully rounded
+    paddingVertical: Spacing.xs,
+    paddingHorizontal: Spacing.sm,
+    borderRadius: BorderRadius.xs,
   },
   statusText: {
-    fontSize: 12,
-    fontWeight: "500", // 'medium'
+    fontSize: FontSize.xs,
+    fontWeight: "medium",
   },
   infoRow: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 6, // A bit of space between info rows
+    marginTop: Spacing.xs,
   },
   icon: {
-    marginRight: 8,
+    marginRight: Spacing.xs,
   },
   infoText: {
-    fontSize: 14,
-    color: "#64748b",
+    fontSize: FontSize.sm,
+    color: Colors.info[50],
   },
 });

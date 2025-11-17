@@ -30,7 +30,9 @@ export const Colors = {
     50: "#14532D",
   },
   error: {
+    900: "#fee2e2",
     400: "#E63535",
+    50: "#7f1d1d",
   },
 };
 
