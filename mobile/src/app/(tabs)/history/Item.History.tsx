@@ -15,6 +15,7 @@ import Mapbox, {
   PointAnnotation,
 } from "@rnmapbox/maps";
 import { Position, Point, Feature, LineString } from "geojson";
+import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
 
 // Mapbox configuration
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
@@ -71,166 +72,162 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 
 const HistoryDetailScreen = () => {
   return (
-    <View style={styles.safeArea}>
-      <ScrollView style={styles.container}>
-        {/* --- Header --- */}
-        <View style={styles.header}>
-          <TouchableOpacity style={styles.backButton}>
-            <ArrowLeft size={24} color="#111827" />
-          </TouchableOpacity>
-          <Text style={styles.headerTitle}>{MOCK_DATA.title}</Text>
-          {/* Spacer view to center the title perfectly */}
-          <View style={{ width: 40 }} />
-        </View>
+    <ScrollView style={styles.container}>
+      {/* --- Header --- */}
+      <View style={styles.header}>
+        <TouchableOpacity style={styles.backButton}>
+          <ArrowLeft size={24} color={Colors.info[50]} />
+        </TouchableOpacity>
+        <Text style={styles.headerTitle}>{MOCK_DATA.title}</Text>
+        {/* Spacer view to center the title perfectly */}
+        <View style={{ width: 40 }} />
+      </View>
 
-        {/* --- Map --- */}
-        <View style={styles.mapContainer}>
-          <MapView
-            style={styles.map}
-            logoEnabled={false}
-            scaleBarEnabled={false}
-            attributionEnabled={false}
+      {/* --- Map --- */}
+      <View style={styles.mapContainer}>
+        <MapView
+          style={styles.map}
+          logoEnabled={false}
+          scaleBarEnabled={false}
+          attributionEnabled={false}
+        >
+          <Camera
+            bounds={{
+              ne: MOCK_ROUTE_COORDINATES[0],
+              sw: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
+            }}
+            padding={{
+              paddingLeft: 40,
+              paddingRight: 40,
+              paddingTop: 40,
+              paddingBottom: 40,
+            }}
+            animationMode="flyTo"
+            animationDuration={0}
+          />
+
+          {/* Route Line */}
+          <ShapeSource id="route-source" shape={MOCK_ROUTE_GEOJSON}>
+            <LineLayer
+              id="route-line"
+              style={{
+                lineCap: "round",
+                lineJoin: "round",
+                lineColor: "red", // Raw hex for red
+                lineWidth: 4,
+              }}
+            />
+          </ShapeSource>
+
+          {/* Start Point Marker */}
+          <PointAnnotation
+            id="start-point"
+            coordinate={MOCK_START_POINT.coordinates}
           >
-            <Camera
-              bounds={{
-                ne: MOCK_ROUTE_COORDINATES[0],
-                sw: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
-              }}
-              padding={{
-                paddingLeft: 40,
-                paddingRight: 40,
-                paddingTop: 40,
-                paddingBottom: 40,
-              }}
-              animationMode="flyTo"
-              animationDuration={0}
-            />
+            <View style={styles.mapMarker} />
+          </PointAnnotation>
 
-            {/* Route Line */}
-            <ShapeSource id="route-source" shape={MOCK_ROUTE_GEOJSON}>
-              <LineLayer
-                id="route-line"
-                style={{
-                  lineCap: "round",
-                  lineJoin: "round",
-                  lineColor: "#EF4444", // Raw hex for red
-                  lineWidth: 4,
-                }}
-              />
-            </ShapeSource>
+          {/* End Point Marker */}
+          <PointAnnotation
+            id="end-point"
+            coordinate={MOCK_END_POINT.coordinates}
+          >
+            <View style={styles.mapMarker} />
+          </PointAnnotation>
+        </MapView>
+      </View>
 
-            {/* Start Point Marker */}
-            <PointAnnotation
-              id="start-point"
-              coordinate={MOCK_START_POINT.coordinates}
-            >
-              <View style={styles.mapMarker} />
-            </PointAnnotation>
-
-            {/* End Point Marker */}
-            <PointAnnotation
-              id="end-point"
-              coordinate={MOCK_END_POINT.coordinates}
-            >
-              <View style={styles.mapMarker} />
-            </PointAnnotation>
-          </MapView>
-        </View>
-
-        {/* --- Info Details --- */}
-        <View style={styles.infoContainer}>
-          {/* Status Section */}
-          <View style={styles.statusRow}>
-            <Text style={styles.detailLabel}>Trạng thái</Text>
-            <View style={styles.statusBadge}>
-              <Text style={styles.statusBadgeText}>{MOCK_DATA.status}</Text>
-            </View>
-          </View>
-
-          <View style={styles.divider} />
-
-          {/* Time Section */}
-          <View style={styles.detailSection}>
-            <DetailRow
-              label="Thời gian yêu cầu đón"
-              value={MOCK_DATA.requestTime}
-            />
-            <DetailRow label="Thời gian xe đến" value={MOCK_DATA.arrivalTime} />
-            <DetailRow
-              label="Tổng thời gian di chuyển"
-              value={MOCK_DATA.duration}
-            />
-          </View>
-
-          <View style={styles.divider} />
-
-          {/* Bus Section */}
-          <View style={styles.detailSection}>
-            <DetailRow label="Xe buýt số" value={MOCK_DATA.busNumber} />
-            <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
-            <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
+      {/* --- Info Details --- */}
+      <View style={styles.infoContainer}>
+        {/* Status Section */}
+        <View style={styles.statusRow}>
+          <Text style={styles.detailLabel}>Trạng thái</Text>
+          <View style={styles.statusBadge}>
+            <Text style={styles.statusBadgeText}>{MOCK_DATA.status}</Text>
           </View>
         </View>
-      </ScrollView>
-    </View>
+
+        <View style={styles.divider} />
+
+        {/* Time Section */}
+        <View style={styles.detailSection}>
+          <DetailRow
+            label="Thời gian yêu cầu đón"
+            value={MOCK_DATA.requestTime}
+          />
+          <DetailRow label="Thời gian xe đến" value={MOCK_DATA.arrivalTime} />
+          <DetailRow
+            label="Tổng thời gian di chuyển"
+            value={MOCK_DATA.duration}
+          />
+        </View>
+
+        <View style={styles.divider} />
+
+        {/* Bus Section */}
+        <View style={styles.detailSection}>
+          <DetailRow label="Xe buýt số" value={MOCK_DATA.busNumber} />
+          <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
+          <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
+        </View>
+      </View>
+    </ScrollView>
   );
 };
 
 export default HistoryDetailScreen;
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: "#FFFFFF", // White background for the whole screen
-  },
   container: {
     flex: 1,
+    paddingHorizontal: Spacing.md,
+    backgroundColor: Colors.primary[950],
   },
   // --- Header Styles ---
   header: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingHorizontal: 20,
-    paddingTop: 16,
-    paddingBottom: 8,
+    paddingTop: Spacing.sm,
+    paddingBottom: Spacing.xs,
   },
   backButton: {
-    padding: 10, // Hit area
-    marginLeft: -10, // Align icon visually
+    padding: Spacing.sm, // A bit larger hitbox
+    marginLeft: -Spacing.sm,
   },
   headerTitle: {
-    fontSize: 20,
+    fontSize: FontSize.lg,
     fontWeight: "bold",
-    color: "#111827", // Dark gray
+    color: Colors.info[50],
   },
   // --- Map Styles ---
   mapContainer: {
-    height: 350,
-    marginVertical: 16,
-    marginHorizontal: 20,
-    borderRadius: 16,
+    width: "100%",
+    aspectRatio: 1,
+    marginVertical: Spacing.md,
+    borderRadius: BorderRadius.md,
     overflow: "hidden", // Clips the map to the border radius
-    backgroundColor: "#E5E7EB", // Light gray placeholder
+    backgroundColor: Colors.secondary[950], // Light gray placeholder
   },
   map: {
     flex: 1,
   },
+  // Temporary marker style
   mapMarker: {
-    width: 12,
-    height: 12,
+    width: 20,
+    height: 20,
     borderRadius: 6,
-    backgroundColor: "#EF4444", // Red
+    backgroundColor: "black",
     borderWidth: 2,
-    borderColor: "#FFFFFF", // White
+    borderColor: "white",
   },
+
   // --- Info Styles ---
   infoContainer: {
-    marginHorizontal: 20,
     marginBottom: 20,
-    padding: 20,
-    backgroundColor: "#F8F9FA", // Very light gray background for info
-    borderRadius: 16,
+    padding: Spacing.md,
+    backgroundColor: Colors.primary[800],
+    borderRadius: BorderRadius.md,
   },
   statusRow: {
     flexDirection: "row",
@@ -238,15 +235,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   statusBadge: {
-    backgroundColor: "#D1FAE5", // Light green
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 6,
+    backgroundColor: Colors.success[900],
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+    borderRadius: BorderRadius.xs,
   },
   statusBadgeText: {
-    color: "#065F46", // Dark green
-    fontSize: 12,
-    fontWeight: "600",
+    color: Colors.success[50], // Dark green
+    fontSize: FontSize.xs,
+    fontWeight: "medium",
   },
   divider: {
     height: 1,
@@ -254,7 +251,7 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
   detailSection: {
-    gap: 12, // Spaces out the rows
+    gap: 12,
   },
   detailRow: {
     flexDirection: "row",
@@ -262,12 +259,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   detailLabel: {
-    fontSize: 14,
-    color: "#6B7280", // Medium gray
+    fontSize: FontSize.sm,
+    color: Colors.secondary[500],
   },
   detailValue: {
-    fontSize: 14,
-    color: "#1F2937", // Darker gray
-    fontWeight: "500",
+    fontSize: FontSize.sm,
+    color: Colors.secondary[700],
   },
 });

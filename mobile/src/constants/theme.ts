@@ -4,34 +4,35 @@ import { Platform } from "react-native";
 // https://github.com/eldritch-theme
 export const Colors = {
   primary: {
-    950: "#FDFCFC",
+    950: "#fdfcfc",
+    800: "#fdfdfd",
     500: "#e6e6e6",
-    300: "#D4D4D4",
+    300: "#d4d4d4",
     100: "#bababa",
   },
   secondary: {
     950: "#a4a4a4",
     900: "#969696",
     800: "#878787",
-    700: "#6E6E6E",
-    500: "#3F4040",
+    700: "#6e6e6e",
+    500: "#3f4040",
     400: "#383939",
   },
   info: {
-    950: "#ECF8FE",
-    600: "#57C2F6",
-    400: "#0DA6F2",
-    300: "#0B8DCD",
+    950: "#ecf8fe",
+    600: "#57c2f6",
+    400: "#0da6f2",
+    300: "#0b8dcd",
     200: "#0973a8",
-    50: "#05405D",
+    50: "#05405d",
   },
   success: {
-    900: "#CAFFE8",
-    50: "#14532D",
+    900: "#caffe8",
+    50: "#14532d",
   },
   error: {
     900: "#fee2e2",
-    400: "#E63535",
+    400: "#e63535",
     50: "#7f1d1d",
   },
 };
