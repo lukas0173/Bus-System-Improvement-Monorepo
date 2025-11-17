@@ -23,6 +23,9 @@ importers:
       '@rnmapbox/maps':
         specifier: ^10.2.6
         version: 10.2.6(expo@54.0.13)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
+      '@types/geojson':
+        specifier: ^7946.0.16
+        version: 7946.0.16
       axios:
         specifier: ^1.12.2
         version: 1.12.2

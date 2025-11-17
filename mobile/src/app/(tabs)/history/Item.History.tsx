@@ -4,7 +4,6 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  SafeAreaView,
   ScrollView,
   StatusBar,
 } from "react-native";
@@ -16,6 +15,7 @@ import Mapbox, {
   LineLayer,
   PointAnnotation,
 } from "@rnmapbox/maps";
+import { Position, Point, Feature, LineString } from "geojson";
 
 // Mapbox configuration
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
@@ -33,7 +33,7 @@ const MOCK_DATA = {
 };
 
 // Mock GeoJSON data for the route, start, and end points
-const MOCK_ROUTE_COORDINATES = [
+const MOCK_ROUTE_COORDINATES: Position[] = [
   [108.2104, 16.0617],
   [108.2115, 16.0612],
   [108.212, 16.0605],
@@ -43,23 +43,24 @@ const MOCK_ROUTE_COORDINATES = [
   [108.2158, 16.054],
 ];
 
-const MOCK_START_POINT = {
+const MOCK_START_POINT: Point = {
   type: "Point",
   coordinates: MOCK_ROUTE_COORDINATES[0],
 };
 
-const MOCK_END_POINT = {
+const MOCK_END_POINT: Point = {
   type: "Point",
   coordinates: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
 };
 
-const MOCK_ROUTE_GEOJSON = {
+const MOCK_ROUTE_GEOJSON: Feature<LineString> = {
   type: "Feature",
   geometry: {
     type: "LineString",
     coordinates: MOCK_ROUTE_COORDINATES,
   },
-};
+  properties: {},
+} as const;
 
 // Helper component for rendering detail rows
 const DetailRow = ({ label, value }: { label: string; value: string }) => (
