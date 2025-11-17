@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, FlatList, StatusBar } from "react-native";
+import { View, StyleSheet, FlatList } from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
 import { HistoryItem } from "@/src/types/history";

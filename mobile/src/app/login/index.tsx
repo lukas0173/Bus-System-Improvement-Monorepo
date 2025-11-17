@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  StatusBar,
-} from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Colors } from "@constants/theme";
 import HeaderLogin from "@components/login/Header.Login";
@@ -29,7 +23,6 @@ export default function LoginScreen() {
         marginBottom: insets.bottom,
       }}
     >
-      <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <HeaderLogin />
 

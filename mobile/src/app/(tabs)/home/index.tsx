@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, StatusBar } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors, Spacing } from "@constants/theme";
@@ -22,7 +22,6 @@ const ActionButtons = () => (
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <HeaderHome />
         <SearchBarHome />

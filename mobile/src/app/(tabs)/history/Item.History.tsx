@@ -5,7 +5,6 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
-  StatusBar,
 } from "react-native";
 import { ArrowLeft } from "lucide-react-native";
 import Mapbox, {
@@ -73,7 +72,6 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 const HistoryDetailScreen = () => {
   return (
     <View style={styles.safeArea}>
-      <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
       <ScrollView style={styles.container}>
         {/* --- Header --- */}
         <View style={styles.header}>

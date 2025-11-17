@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, FlatList, StatusBar } from "react-native";
+import { View, StyleSheet, FlatList } from "react-native";
 
 import { Colors, Spacing } from "@constants/theme";
 import { Ticket } from "@/src/types/ticket";
@@ -31,8 +31,6 @@ const TicketScreen = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor={Colors.info[200]} />
-
       <HeaderTicket searchText={searchText} setSearchText={setSearchText} />
       {/* --- Tabs Section --- */}
       <View style={styles.tabsContainer}>
