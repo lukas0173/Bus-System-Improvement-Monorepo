@@ -7,20 +7,19 @@ import {
   TouchableOpacity,
   FlatList,
   StatusBar,
-  SafeAreaView,
 } from "react-native";
 import { Search, Filter, Tag, Clock, QrCode } from "lucide-react-native";
 
-import { Colors } from "@constants/theme";
+import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 
 // --- Types & Interfaces ---
 interface Ticket {
   id: string;
   title: string;
-  code: string; // e.g., "V2-BT"
+  code: string;
   type: "Liên tuyến" | "Đơn tuyến";
   month: string;
-  routeInfo?: string; // Optional, as "Liên tuyến" might not have it
+  routeInfo?: string;
 }
 
 // --- Mock Data ---
@@ -76,12 +75,12 @@ const TicketManagementScreen = () => {
           {/* Left Content */}
           <View style={styles.cardContent}>
             <View style={styles.infoRow}>
-              <Tag size={16} color="#005F8F" style={styles.icon} />
+              <Tag size={16} color={Colors.info[50]} style={styles.icon} />
               <Text style={styles.infoText}>{item.type}</Text>
             </View>
 
             <View style={styles.infoRow}>
-              <Clock size={16} color="#005F8F" style={styles.icon} />
+              <Clock size={16} color={Colors.info[50]} style={styles.icon} />
               <Text style={styles.infoText}>{item.month}</Text>
             </View>
 
@@ -93,7 +92,7 @@ const TicketManagementScreen = () => {
           {/* Right Action (QR) */}
           <View style={styles.qrContainer}>
             <TouchableOpacity style={styles.qrButton}>
-              <QrCode size={24} color="#005F8F" />
+              <QrCode size={24} color={Colors.info[50]} />
             </TouchableOpacity>
           </View>
         </View>
@@ -103,28 +102,32 @@ const TicketManagementScreen = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#0085C8" />
+      <StatusBar barStyle="light-content" backgroundColor={Colors.info[200]} />
 
       {/* --- Header Section --- */}
       <View style={styles.headerContainer}>
-        <SafeAreaView>
+        <View>
           <Text style={styles.headerTitle}>Quản lý vé</Text>
 
           <View style={styles.searchContainer}>
-            <Search size={20} color="#888" style={styles.searchIcon} />
+            <Search
+              size={20}
+              color={Colors.secondary[800]}
+              style={styles.searchIcon}
+            />
             <TextInput
               style={styles.searchInput}
               placeholder="Tìm kiếm..."
               value={searchText}
               onChangeText={setSearchText}
-              placeholderTextColor="#888"
+              placeholderTextColor={Colors.secondary[800]}
             />
             <View style={styles.searchDivider} />
             <TouchableOpacity style={styles.filterButton}>
-              <Filter size={20} color="#666" />
+              <Filter size={20} color={Colors.secondary[800]} />
             </TouchableOpacity>
           </View>
-        </SafeAreaView>
+        </View>
       </View>
 
       {/* --- Tabs Section --- */}
@@ -166,43 +169,42 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primary[950],
   },
   headerContainer: {
-    backgroundColor: Colors.info[200], // Primary Blue from design
-    paddingHorizontal: 16,
-    paddingBottom: 16,
-    paddingTop: 10, // Adjust based on status bar preference
+    backgroundColor: Colors.info[200],
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.md,
   },
   headerTitle: {
-    fontSize: 20,
-    fontWeight: "600",
+    fontSize: FontSize.lg,
+    fontWeight: "bold",
     color: "white",
     textAlign: "center",
-    marginBottom: 16,
+    marginBottom: Spacing.md,
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "white",
-    borderRadius: 8,
-    height: 44,
-    paddingHorizontal: 12,
+    borderRadius: BorderRadius.sm,
+    height: 40,
+    paddingHorizontal: Spacing.sm,
   },
   searchIcon: {
-    marginRight: 8,
+    marginRight: Spacing.xs,
   },
   searchInput: {
     flex: 1,
-    fontSize: 15,
+    fontSize: FontSize.sm,
     color: Colors.secondary[800],
     height: "100%",
   },
   searchDivider: {
     width: 1,
-    height: 24,
+    height: 20,
     backgroundColor: Colors.primary[300],
-    marginHorizontal: 10,
+    marginRight: Spacing.xs,
   },
   filterButton: {
-    padding: 4,
+    padding: Spacing.xs,
   },
 
   tabsContainer: {
@@ -214,7 +216,7 @@ const styles = StyleSheet.create({
   tabItem: {
     flex: 1,
     alignItems: "center",
-    paddingVertical: 14,
+    paddingVertical: Spacing.md,
     borderBottomWidth: 2,
     borderBottomColor: "transparent",
   },
@@ -222,24 +224,24 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.info[300],
   },
   tabText: {
-    fontSize: 15,
-    fontWeight: "500",
+    fontSize: FontSize.md,
+    fontWeight: "medium",
     color: Colors.secondary[400],
   },
   tabTextActive: {
     color: Colors.info[300],
-    fontWeight: "600",
+    fontWeight: "bold",
   },
 
   // Card Styles
   listContent: {
-    padding: 16,
-    gap: 12,
+    padding: Spacing.md,
+    gap: Spacing.md,
   },
   card: {
     backgroundColor: Colors.info[950],
-    borderRadius: 12,
-    padding: 16,
+    borderRadius: BorderRadius.sm,
+    padding: Spacing.md,
     alignItems: "center",
   },
   cardHeader: {
@@ -247,15 +249,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: Spacing.xs,
   },
   cardTitle: {
-    fontSize: 16,
-    fontWeight: "700",
+    fontSize: FontSize.md,
+    fontWeight: "bold",
     color: Colors.info[50],
   },
   cardCode: {
-    fontSize: 14,
+    fontSize: FontSize.sm,
     color: Colors.info[50],
   },
   cardContentContainer: {
@@ -263,24 +265,24 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     flex: 1,
-    marginRight: 12,
   },
   infoRow: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 4,
+    marginTop: Spacing.xs,
   },
   icon: {
-    marginRight: 6,
+    marginRight: Spacing.xs,
   },
   infoText: {
-    fontSize: 14,
-    color: "#333",
+    fontSize: FontSize.sm,
+    color: Colors.info[50],
   },
   routeText: {
-    marginTop: 8,
-    fontSize: 14,
-    color: "#556677",
+    marginTop: FontSize.xs,
+    fontSize: FontSize.sm,
+    color: Colors.info[50],
+    opacity: 0.7,
   },
 
   // QR Button Styles
@@ -289,10 +291,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   qrButton: {
-    width: 48,
-    height: 48,
-    backgroundColor: "#CDE9FA", // QR bg color
-    borderRadius: 8,
+    width: 45,
+    height: 45,
+    backgroundColor: `rgba(87,194,246, 0.4)`,
+    borderRadius: BorderRadius.sm,
     justifyContent: "center",
     alignItems: "center",
   },
