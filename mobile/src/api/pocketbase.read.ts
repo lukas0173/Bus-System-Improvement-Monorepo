@@ -77,6 +77,19 @@ export const fetchFilteredRecords = async <T>(
   }
 };
 
+export const updateButton = async (options: RequestOptions = {}) => {
+  try {
+    const records = await pocketbaseClient
+      .collection("button")
+      .update("4mmd7x25iuo3z3s", { logic: false });
+    console.log(`[API - READ] Successfully update records from button`);
+    return records;
+  } catch (error) {
+    console.error(`[API - READ] Error fetching records from button:\n`, error);
+    throw error;
+  }
+};
+
 // --- Export specific fetch functions for each collection ---
 // Fetch ALL records from a collection
 export const fetchBusLocations = () =>

@@ -1,23 +1,41 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
+import { useRouter } from "expo-router";
 import HeaderHome from "@components/home/Header.Home";
 import { Colors, Spacing } from "@constants/theme";
 import SearchBarHome from "@/src/components/home/SearchBar.Home";
 import ActionButtonHome from "@components/home/ActionButton.Home";
 import MapHome from "@components/home/Map.Home";
+import { updateButton } from "@/src/api/pocketbase.read";
 
-const ActionButtons = () => (
-  <View style={styles.actionsContainer}>
-    <ActionButtonHome icon={<List color="white" size={28} />} label="Tra cứu" />
-    <ActionButtonHome
-      icon={<Shuffle color="white" size={28} />}
-      label="Tuyến đường"
-    />
-    <ActionButtonHome icon={<Pause color="white" size={28} />} label="Trạm" />
-    <ActionButtonHome icon={<Bus color="white" size={28} />} label="Xe buýt" />
-  </View>
-);
+const ActionButtons = () => {
+  const router = useRouter();
+  return (
+    <View style={styles.actionsContainer}>
+      <ActionButtonHome
+        icon={<List color="white" size={28} />}
+        label="Tra cứu"
+        navigation={() => updateButton()}
+      />
+      <ActionButtonHome
+        icon={<Shuffle color="white" size={28} />}
+        label="Tuyến đường"
+        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+      />
+      <ActionButtonHome
+        icon={<Pause color="white" size={28} />}
+        label="Trạm"
+        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+      />
+      <ActionButtonHome
+        icon={<Bus color="white" size={28} />}
+        label="Xe buýt"
+        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+      />
+    </View>
+  );
+};
 
 const HomeScreen = () => {
   return (

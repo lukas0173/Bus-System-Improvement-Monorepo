@@ -6,16 +6,17 @@ import { useRouter } from "expo-router";
 const ActionButtonHome = ({
   icon,
   label,
+  navigation,
 }: {
   icon: React.ReactNode;
   label: string;
+  navigation: any;
 }) => {
-  const router = useRouter();
   return (
     <View style={styles.actionButton}>
       <TouchableOpacity
         style={styles.actionButtonIconContainer}
-        onPress={() => router.navigate("/home/Bus.Home.Screen")}
+        onPress={navigation}
       >
         {icon}
       </TouchableOpacity>
