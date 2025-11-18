@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, FlatList } from "react-native";
+import { View, StyleSheet, FlatList, RefreshControl } from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
 import { Bus } from "@/src/types/bus";
@@ -14,7 +14,7 @@ const BusHomeScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
 
-  const { buses, isLoading, error } = useBuses();
+  const { buses, isLoading, error, refetch } = useBuses();
   console.log(buses);
 
   const filteredHistory = buses.filter((item) => {
@@ -66,6 +66,14 @@ const BusHomeScreen = () => {
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isLoading}
+            onRefresh={refetch}
+            tintColor={Colors.info[50]}
+            colors={[Colors.info[50]]}
+          />
+        }
       />
     </View>
   );
