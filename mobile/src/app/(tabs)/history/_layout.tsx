@@ -10,7 +10,7 @@ export default function HistoryStackLayout() {
         }}
       />
       <Stack.Screen
-        name="Bus.Home.Screen"
+        name="Item.History"
         options={{
           headerShown: false,
         }}
