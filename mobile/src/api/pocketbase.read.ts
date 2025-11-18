@@ -55,11 +55,12 @@ export const fetchFilteredRecords = async <T>(
   collectionName: CollectionsName,
   fieldName: string,
   fieldValue: any,
-  options: RequestOptions = {},
+  options: RequestOptions = {
+    filter: "buses = 'jb5xemoa6u396x7'",
+    sort: "-created_at",
+  },
 ): Promise<T[]> => {
   try {
-    // Append the filter option
-    options.filter = `${fieldName} = ${fieldValue}`;
     const records = pocketbaseClient
       .collection(collectionName)
       .getFullList<T>(options);
@@ -80,6 +81,10 @@ export const fetchFilteredRecords = async <T>(
 // Fetch ALL records from a collection
 export const fetchBusLocations = () =>
   fetchAllRecords<BusLocation>(CollectionsName.BusLocations);
+
+export const fetchBusLocationsById = (id: string) =>
+  fetchFilteredRecords<BusLocation>(CollectionsName.BusLocations, "buses", id);
+
 export const fetchBuses = () => fetchAllRecords<Bus>(CollectionsName.Buses);
 export const fetchNotifications = () =>
   fetchAllRecords<Notification>(CollectionsName.Notifications);

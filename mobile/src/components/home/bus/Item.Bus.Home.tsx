@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { Clock, MapPin } from "lucide-react-native";
+import { Clock, MapPin, Box } from "lucide-react-native";
 
 import { Bus as BusType } from "@/src/types/bus";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
@@ -44,12 +44,16 @@ const ItemBusHome = ({ item }: { item: BusType }) => {
 
       <View style={styles.infoRow}>
         <MapPin size={16} color={Colors.info[50]} style={styles.icon} />
-        <Text style={styles.infoText}>{item.route}</Text>
+        <Text style={styles.infoText}>{item.position}</Text>
+      </View>
+
+      <View style={styles.infoRow}>
+        <Box size={16} color={Colors.info[50]} style={styles.icon} />
+        <Text style={styles.infoText}>{item.capacity}</Text>
       </View>
     </View>
   );
 };
-
 export default ItemBusHome;
 
 const styles = StyleSheet.create({

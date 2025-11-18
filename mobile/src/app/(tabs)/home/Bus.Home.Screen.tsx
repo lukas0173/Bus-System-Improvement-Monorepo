@@ -6,17 +6,7 @@ import { Bus } from "@/src/types/bus";
 import HeaderBusHome from "@components/home/bus/Header.Bus.Home";
 import TabBusHome from "@components/home/bus/Tab.Bus.Home";
 import ItemBusHome from "@components/home/bus/Item.Bus.Home";
-
-// --- Mock Data ---
-const MOCK_HISTORY: Bus[] = [
-  {
-    id: "1",
-    title: "Xe 01",
-    date: "29/05/2025",
-    route: "Trạm 05 Ông Ích Khiêm - Trạm 07 Trưng Nữ Vương",
-    status: "Hoạt động",
-  },
-];
+import { useBuses } from "@/src/context/BusContext";
 
 type ActiveTab = "Tất cả" | "Hoạt động" | "Tạm dừng";
 
@@ -24,7 +14,10 @@ const BusHomeScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
 
-  const filteredHistory = MOCK_HISTORY.filter((item) => {
+  const { buses, isLoading, error } = useBuses();
+  console.log(buses);
+
+  const filteredHistory = buses.filter((item) => {
     // Filter by active tab
     if (activeTab === "Hoạt động" && item.status !== "Hoạt động") return false;
     if (activeTab === "Tạm dừng" && item.status !== "Tạm dừng") return false;
@@ -34,7 +27,6 @@ const BusHomeScreen = () => {
     if (
       searchText &&
       !item.title.toLowerCase().includes(searchLower) &&
-      !item.route.toLowerCase().includes(searchLower) &&
       !item.date.toLowerCase().includes(searchLower)
     ) {
       return false;
