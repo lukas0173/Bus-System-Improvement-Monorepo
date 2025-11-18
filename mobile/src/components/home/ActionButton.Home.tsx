@@ -1,6 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { Colors, BorderRadius, Spacing, FontSize } from "@constants/theme";
+import { useRouter } from "expo-router";
 
 const ActionButtonHome = ({
   icon,
@@ -8,14 +9,20 @@ const ActionButtonHome = ({
 }: {
   icon: React.ReactNode;
   label: string;
-}) => (
-  <View style={styles.actionButton}>
-    <TouchableOpacity style={styles.actionButtonIconContainer}>
-      {icon}
-    </TouchableOpacity>
-    <Text style={styles.actionButtonLabel}>{label}</Text>
-  </View>
-);
+}) => {
+  const router = useRouter();
+  return (
+    <View style={styles.actionButton}>
+      <TouchableOpacity
+        style={styles.actionButtonIconContainer}
+        onPress={() => router.navigate("/home/Bus.Home.Screen")}
+      >
+        {icon}
+      </TouchableOpacity>
+      <Text style={styles.actionButtonLabel}>{label}</Text>
+    </View>
+  );
+};
 
 export default ActionButtonHome;
 

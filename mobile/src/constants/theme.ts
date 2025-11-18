@@ -1,7 +1,5 @@
 import { Platform } from "react-native";
 
-// This is drived directly from the Eldritch theme
-// https://github.com/eldritch-theme
 export const Colors = {
   primary: {
     950: "#fdfcfc",
