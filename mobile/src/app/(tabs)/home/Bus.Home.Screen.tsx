@@ -2,58 +2,23 @@ import React, { useState } from "react";
 import { View, StyleSheet, FlatList } from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
-import { HistoryItem } from "@/src/types/history";
-import HeaderHistory from "@components/history/Header.History";
-import TabHistory from "@components/history/Tab.History";
-import ItemHistory from "@/src/components/history/Item.History";
+import { Bus } from "@/src/types/bus";
+import HeaderBusHome from "@components/home/bus/Header.Bus.Home";
+import TabBusHome from "@components/home/bus/Tab.Bus.Home";
+import ItemBusHome from "@components/home/bus/Item.Bus.Home";
 
 // --- Mock Data ---
-const MOCK_HISTORY: HistoryItem[] = [
+const MOCK_HISTORY: Bus[] = [
   {
     id: "1",
-    title: "Tuyến 06",
+    title: "Xe 01",
     date: "29/05/2025",
     route: "Trạm 05 Ông Ích Khiêm - Trạm 07 Trưng Nữ Vương",
-    status: "Hoàn thành",
-  },
-  {
-    id: "2",
-    title: "Tuyến 12",
-    date: "28/05/2025",
-    route: "Trạm 01 Hùng Vương - Trạm 10 Cầu Rồng",
-    status: "Hoàn thành",
-  },
-  {
-    id: "3",
-    title: "Tuyến 03",
-    date: "27/05/2025",
-    route: "Trạm 02 Phan Châu Trinh - Trạm 08 Ngũ Hành Sơn",
-    status: "Đã hủy",
-  },
-  {
-    id: "4",
-    title: "Tuyến 06",
-    date: "26/05/2025",
-    route: "Trạm 05 Ông Ích Khiêm - Trạm 07 Trưng Nữ Vương",
-    status: "Hoàn thành",
-  },
-  {
-    id: "5",
-    title: "Tuyến 08",
-    date: "25/05/2025",
-    route: "Trạm 11 Sân Bay - Trạm 04 Lê Duẩn",
-    status: "Hoàn thành",
-  },
-  {
-    id: "6",
-    title: "Tuyến 03",
-    date: "24/05/2025",
-    route: "Trạm 02 Phan Châu Trinh - Trạm 08 Ngũ Hành Sơn",
-    status: "Đã hủy",
+    status: "Hoạt động",
   },
 ];
 
-type ActiveTab = "Tất cả" | "Hoàn thành" | "Đã hủy";
+type ActiveTab = "Tất cả" | "Hoạt động" | "Tạm dừng";
 
 const BusHomeScreen = () => {
   const [searchText, setSearchText] = useState("");
@@ -61,9 +26,8 @@ const BusHomeScreen = () => {
 
   const filteredHistory = MOCK_HISTORY.filter((item) => {
     // Filter by active tab
-    if (activeTab === "Hoàn thành" && item.status !== "Hoàn thành")
-      return false;
-    if (activeTab === "Đã hủy" && item.status !== "Đã hủy") return false;
+    if (activeTab === "Hoạt động" && item.status !== "Hoạt động") return false;
+    if (activeTab === "Tạm dừng" && item.status !== "Tạm dừng") return false;
 
     // Filter by search text (checks title, route, and date)
     const searchLower = searchText.toLowerCase();
@@ -82,31 +46,31 @@ const BusHomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <HeaderHistory searchText={searchText} setSearchText={setSearchText} />
+      <HeaderBusHome searchText={searchText} setSearchText={setSearchText} />
 
       {/* --- Tabs Section --- */}
       <View style={styles.tabsContainer}>
-        <TabHistory
+        <TabBusHome
           label="Tất cả"
           isActive={activeTab === "Tất cả"}
           onPress={() => setActiveTab("Tất cả")}
         />
-        <TabHistory
-          label="Hoàn thành"
-          isActive={activeTab === "Hoàn thành"}
-          onPress={() => setActiveTab("Hoàn thành")}
+        <TabBusHome
+          label="Hoạt động"
+          isActive={activeTab === "Hoạt động"}
+          onPress={() => setActiveTab("Hoạt động")}
         />
-        <TabHistory
-          label="Đã hủy"
-          isActive={activeTab === "Đã hủy"}
-          onPress={() => setActiveTab("Đã hủy")}
+        <TabBusHome
+          label="Tạm dừng"
+          isActive={activeTab === "Tạm dừng"}
+          onPress={() => setActiveTab("Tạm dừng")}
         />
       </View>
 
       {/* History list */}
       <FlatList
         data={filteredHistory}
-        renderItem={({ item }) => <ItemHistory item={item} />}
+        renderItem={({ item }) => <ItemBusHome item={item} />}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
