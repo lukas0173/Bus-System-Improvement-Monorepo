@@ -19,6 +19,7 @@ export interface Bus extends BaseRecord {
   license_plate: string;
   capacity: number;
   status: string;
+  name: string;
 }
 
 // Collection: notifications

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { Clock, MapPin, Box } from "lucide-react-native";
+import { Clock, MapPin, Box, IdCard } from "lucide-react-native";
 
 import { Bus as BusType } from "@/src/types/bus";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
@@ -29,7 +29,7 @@ const ItemBusHome = ({ item }: { item: BusType }) => {
   return (
     <View style={styles.card}>
       <View style={styles.cardTopRow}>
-        <Text style={styles.cardTitle}>{item.title}</Text>
+        <Text style={styles.cardTitle}>{item.name}</Text>
         <View style={[styles.statusBadge, statusStyle.badge]}>
           <Text style={[styles.statusText, statusStyle.text]}>
             {item.status}
@@ -37,19 +37,31 @@ const ItemBusHome = ({ item }: { item: BusType }) => {
         </View>
       </View>
 
-      <View style={styles.infoRow}>
-        <Clock size={16} color={Colors.info[50]} style={styles.icon} />
-        <Text style={styles.infoText}>{item.date}</Text>
-      </View>
+      <View style={styles.infoContainer}>
+        <View style={styles.infoLeft}>
+          <View style={styles.infoRow}>
+            <Clock size={16} color={Colors.info[50]} style={styles.icon} />
+            <Text style={styles.infoText}>{item.lastUpdate}</Text>
+          </View>
 
-      <View style={styles.infoRow}>
-        <MapPin size={16} color={Colors.info[50]} style={styles.icon} />
-        <Text style={styles.infoText}>{item.position}</Text>
-      </View>
+          <View style={styles.infoRow}>
+            <MapPin size={16} color={Colors.info[50]} style={styles.icon} />
+            <Text style={styles.infoText}>{item.position}</Text>
+          </View>
 
-      <View style={styles.infoRow}>
-        <Box size={16} color={Colors.info[50]} style={styles.icon} />
-        <Text style={styles.infoText}>{item.capacity}</Text>
+          <View style={styles.infoRow}>
+            <Box size={16} color={Colors.info[50]} style={styles.icon} />
+            <Text style={styles.infoText}>{item.capacity}</Text>
+          </View>
+        </View>
+        <View style={styles.infoRight}>
+          <View style={styles.infoRow}>
+            <IdCard size={16} color={Colors.info[50]} style={styles.icon} />
+            <Text style={{ ...styles.infoText, fontWeight: "bold" }}>
+              {item.licensePlate}
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -81,6 +93,14 @@ const styles = StyleSheet.create({
   statusText: {
     fontSize: FontSize.xs,
     fontWeight: "medium",
+  },
+  infoContainer: {
+    flexDirection: "row",
+  },
+  infoLeft: {},
+  infoRight: {
+    flex: 1,
+    alignItems: "flex-end",
   },
   infoRow: {
     flexDirection: "row",

@@ -15,7 +15,6 @@ const BusHomeScreen = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
 
   const { buses, isLoading, error, refetch } = useBuses();
-  console.log(buses);
 
   const filteredHistory = buses.filter((item) => {
     // Filter by active tab

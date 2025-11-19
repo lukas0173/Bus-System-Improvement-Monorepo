@@ -57,6 +57,7 @@ export const fetchFilteredRecords = async <T>(
       ? `${options.filter} && ${baseFilter}`
       : baseFilter;
 
+    console.log(options);
     const records = await pocketbaseClient
       .collection(collectionName)
       .getFullList<T>({
@@ -85,6 +86,39 @@ export const fetchFilteredRecords = async <T>(
   }
 };
 
+export const fetchFirstListItem = async <T>(
+  collectionName: CollectionsName,
+  fieldName: string,
+  fieldValue: any,
+  options: RequestOptions = {},
+): Promise<T> => {
+  const startTime = performance.now();
+  try {
+    const baseFilter = `${fieldName} = '${fieldValue}'`;
+    const finalFilter = options.filter
+      ? `${options.filter} && ${baseFilter}`
+      : baseFilter;
+
+    const record = await pocketbaseClient
+      .collection(collectionName)
+      .getFirstListItem<T>(finalFilter, options);
+
+    const endTime = performance.now();
+    const rtt = endTime - startTime;
+    console.log(`[API - READ] Fetch first list item RTT: ${rtt.toFixed(2)} ms`);
+    console.log(
+      `[API - READ] Successfully fetched the first record from ${collectionName} where ${fieldName} is ${fieldValue}`,
+    );
+    return record;
+  } catch (error) {
+    console.error(
+      `[API - READ] Error fetching the first record from ${collectionName}:\n`,
+      error,
+    );
+    throw error;
+  }
+};
+
 // Fetch ALL records from a collection
 export const fetchBusLocations = () =>
   fetchAllRecords<BusLocation>(CollectionsName.BusLocations);
@@ -104,5 +138,18 @@ export const fetchSystemLogs = () =>
 export const fetchTrips = () => fetchAllRecords<Trip>(CollectionsName.Trips);
 
 // Fetch filtered records
-export const fetchBusLocationsById = (id: string) =>
-  fetchFilteredRecords<BusLocation>(CollectionsName.BusLocations, "buses", id);
+export const fetchBusLocationsById = (id: string, options = {}) =>
+  fetchFilteredRecords<BusLocation>(
+    CollectionsName.BusLocations,
+    "buses",
+    id,
+    options,
+  );
+
+export const fetchFirstBusLocationById = (id: string, options = {}) =>
+  fetchFirstListItem<BusLocation>(
+    CollectionsName.BusLocations,
+    "buses",
+    id,
+    options,
+  );
