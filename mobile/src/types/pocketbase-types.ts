@@ -78,6 +78,12 @@ export interface Trip extends BaseRecord {
   routes: string; // Relation to 'routes'
 }
 
+export interface NotificationLed extends BaseRecord {
+  logic: boolean;
+  created: string;
+  updated: string;
+}
+
 // Enum for collection names to ensure type-safe queries
 export enum CollectionsName {
   BusLocations = "bus_locations",
@@ -89,6 +95,7 @@ export enum CollectionsName {
   Stations = "stations",
   SystemLogs = "system_logs",
   Trips = "trips",
+  NotificationLed = "notification_led",
 }
 
 export interface RequestOptions {

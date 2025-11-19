@@ -12,14 +12,6 @@ import type {
   Trip,
 } from "../types/pocketbase-types";
 
-/**
- * A generic function to fetch all records from a specified collection.
- *
- * @param collection - The name of the collection to fetch from.
- * @param options - Optional Pocketbase request options (e.g., filter, sort).
- * @returns A promise that resolves to an array of records.
- */
-
 const fetchAllRecords = async <T>(
   collectionName: CollectionsName,
   options: RequestOptions = {},
@@ -41,16 +33,6 @@ const fetchAllRecords = async <T>(
   }
 };
 
-/**
- * A generic function to fetch a record(s) by desired field
- *
- * @param collectionName - The name of the collection.
- * @param fieldName- The name of the field to filter.
- * @param fieldValue- The value of the field to filter.
- * @param options - Optional Pocketbase request options.
- * @returns A promise that resolves to a single record.
- */
-
 export const fetchFilteredRecords = async <T>(
   collectionName: CollectionsName,
   fieldName: string,
@@ -60,10 +42,20 @@ export const fetchFilteredRecords = async <T>(
     sort: "-created_at",
   },
 ): Promise<T[]> => {
+  const startTime = performance.now();
   try {
     const records = pocketbaseClient
       .collection(collectionName)
       .getFullList<T>(options);
+
+    const endTime = performance.now();
+    // Calculate the RTT in milliseconds
+    const rtt = endTime - startTime;
+
+    console.log(
+      `[API - READ] Fetch filtered records RTT: ${rtt.toFixed(2)} ms`,
+    );
+
     console.log(
       `[API - READ] Successfully fetched filtered records ${fieldName} from ${collectionName}`,
     );
