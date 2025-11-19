@@ -51,21 +51,27 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
             lastUpdate: latestLocation.created_at,
             capacity: `Sức chứa: ${bus.capacity}`,
             position: `${latestLocation.longitude}, ${latestLocation.latitude}`,
-          };
+          } as UIBus;
         } catch (error) {
-          // If getFirstListItem throws an error (e.g., no records found), log it and return null
+          // If the API call fails (e.g., no location found), return a placeholder object that matches the UIBus type
           console.error(
-            `[Context - Bus] No location found for bus ${bus.id}:`,
+            `[Context - Bus] No location found for bus ${bus.id}.`,
             error,
           );
-          return null;
+          return {
+            id: bus.id,
+            name: bus.name,
+            licensePlate: bus.license_plate,
+            status: "Tạm dừng",
+            lastUpdate: "N/A",
+            capacity: `Sức chứa: ${bus.capacity}`,
+            position: "Unknown",
+          } as UIBus;
         }
       });
 
       // Wait for all parallel fetches to complete
-      const processedBuses = (await Promise.all(processedBusesPromises)).filter(
-        (bus): bus is UIBus => bus !== null,
-      ); // Filter out any buses that had no location
+      const processedBuses = await Promise.all(processedBusesPromises);
 
       setBuses(processedBuses);
     } catch (err) {
