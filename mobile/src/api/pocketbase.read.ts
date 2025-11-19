@@ -16,10 +16,18 @@ const fetchAllRecords = async <T>(
   collectionName: CollectionsName,
   options: RequestOptions = {},
 ): Promise<T[]> => {
+  const startTime = performance.now();
   try {
     const records = await pocketbaseClient
       .collection(collectionName)
       .getFullList<T>(options);
+
+    const endTime = performance.now();
+    // Calculate the RTT in milliseconds
+    const rtt = endTime - startTime;
+
+    console.log(`[API - READ] Fetch all records RTT: ${rtt.toFixed(2)} ms`);
+
     console.log(
       `[API - READ] Successfully fetched records from ${collectionName}`,
     );
@@ -37,16 +45,24 @@ export const fetchFilteredRecords = async <T>(
   collectionName: CollectionsName,
   fieldName: string,
   fieldValue: any,
-  options: RequestOptions = {
-    filter: "buses = 'jb5xemoa6u396x7'",
-    sort: "-created_at",
-  },
+  options: RequestOptions = {},
 ): Promise<T[]> => {
   const startTime = performance.now();
   try {
-    const records = pocketbaseClient
+    // Base filter created from the function parameters
+    const baseFilter = `${fieldName} = '${fieldValue}'`;
+
+    // Combine with any filter that might be passed in the options
+    const finalFilter = options.filter
+      ? `${options.filter} && ${baseFilter}`
+      : baseFilter;
+
+    const records = await pocketbaseClient
       .collection(collectionName)
-      .getFullList<T>(options);
+      .getFullList<T>({
+        ...options,
+        filter: finalFilter,
+      });
 
     const endTime = performance.now();
     // Calculate the RTT in milliseconds
@@ -57,38 +73,21 @@ export const fetchFilteredRecords = async <T>(
     );
 
     console.log(
-      `[API - READ] Successfully fetched filtered records ${fieldName} from ${collectionName}`,
+      `[API - READ] Successfully fetched filtered records from ${collectionName} where ${fieldName} is ${fieldValue}`,
     );
     return records;
   } catch (error) {
     console.error(
-      `[API - READ] Error fetching filtered records ${fieldName} from ${collectionName}:\n`,
+      `[API - READ] Error fetching filtered records from ${collectionName}:\n`,
       error,
     );
     throw error;
   }
 };
 
-export const updateButton = async (options: RequestOptions = {}) => {
-  try {
-    const records = await pocketbaseClient
-      .collection("button")
-      .update("4mmd7x25iuo3z3s", { logic: false });
-    console.log(`[API - READ] Successfully update records from button`);
-    return records;
-  } catch (error) {
-    console.error(`[API - READ] Error fetching records from button:\n`, error);
-    throw error;
-  }
-};
-
-// --- Export specific fetch functions for each collection ---
 // Fetch ALL records from a collection
 export const fetchBusLocations = () =>
   fetchAllRecords<BusLocation>(CollectionsName.BusLocations);
-
-export const fetchBusLocationsById = (id: string) =>
-  fetchFilteredRecords<BusLocation>(CollectionsName.BusLocations, "buses", id);
 
 export const fetchBuses = () => fetchAllRecords<Bus>(CollectionsName.Buses);
 export const fetchNotifications = () =>
@@ -103,3 +102,7 @@ export const fetchStations = () =>
 export const fetchSystemLogs = () =>
   fetchAllRecords<SystemLog>(CollectionsName.SystemLogs);
 export const fetchTrips = () => fetchAllRecords<Trip>(CollectionsName.Trips);
+
+// Fetch filtered records
+export const fetchBusLocationsById = (id: string) =>
+  fetchFilteredRecords<BusLocation>(CollectionsName.BusLocations, "buses", id);

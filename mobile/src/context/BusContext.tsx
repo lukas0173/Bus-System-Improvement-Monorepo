@@ -6,9 +6,9 @@ import React, {
   ReactNode,
   useCallback,
 } from "react";
-import { fetchBuses, fetchBusLocationsById } from "@api/pocketbase.read"; // Import your API function
-import { Bus as PBBus } from "@/src/types/pocketbase-types"; // PocketBase 'Bus' type
-import { Bus as UIBus } from "@/src/types/bus"; // Your UI 'Bus' type
+import { fetchBuses, fetchBusLocationsById } from "@api/pocketbase.read";
+import { Bus as PBBus } from "@/src/types/pocketbase-types";
+import { Bus as UIBus } from "@/src/types/bus";
 
 // Define the shape of the context state
 interface BusContextType {
@@ -18,10 +18,10 @@ interface BusContextType {
   refetch: () => void;
 }
 
-// Create the context
+// Context intialization
 const BusContext = createContext<BusContextType | undefined>(undefined);
 
-// Define the provider component
+// Context provider
 export const BusProvider = ({ children }: { children: ReactNode }) => {
   const [buses, setBuses] = useState<UIBus[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,9 +36,7 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
       // Fetch ALL buses from the 'buses' collection
       const rawBuses = await fetchBuses();
       const rawLocations = await fetchBusLocationsById("jb5xemoa6u396x7");
-      console.log(rawLocations[0]);
 
-      // --- Transform the data ---
       // Map PocketBase 'Bus' data to fit your UI 'Bus' type
       const processedBuses: UIBus[] = rawBuses.map((bus: PBBus) => {
         return {

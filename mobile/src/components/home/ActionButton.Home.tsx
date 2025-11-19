@@ -1,7 +1,6 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { Colors, BorderRadius, Spacing, FontSize } from "@constants/theme";
-import { useRouter } from "expo-router";
 
 const ActionButtonHome = ({
   icon,
