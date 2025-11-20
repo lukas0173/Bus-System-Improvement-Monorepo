@@ -73,119 +73,115 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 
 const HistoryDetailScreen = () => {
   const { itemTitle } = useLocalSearchParams();
-  console.log(itemTitle);
   const router = useRouter();
 
   // In a real app, you would use this ID to fetch data from your API
   // For now, we'll just display it to confirm it's working.
 
   return (
-    <>
-      <Stack.Screen options={{ headerShown: false }} />
-      <ScrollView style={styles.container}>
-        {/* --- Header --- */}
-        <View style={styles.header}>
-          <TouchableOpacity
-            style={styles.backButton}
-            onPress={() => router.back()}
-          >
-            <ArrowLeft size={24} color={Colors.info[50]} />
-          </TouchableOpacity>
-          <Text style={styles.headerTitle}>{MOCK_DATA.title}</Text>
-          {/* Spacer view to center the title perfectly */}
-          <View style={{ width: 40 }} />
-        </View>
+    <ScrollView style={styles.container}>
+      {/* --- Header --- */}
+      <View style={styles.header}>
+        <TouchableOpacity
+          style={styles.backButton}
+          onPress={() => router.back()}
+        >
+          <ArrowLeft size={24} color={Colors.info[50]} />
+        </TouchableOpacity>
+        <Text style={styles.headerTitle}>{MOCK_DATA.title}</Text>
+        {/* Spacer view to center the title perfectly */}
+        <View style={{ width: 40 }} />
+      </View>
 
-        {/* --- Map --- */}
-        <View style={styles.mapContainer}>
-          <MapView
-            style={styles.map}
-            logoEnabled={false}
-            scaleBarEnabled={false}
-            attributionEnabled={false}
-          >
-            <Camera
-              bounds={{
-                ne: MOCK_ROUTE_COORDINATES[0],
-                sw: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
+      {/* --- Map --- */}
+      <View style={styles.mapContainer}>
+        <MapView
+          style={styles.map}
+          logoEnabled={false}
+          scaleBarEnabled={false}
+          attributionEnabled={false}
+        >
+          <Camera
+            bounds={{
+              ne: MOCK_ROUTE_COORDINATES[0],
+              sw: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
+            }}
+            padding={{
+              paddingLeft: 40,
+              paddingRight: 40,
+              paddingTop: 40,
+              paddingBottom: 40,
+            }}
+            animationMode="flyTo"
+            animationDuration={0}
+          />
+
+          {/* Route Line */}
+          <ShapeSource id="route-source" shape={MOCK_ROUTE_GEOJSON}>
+            <LineLayer
+              id="route-line"
+              style={{
+                lineCap: "round",
+                lineJoin: "round",
+                lineColor: "red", // Raw hex for red
+                lineWidth: 4,
               }}
-              padding={{
-                paddingLeft: 40,
-                paddingRight: 40,
-                paddingTop: 40,
-                paddingBottom: 40,
-              }}
-              animationMode="flyTo"
-              animationDuration={0}
             />
+          </ShapeSource>
 
-            {/* Route Line */}
-            <ShapeSource id="route-source" shape={MOCK_ROUTE_GEOJSON}>
-              <LineLayer
-                id="route-line"
-                style={{
-                  lineCap: "round",
-                  lineJoin: "round",
-                  lineColor: "red", // Raw hex for red
-                  lineWidth: 4,
-                }}
-              />
-            </ShapeSource>
+          {/* Start Point Marker */}
+          <PointAnnotation
+            id="start-point"
+            coordinate={MOCK_START_POINT.coordinates}
+          >
+            <View style={styles.mapMarker} />
+          </PointAnnotation>
 
-            {/* Start Point Marker */}
-            <PointAnnotation
-              id="start-point"
-              coordinate={MOCK_START_POINT.coordinates}
-            >
-              <View style={styles.mapMarker} />
-            </PointAnnotation>
+          {/* End Point Marker */}
+          <PointAnnotation
+            id="end-point"
+            coordinate={MOCK_END_POINT.coordinates}
+          >
+            <View style={styles.mapMarker} />
+          </PointAnnotation>
+        </MapView>
+      </View>
 
-            {/* End Point Marker */}
-            <PointAnnotation
-              id="end-point"
-              coordinate={MOCK_END_POINT.coordinates}
-            >
-              <View style={styles.mapMarker} />
-            </PointAnnotation>
-          </MapView>
-        </View>
-
-        {/* --- Info Details --- */}
-        <View style={styles.infoContainer}>
-          {/* Status Section */}
-          <View style={styles.statusRow}>
-            <Text style={styles.detailLabel}>Trạng thái</Text>
-            <View style={styles.statusBadge}>
-              <Text style={styles.statusBadgeText}>{MOCK_DATA.status}</Text>
-            </View>
-          </View>
-
-          <View style={styles.divider} />
-
-          {/* Time Section */}
-          <View style={styles.detailSection}>
-            <DetailRow
-              label="Thời gian yêu cầu đón"
-              value={MOCK_DATA.requestTime}
-            />
-            <DetailRow label="Thời gian xe đến" value={MOCK_DATA.arrivalTime} />
-            <DetailRow
-              label="Tổng thời gian di chuyển"
-              value={MOCK_DATA.duration}
-            />
-          </View>
-
-          <View style={styles.divider} />
-
-          {/* Bus Section */}
-          <View style={styles.detailSection}>
-            <DetailRow label="Xe buýt số" value={MOCK_DATA.busNumber} />
-            <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
-            <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
+      {/* --- Info Details --- */}
+      <View style={styles.infoContainer}>
+        {/* Status Section */}
+        <View style={styles.statusRow}>
+          <Text style={styles.detailLabel}>Trạng thái</Text>
+          <View style={styles.statusBadge}>
+            <Text style={styles.statusBadgeText}>{MOCK_DATA.status}</Text>
           </View>
         </View>
-      </ScrollView>
-    </>
+
+        <View style={styles.divider} />
+
+        {/* Time Section */}
+        <View style={styles.detailSection}>
+          <DetailRow
+            label="Thời gian yêu cầu đón"
+            value={MOCK_DATA.requestTime}
+          />
+          <DetailRow label="Thời gian xe đến" value={MOCK_DATA.arrivalTime} />
+          <DetailRow
+            label="Tổng thời gian di chuyển"
+            value={MOCK_DATA.duration}
+          />
+        </View>
+
+        <View style={styles.divider} />
+
+        {/* Bus Section */}
+        <View style={styles.detailSection}>
+          <DetailRow label="Xe buýt số" value={MOCK_DATA.busNumber} />
+          <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
+          <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
+        </View>
+      </View>
+    </ScrollView>
   );
 };
 

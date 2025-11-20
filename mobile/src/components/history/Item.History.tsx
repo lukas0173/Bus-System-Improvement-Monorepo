@@ -27,7 +27,6 @@ const ItemHistory = ({ item }: { item: HistoryItem }) => {
 
   const statusStyle = getStatusStyles(item.status);
 
-  console.log(item.title);
   return (
     <Link href={`/history/${item.title}`} asChild>
       <TouchableOpacity style={styles.card}>
