@@ -137,8 +137,8 @@ export const fetchStations = () =>
 export const fetchSystemLogs = () =>
   fetchAllRecords<SystemLog>(CollectionsName.SystemLogs);
 export const fetchTrips = () => fetchAllRecords<Trip>(CollectionsName.Trips);
-export const fetchTripHistories = () =>
-  fetchAllRecords<TripHistory>(CollectionsName.TripHistories);
+export const fetchTripHistories = (options: RequestOptions = {}) =>
+  fetchAllRecords<TripHistory>(CollectionsName.TripHistories, options);
 
 // Fetch filtered records
 export const fetchBusLocationsById = (id: string, options = {}) =>

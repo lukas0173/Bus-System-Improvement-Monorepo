@@ -1,65 +1,26 @@
 import React, { useState } from "react";
-import { View, StyleSheet, FlatList } from "react-native";
+import {
+  View,
+  StyleSheet,
+  FlatList,
+  ActivityIndicator,
+  Text,
+} from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
-import { HistoryItem } from "@/src/types/history";
 import HeaderHistory from "@components/history/Header.History";
 import TabHistory from "@components/history/Tab.History";
 import ItemHistory from "@/src/components/history/Item.History";
-
-// --- Mock Data ---
-const MOCK_HISTORY: HistoryItem[] = [
-  {
-    id: "1",
-    title: "Tuyến 06",
-    date: "29/05/2025",
-    route: "Trạm 05 Ông Ích Khiêm - Trạm 07 Trưng Nữ Vương",
-    status: "Hoàn thành",
-  },
-  {
-    id: "2",
-    title: "Tuyến 12",
-    date: "28/05/2025",
-    route: "Trạm 01 Hùng Vương - Trạm 10 Cầu Rồng",
-    status: "Hoàn thành",
-  },
-  {
-    id: "3",
-    title: "Tuyến 03",
-    date: "27/05/2025",
-    route: "Trạm 02 Phan Châu Trinh - Trạm 08 Ngũ Hành Sơn",
-    status: "Đã hủy",
-  },
-  {
-    id: "4",
-    title: "Tuyến 06",
-    date: "26/05/2025",
-    route: "Trạm 05 Ông Ích Khiêm - Trạm 07 Trưng Nữ Vương",
-    status: "Hoàn thành",
-  },
-  {
-    id: "5",
-    title: "Tuyến 08",
-    date: "25/05/2025",
-    route: "Trạm 11 Sân Bay - Trạm 04 Lê Duẩn",
-    status: "Hoàn thành",
-  },
-  {
-    id: "6",
-    title: "Tuyến 03",
-    date: "24/05/2025",
-    route: "Trạm 02 Phan Châu Trinh - Trạm 08 Ngũ Hành Sơn",
-    status: "Đã hủy",
-  },
-];
+import { useTripHistories } from "@/src/context/TripHistoryContext";
 
 type ActiveTab = "Tất cả" | "Hoàn thành" | "Đã hủy";
 
 const HistoryScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
+  const { tripHistories, isLoading, error } = useTripHistories();
 
-  const filteredHistory = MOCK_HISTORY.filter((item) => {
+  const filteredHistory = tripHistories.filter((item) => {
     // Filter by active tab
     if (activeTab === "Hoàn thành" && item.status !== "Hoàn thành")
       return false;
@@ -69,9 +30,9 @@ const HistoryScreen = () => {
     const searchLower = searchText.toLowerCase();
     if (
       searchText &&
-      !item.title.toLowerCase().includes(searchLower) &&
       !item.route.toLowerCase().includes(searchLower) &&
-      !item.date.toLowerCase().includes(searchLower)
+      !item.start.toLowerCase().includes(searchLower) &&
+      !item.bus.toLowerCase().includes(searchLower)
     ) {
       return false;
     }
@@ -79,6 +40,24 @@ const HistoryScreen = () => {
     // Passed all filters
     return true;
   });
+
+  if (isLoading) {
+    return (
+      <ActivityIndicator
+        size="large"
+        color={Colors.primary[500]}
+        style={{ flex: 1 }}
+      />
+    );
+  }
+
+  if (error) {
+    return (
+      <Text style={{ color: "white", textAlign: "center", marginTop: 20 }}>
+        Error fetching data: {error.message}
+      </Text>
+    );
+  }
 
   return (
     <View style={styles.container}>
@@ -106,7 +85,17 @@ const HistoryScreen = () => {
       {/* History list */}
       <FlatList
         data={filteredHistory}
-        renderItem={({ item }) => <ItemHistory item={item} />}
+        renderItem={({ item }) => (
+          <ItemHistory
+            item={{
+              id: item.id,
+              title: item.route,
+              date: new Date(item.start).toLocaleDateString(),
+              route: `Bus: ${item.bus}`,
+              status: item.status as "Hoàn thành" | "Đã hủy",
+            }}
+          />
+        )}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}

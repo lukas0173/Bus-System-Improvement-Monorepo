@@ -1,4 +1,3 @@
-import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import React from "react";
 import {
   View,
@@ -16,6 +15,7 @@ import Mapbox, {
   PointAnnotation,
 } from "@rnmapbox/maps";
 import { Position, Point, Feature, LineString } from "geojson";
+import { useRouter } from "expo-router";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
 
 // Mapbox configuration
@@ -72,11 +72,7 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 );
 
 const HistoryDetailScreen = () => {
-  const { itemTitle } = useLocalSearchParams();
   const router = useRouter();
-
-  // In a real app, you would use this ID to fetch data from your API
-  // For now, we'll just display it to confirm it's working.
 
   return (
     <ScrollView style={styles.container}>
