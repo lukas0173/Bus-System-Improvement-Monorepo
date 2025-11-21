@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  StyleSheet,
-  FlatList,
-  ActivityIndicator,
-  Text,
-} from "react-native";
+import { View, StyleSheet, FlatList, RefreshControl, Text } from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
 import HeaderHistory from "@components/history/Header.History";
@@ -18,7 +12,7 @@ type ActiveTab = "Tất cả" | "Hoàn thành" | "Đã hủy";
 const HistoryScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
-  const { tripHistories, isLoading, error } = useTripHistories();
+  const { tripHistories, isLoading, error, refetch } = useTripHistories();
 
   const filteredHistory = tripHistories.filter((item) => {
     // Filter by active tab
@@ -40,16 +34,6 @@ const HistoryScreen = () => {
     // Passed all filters
     return true;
   });
-
-  if (isLoading) {
-    return (
-      <ActivityIndicator
-        size="large"
-        color={Colors.primary[500]}
-        style={{ flex: 1 }}
-      />
-    );
-  }
 
   if (error) {
     return (
@@ -99,6 +83,14 @@ const HistoryScreen = () => {
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isLoading}
+            onRefresh={refetch}
+            tintColor={Colors.info[50]}
+            colors={[Colors.info[50]]}
+          />
+        }
       />
     </View>
   );

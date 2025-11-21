@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { View, StyleSheet, FlatList, RefreshControl } from "react-native";
 
 import { Spacing, Colors } from "@constants/theme";
-import { Bus } from "@/src/types/bus";
 import HeaderBusHome from "@components/home/bus/Header.Bus.Home";
 import TabBusHome from "@components/home/bus/Tab.Bus.Home";
 import ItemBusHome from "@components/home/bus/Item.Bus.Home";
@@ -14,7 +13,7 @@ const BusHomeScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
 
-  const { buses, isLoading, error, refetch } = useBuses();
+  const { buses, isLoading, refetch } = useBuses();
 
   const filteredHistory = buses.filter((item) => {
     // Filter by active tab
@@ -25,8 +24,8 @@ const BusHomeScreen = () => {
     const searchLower = searchText.toLowerCase();
     if (
       searchText &&
-      !item.title.toLowerCase().includes(searchLower) &&
-      !item.date.toLowerCase().includes(searchLower)
+      !item.name.toLowerCase().includes(searchLower) &&
+      !item.lastUpdate.toLowerCase().includes(searchLower)
     ) {
       return false;
     }
