@@ -10,6 +10,7 @@ import type {
   Station,
   SystemLog,
   Trip,
+  TripHistory,
 } from "../types/pocketbase-types";
 
 const fetchAllRecords = async <T>(
@@ -136,6 +137,8 @@ export const fetchStations = () =>
 export const fetchSystemLogs = () =>
   fetchAllRecords<SystemLog>(CollectionsName.SystemLogs);
 export const fetchTrips = () => fetchAllRecords<Trip>(CollectionsName.Trips);
+export const fetchTripHistories = () =>
+  fetchAllRecords<TripHistory>(CollectionsName.TripHistories);
 
 // Fetch filtered records
 export const fetchBusLocationsById = (id: string, options = {}) =>

@@ -79,6 +79,15 @@ export interface Trip extends BaseRecord {
   routes: string; // Relation to 'routes'
 }
 
+export interface TripHistory extends BaseRecord {
+  start: string;
+  end: string;
+  bus: string;
+  locations: string[];
+  status: string;
+  route: string;
+}
+
 export interface NotificationLed extends BaseRecord {
   logic: boolean;
   created: string;
@@ -96,6 +105,7 @@ export enum CollectionsName {
   Stations = "stations",
   SystemLogs = "system_logs",
   Trips = "trips",
+  TripHistories = "trip_histories",
   NotificationLed = "notification_led",
 }
 

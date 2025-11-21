@@ -10,6 +10,7 @@ import type {
   Station,
   SystemLog,
   Trip,
+  TripHistory,
   NotificationLed,
 } from "../types/pocketbase-types";
 
@@ -62,6 +63,9 @@ export const updateSystemLog = (id: string, body: Partial<SystemLog>) =>
 
 export const updateTrip = (id: string, body: Partial<Trip>) =>
   updateRecord<Trip>(CollectionsName.Trips, id, body);
+
+export const updateTripHistory = (id: string, body: Partial<TripHistory>) =>
+  updateRecord<TripHistory>(CollectionsName.TripHistories, id, body);
 
 export const updateNotificationLed = (
   id: string,
