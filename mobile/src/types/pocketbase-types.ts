@@ -20,6 +20,7 @@ export interface Bus extends BaseRecord {
   capacity: number;
   status: string;
   name: string;
+  driver?: string;
 }
 
 // Collection: notifications
@@ -86,6 +87,8 @@ export interface TripHistory extends BaseRecord {
   locations: string[];
   status: string;
   route: string;
+  created: string;
+  updated: string;
 }
 
 export interface NotificationLed extends BaseRecord {

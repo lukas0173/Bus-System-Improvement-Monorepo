@@ -69,17 +69,7 @@ const HistoryScreen = () => {
       {/* History list */}
       <FlatList
         data={filteredHistory}
-        renderItem={({ item }) => (
-          <ItemHistory
-            item={{
-              id: item.id,
-              title: item.route,
-              date: new Date(item.start).toLocaleDateString(),
-              route: `Bus: ${item.bus}`,
-              status: item.status as "Hoàn thành" | "Đã hủy",
-            }}
-          />
-        )}
+        renderItem={({ item }) => <ItemHistory item={item} />}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}

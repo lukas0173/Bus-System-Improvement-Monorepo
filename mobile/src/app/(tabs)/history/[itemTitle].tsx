@@ -172,7 +172,7 @@ const HistoryDetailScreen = () => {
 
         {/* Bus Section */}
         <View style={styles.detailSection}>
-          <DetailRow label="Xe buýt số" value={MOCK_DATA.busNumber} />
+          <DetailRow label="  Xe buýt số" value={MOCK_DATA.busNumber} />
           <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
           <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
         </View>

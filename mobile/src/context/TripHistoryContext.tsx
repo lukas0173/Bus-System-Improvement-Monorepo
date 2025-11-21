@@ -56,8 +56,8 @@ export const TripHistoryProvider = ({ children }: { children: ReactNode }) => {
             locations: history.locations,
             status: history.status,
             route: routeName,
-            created: new Date((history as any).created).toLocaleString(),
-            updated: new Date((history as any).updated).toLocaleString(),
+            created: new Date(history.created).toLocaleString(),
+            updated: new Date(history.updated).toLocaleString(),
           } as UITripHistory;
         },
       );

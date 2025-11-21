@@ -3,12 +3,12 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Clock, Bus } from "lucide-react-native";
 
-import { HistoryItem } from "@/src/types/history";
+import { UITripHistory } from "@/src/types/trip-history";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 
-const ItemHistory = ({ item }: { item: HistoryItem }) => {
+const ItemHistory = ({ item }: { item: UITripHistory }) => {
   // Helper to get styles based on status
-  const getStatusStyles = (status: HistoryItem["status"]) => {
+  const getStatusStyles = (status: UITripHistory["status"]) => {
     if (status === "Hoàn thành") {
       return {
         badge: { backgroundColor: Colors.success[900] },
@@ -28,10 +28,10 @@ const ItemHistory = ({ item }: { item: HistoryItem }) => {
   const statusStyle = getStatusStyles(item.status);
 
   return (
-    <Link href={`/history/${item.title}`} asChild>
+    <Link href={`/history/${item.route}`} asChild>
       <TouchableOpacity style={styles.card}>
         <View style={styles.cardTopRow}>
-          <Text style={styles.cardTitle}>{item.title}</Text>
+          <Text style={styles.cardTitle}>{item.route}</Text>
           <View style={[styles.statusBadge, statusStyle.badge]}>
             <Text style={[styles.statusText, statusStyle.text]}>
               {item.status}
@@ -41,12 +41,12 @@ const ItemHistory = ({ item }: { item: HistoryItem }) => {
 
         <View style={styles.infoRow}>
           <Clock size={16} color={Colors.info[50]} style={styles.icon} />
-          <Text style={styles.infoText}>{item.date}</Text>
+          <Text style={styles.infoText}>{item.created}</Text>
         </View>
 
         <View style={styles.infoRow}>
           <Bus size={16} color={Colors.info[50]} style={styles.icon} />
-          <Text style={styles.infoText}>{item.route}</Text>
+          <Text style={styles.infoText}>{item.bus}</Text>
         </View>
       </TouchableOpacity>
     </Link>

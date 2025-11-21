@@ -7,7 +7,7 @@ import { Colors, Spacing } from "@constants/theme";
 import SearchBarHome from "@/src/components/home/SearchBar.Home";
 import ActionButtonHome from "@components/home/ActionButton.Home";
 import MapHome from "@components/home/Map.Home";
-import { updateButton } from "@/src/api/pocketbase.read";
+import { updateNotificationLed } from "@/src/api/pocketbase.update";
 
 const ActionButtons = () => {
   const router = useRouter();
@@ -16,7 +16,9 @@ const ActionButtons = () => {
       <ActionButtonHome
         icon={<List color="white" size={28} />}
         label="Tra cứu"
-        navigation={() => updateButton()}
+        navigation={() =>
+          updateNotificationLed("4mmd7x25iuo3z3s", { logic: false })
+        }
       />
       <ActionButtonHome
         icon={<Shuffle color="white" size={28} />}
