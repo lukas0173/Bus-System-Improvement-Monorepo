@@ -3,17 +3,16 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   ScrollView,
   ActivityIndicator,
 } from "react-native";
-import { ArrowLeft } from "lucide-react-native";
-import { useRouter, useLocalSearchParams } from "expo-router";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
+import { useLocalSearchParams } from "expo-router";
 import { useTrip } from "@/src/context/TripHistoryContext";
 import getStatusStyles from "@/src/utils/status-style";
 import calculateDuration from "@/src/utils/duration-calculation";
 import MapDetailHistory from "@/src/components/history/detail/Map.Detail.History";
+import HeaderDetailHistory from "@/src/components/history/detail/Header.Detail.History";
 
 // Helper component for rendering detail rows
 const DetailRow = ({ label, value }: { label: string; value: string }) => (
@@ -24,7 +23,6 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 );
 
 const HistoryDetailScreen = () => {
-  const router = useRouter();
   const { itemTitle } = useLocalSearchParams<{ itemTitle: string }>();
   const { tripHistoryDetails, isLoading } = useTrip();
 
@@ -42,9 +40,6 @@ const HistoryDetailScreen = () => {
     return (
       <View style={styles.centered}>
         <Text style={styles.errorText}>Không tìm thấy dữ liệu chuyến đi.</Text>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Text style={styles.backLink}>Quay lại</Text>
-        </TouchableOpacity>
       </View>
     );
   }
@@ -53,18 +48,7 @@ const HistoryDetailScreen = () => {
 
   return (
     <ScrollView style={styles.container}>
-      {/* --- Header --- */}
-      <View style={styles.header}>
-        <TouchableOpacity
-          style={styles.backButton}
-          onPress={() => router.back()}
-        >
-          <ArrowLeft size={24} color={Colors.info[50]} />
-        </TouchableOpacity>
-        <Text style={styles.headerTitle}>{trip.route.name}</Text>
-        <View style={{ width: 40 }} />
-      </View>
-
+      <HeaderDetailHistory trip={trip} />
       <MapDetailHistory />
 
       {/* --- Info Details --- */}
@@ -121,22 +105,6 @@ const styles = StyleSheet.create({
   backLink: {
     color: Colors.info[50],
     fontSize: FontSize.md,
-  },
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingTop: Spacing.sm,
-    paddingBottom: Spacing.xs,
-  },
-  backButton: {
-    padding: Spacing.sm,
-    marginLeft: -Spacing.sm,
-  },
-  headerTitle: {
-    fontSize: FontSize.lg,
-    fontWeight: "bold",
-    color: Colors.info[50],
   },
   infoContainer: {
     marginBottom: 20,
