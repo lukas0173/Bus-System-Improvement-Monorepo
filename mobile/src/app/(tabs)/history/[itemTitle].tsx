@@ -178,8 +178,8 @@ const HistoryDetailScreen = () => {
 
         {/* Time Section */}
         <View style={styles.detailSection}>
-          <DetailRow label="Thời gian yêu cầu đón" value={trip.start} />
-          <DetailRow label="Thời gian xe đến" value={trip.end} />
+          <DetailRow label="Thời gian yêu cầu đón" value={trip.created} />
+          <DetailRow label="Thời gian xe đến" value={trip.start} />
           <DetailRow
             label="Tổng thời gian di chuyển"
             value={calculateDuration(trip.start, trip.end)}

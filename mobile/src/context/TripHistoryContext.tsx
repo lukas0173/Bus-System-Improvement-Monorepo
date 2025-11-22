@@ -8,7 +8,10 @@ import React, {
 } from "react";
 import { fetchTripHistories } from "@api/pocketbase.read";
 import { TripHistory as PBTripHistory } from "@/src/types/pocketbase-types";
-import { UITripHistory, UITripHistoryDetail } from "@/src/types/trip-history";
+import {
+  UITripHistory,
+  UITripHistoryDetail,
+} from "@/src/types/UI/trip-history";
 
 // Define the shape of the context state
 interface TripContextType {

@@ -8,7 +8,7 @@ import React, {
 } from "react";
 import { fetchBuses, fetchFirstBusLocationById } from "@api/pocketbase.read";
 import { Bus as PBBus } from "@/src/types/pocketbase-types";
-import { Bus as UIBus } from "@/src/types/bus";
+import { UIBus } from "@/src/types/UI/bus";
 
 // Define the shape of the context state
 interface BusContextType {
@@ -53,7 +53,6 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
             position: `${latestLocation.longitude}, ${latestLocation.latitude}`,
           } as UIBus;
         } catch (error) {
-          // If the API call fails (e.g., no location found), return a placeholder object that matches the UIBus type
           console.error(
             `[Context - Bus] No location found for bus ${bus.id}.`,
             error,
