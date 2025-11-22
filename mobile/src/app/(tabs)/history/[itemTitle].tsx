@@ -32,6 +32,24 @@ const calculateDuration = (start: string, end: string) => {
   return `${minutes} phút`;
 };
 
+// Helper to get styles based on status
+const getStatusStyles = (status: string) => {
+  if (status === "Hoàn thành") {
+    return {
+      badge: { backgroundColor: Colors.success[900] },
+      text: { color: Colors.success[50] },
+    };
+  }
+  if (status === "Đã hủy") {
+    return {
+      badge: { backgroundColor: Colors.error[900] },
+      text: { color: Colors.error[50] },
+    };
+  }
+  // Default/fallback style
+  return {};
+};
+
 // Mock GeoJSON data for the route, start, and end points
 const MOCK_ROUTE_COORDINATES: Position[] = [
   [108.2104, 16.0617],
@@ -95,6 +113,8 @@ const HistoryDetailScreen = () => {
       </View>
     );
   }
+
+  const statusStyle = getStatusStyles(trip.status);
 
   return (
     <ScrollView style={styles.container}>
@@ -169,12 +189,12 @@ const HistoryDetailScreen = () => {
         {/* Status Section */}
         <View style={styles.statusRow}>
           <Text style={styles.detailLabel}>Trạng thái</Text>
-          <View style={styles.statusBadge}>
-            <Text style={styles.statusBadgeText}>{trip.status}</Text>
+          <View style={[styles.statusBadge, statusStyle.badge]}>
+            <Text style={[styles.statusBadgeText, statusStyle.text]}>
+              {trip.status}
+            </Text>
           </View>
         </View>
-
-        <View style={styles.divider} />
 
         {/* Time Section */}
         <View style={styles.detailSection}>
@@ -185,8 +205,6 @@ const HistoryDetailScreen = () => {
             value={calculateDuration(trip.start, trip.end)}
           />
         </View>
-
-        <View style={styles.divider} />
 
         {/* Bus Section */}
         <View style={styles.detailSection}>
@@ -258,14 +276,18 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     marginBottom: 20,
-    padding: Spacing.md,
     backgroundColor: Colors.primary[800],
     borderRadius: BorderRadius.md,
+    gap: 10,
   },
   statusRow: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    boxShadow: "0px 1.5px 2px 0px rgba(0, 0, 0, 0.25)",
+    borderRadius: BorderRadius.sm,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.md,
   },
   statusBadge: {
     backgroundColor: Colors.success[900],
@@ -278,13 +300,12 @@ const styles = StyleSheet.create({
     fontSize: FontSize.xs,
     fontWeight: "medium",
   },
-  divider: {
-    height: 1,
-    backgroundColor: "#E5E7EB",
-    marginVertical: 16,
-  },
   detailSection: {
-    gap: 12,
+    boxShadow: "0px 1.5px 2px 0px rgba(0, 0, 0, 0.25)",
+    borderRadius: BorderRadius.sm,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    gap: Spacing.sm,
   },
   detailRow: {
     flexDirection: "row",

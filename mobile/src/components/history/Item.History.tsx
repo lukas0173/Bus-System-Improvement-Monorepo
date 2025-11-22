@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Clock, Bus } from "lucide-react-native";
 
-import { UITripHistory } from "@/src/types/trip-history";
+import { UITripHistory } from "@/src/types/UI/trip-history";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 
 const ItemHistory = ({ item }: { item: UITripHistory }) => {
