@@ -1,12 +1,23 @@
-// Define the shape of the data that will be used in the UI
+import type { Bus, Route } from "./pocketbase-types";
+
+// history list
 export interface UITripHistory {
+  id: string;
+  created: string;
+  status: string;
+  routeName: string;
+  busName: string;
+}
+
+// History detail screen
+export interface UITripHistoryDetail {
   id: string;
   start: string;
   end: string;
-  bus: string;
+  bus: Bus;
   locations: string[];
   status: string;
-  route: string;
+  route: Route;
   created: string;
   updated: string;
 }

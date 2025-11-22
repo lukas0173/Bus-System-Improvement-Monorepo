@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
+  ActivityIndicator,
 } from "react-native";
 import { ArrowLeft } from "lucide-react-native";
 import Mapbox, {
@@ -15,22 +16,20 @@ import Mapbox, {
   PointAnnotation,
 } from "@rnmapbox/maps";
 import { Position, Point, Feature, LineString } from "geojson";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
+import { useTrip } from "@/src/context/TripHistoryContext";
 
 // Mapbox configuration
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
 
-// --- Mock Data ---
-const MOCK_DATA = {
-  title: "Tuyến 06",
-  status: "Hoàn thành",
-  requestTime: "14:22 - 10/11/2025",
-  arrivalTime: "14:25 - 10/11/2025",
-  duration: "20 phút",
-  busNumber: "01",
-  licensePlate: "012345",
-  driverName: "Nguyễn Gì Đó",
+// Helper function to calculate duration
+const calculateDuration = (start: string, end: string) => {
+  const startDate = new Date(start);
+  const endDate = new Date(end);
+  const diff = endDate.getTime() - startDate.getTime();
+  const minutes = Math.floor(diff / 60000);
+  return `${minutes} phút`;
 };
 
 // Mock GeoJSON data for the route, start, and end points
@@ -73,6 +72,29 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 
 const HistoryDetailScreen = () => {
   const router = useRouter();
+  const { itemTitle } = useLocalSearchParams<{ itemTitle: string }>();
+  const { tripHistoryDetails, isLoading } = useTrip();
+
+  const trip = tripHistoryDetails.find((t) => t.route.name === itemTitle);
+
+  if (isLoading) {
+    return (
+      <View style={styles.centered}>
+        <ActivityIndicator size="large" color={Colors.info[50]} />
+      </View>
+    );
+  }
+
+  if (!trip) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.errorText}>Không tìm thấy dữ liệu chuyến đi.</Text>
+        <TouchableOpacity onPress={() => router.back()}>
+          <Text style={styles.backLink}>Quay lại</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   return (
     <ScrollView style={styles.container}>
@@ -84,8 +106,7 @@ const HistoryDetailScreen = () => {
         >
           <ArrowLeft size={24} color={Colors.info[50]} />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>{MOCK_DATA.title}</Text>
-        {/* Spacer view to center the title perfectly */}
+        <Text style={styles.headerTitle}>{trip.route.name}</Text>
         <View style={{ width: 40 }} />
       </View>
 
@@ -119,7 +140,7 @@ const HistoryDetailScreen = () => {
               style={{
                 lineCap: "round",
                 lineJoin: "round",
-                lineColor: "red", // Raw hex for red
+                lineColor: "red",
                 lineWidth: 4,
               }}
             />
@@ -149,7 +170,7 @@ const HistoryDetailScreen = () => {
         <View style={styles.statusRow}>
           <Text style={styles.detailLabel}>Trạng thái</Text>
           <View style={styles.statusBadge}>
-            <Text style={styles.statusBadgeText}>{MOCK_DATA.status}</Text>
+            <Text style={styles.statusBadgeText}>{trip.status}</Text>
           </View>
         </View>
 
@@ -157,14 +178,11 @@ const HistoryDetailScreen = () => {
 
         {/* Time Section */}
         <View style={styles.detailSection}>
-          <DetailRow
-            label="Thời gian yêu cầu đón"
-            value={MOCK_DATA.requestTime}
-          />
-          <DetailRow label="Thời gian xe đến" value={MOCK_DATA.arrivalTime} />
+          <DetailRow label="Thời gian yêu cầu đón" value={trip.start} />
+          <DetailRow label="Thời gian xe đến" value={trip.end} />
           <DetailRow
             label="Tổng thời gian di chuyển"
-            value={MOCK_DATA.duration}
+            value={calculateDuration(trip.start, trip.end)}
           />
         </View>
 
@@ -172,9 +190,8 @@ const HistoryDetailScreen = () => {
 
         {/* Bus Section */}
         <View style={styles.detailSection}>
-          <DetailRow label="  Xe buýt số" value={MOCK_DATA.busNumber} />
-          <DetailRow label="Biển số xe" value={MOCK_DATA.licensePlate} />
-          <DetailRow label="Tên tài xế" value={MOCK_DATA.driverName} />
+          <DetailRow label="Xe buýt" value={trip.bus.name} />
+          <DetailRow label="Biển số xe" value={trip.bus.license_plate} />
         </View>
       </View>
     </ScrollView>
@@ -189,7 +206,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.md,
     backgroundColor: Colors.primary[950],
   },
-  // --- Header Styles ---
+  centered: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: Colors.primary[950],
+  },
+  errorText: {
+    color: "white",
+    fontSize: FontSize.lg,
+    marginBottom: Spacing.md,
+  },
+  backLink: {
+    color: Colors.info[50],
+    fontSize: FontSize.md,
+  },
   header: {
     flexDirection: "row",
     alignItems: "center",
@@ -198,7 +229,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xs,
   },
   backButton: {
-    padding: Spacing.sm, // A bit larger hitbox
+    padding: Spacing.sm,
     marginLeft: -Spacing.sm,
   },
   headerTitle: {
@@ -206,19 +237,17 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: Colors.info[50],
   },
-  // --- Map Styles ---
   mapContainer: {
     width: "100%",
     aspectRatio: 1,
     marginVertical: Spacing.md,
     borderRadius: BorderRadius.md,
-    overflow: "hidden", // Clips the map to the border radius
-    backgroundColor: Colors.secondary[950], // Light gray placeholder
+    overflow: "hidden",
+    backgroundColor: Colors.secondary[950],
   },
   map: {
     flex: 1,
   },
-  // Temporary marker style
   mapMarker: {
     width: 20,
     height: 20,
@@ -227,8 +256,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "white",
   },
-
-  // --- Info Styles ---
   infoContainer: {
     marginBottom: 20,
     padding: Spacing.md,
@@ -247,13 +274,13 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xs,
   },
   statusBadgeText: {
-    color: Colors.success[50], // Dark green
+    color: Colors.success[50],
     fontSize: FontSize.xs,
     fontWeight: "medium",
   },
   divider: {
     height: 1,
-    backgroundColor: "#E5E7EB", // Light gray
+    backgroundColor: "#E5E7EB",
     marginVertical: 16,
   },
   detailSection: {

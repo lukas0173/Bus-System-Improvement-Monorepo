@@ -28,10 +28,10 @@ const ItemHistory = ({ item }: { item: UITripHistory }) => {
   const statusStyle = getStatusStyles(item.status);
 
   return (
-    <Link href={`/history/${item.route}`} asChild>
+    <Link href={`/history/${item.routeName}`} asChild>
       <TouchableOpacity style={styles.card}>
         <View style={styles.cardTopRow}>
-          <Text style={styles.cardTitle}>{item.route}</Text>
+          <Text style={styles.cardTitle}>{item.routeName}</Text>
           <View style={[styles.statusBadge, statusStyle.badge]}>
             <Text style={[styles.statusText, statusStyle.text]}>
               {item.status}
@@ -46,7 +46,7 @@ const ItemHistory = ({ item }: { item: UITripHistory }) => {
 
         <View style={styles.infoRow}>
           <Bus size={16} color={Colors.info[50]} style={styles.icon} />
-          <Text style={styles.infoText}>{item.bus}</Text>
+          <Text style={styles.infoText}>{item.busName}</Text>
         </View>
       </TouchableOpacity>
     </Link>

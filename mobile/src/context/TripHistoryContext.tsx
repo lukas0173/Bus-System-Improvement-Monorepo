@@ -8,24 +8,26 @@ import React, {
 } from "react";
 import { fetchTripHistories } from "@api/pocketbase.read";
 import { TripHistory as PBTripHistory } from "@/src/types/pocketbase-types";
-import { UITripHistory } from "@/src/types/trip-history";
+import { UITripHistory, UITripHistoryDetail } from "@/src/types/trip-history";
 
 // Define the shape of the context state
-interface TripHistoryContextType {
-  tripHistories: UITripHistory[];
+interface TripContextType {
+  tripHistoryList: UITripHistory[];
+  tripHistoryDetails: UITripHistoryDetail[];
   isLoading: boolean;
   error: Error | null;
   refetch: () => void;
 }
 
 // Context initialization
-const TripHistoryContext = createContext<TripHistoryContextType | undefined>(
-  undefined,
-);
+const TripContext = createContext<TripContextType | undefined>(undefined);
 
 // Context provider
 export const TripHistoryProvider = ({ children }: { children: ReactNode }) => {
-  const [tripHistories, setTripHistories] = useState<UITripHistory[]>([]);
+  const [tripHistoryList, setTripHistoryList] = useState<UITripHistory[]>([]);
+  const [tripHistoryDetails, setTripHistoryDetails] = useState<
+    UITripHistoryDetail[]
+  >([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -36,33 +38,42 @@ export const TripHistoryProvider = ({ children }: { children: ReactNode }) => {
       setError(null);
 
       // Fetch all trip histories, expanding bus and route relations
-      // Note: This assumes fetchTripHistories can accept options.
-      // You may need to modify the function in pocketbase.read.ts
       const rawTripHistories = await fetchTripHistories({
         expand: "bus,route",
       });
 
-      // Process the raw data into a UI-friendly format
-      const processedTripHistories = rawTripHistories.map(
+      // Process for Trip History List
+      const processedTripHistoryList = rawTripHistories.map(
         (history: PBTripHistory) => {
-          const busName = history.expand?.bus?.name || "Unknown Bus";
-          const routeName = history.expand?.route?.name || "Unknown Route";
-
           return {
             id: history.id,
-            start: new Date(history.start).toLocaleString(),
-            end: new Date(history.end).toLocaleString(),
-            bus: busName,
-            locations: history.locations,
-            status: history.status,
-            route: routeName,
             created: new Date(history.created).toLocaleString(),
-            updated: new Date(history.updated).toLocaleString(),
+            status: history.status,
+            routeName: history.expand?.route?.name || "Unknown Route",
+            busName: history.expand?.bus?.name || "Unknown Bus",
           } as UITripHistory;
         },
       );
 
-      setTripHistories(processedTripHistories);
+      // Process for Trip History Details
+      const processedTripHistoryDetails = rawTripHistories.map(
+        (history: PBTripHistory) => {
+          return {
+            id: history.id,
+            start: new Date(history.start).toLocaleString(),
+            end: new Date(history.end).toLocaleString(),
+            bus: history.expand?.bus,
+            locations: history.locations,
+            status: history.status,
+            route: history.expand?.route,
+            created: new Date(history.created).toLocaleString(),
+            updated: new Date(history.updated).toLocaleString(),
+          } as UITripHistoryDetail;
+        },
+      );
+
+      setTripHistoryList(processedTripHistoryList);
+      setTripHistoryDetails(processedTripHistoryDetails);
     } catch (err) {
       console.error("[Context - TripHistory] Error fetching data:", err);
       setError(err as Error);
@@ -77,25 +88,22 @@ export const TripHistoryProvider = ({ children }: { children: ReactNode }) => {
   }, [fetchAndProcessTripHistories]);
 
   const value = {
-    tripHistories,
+    tripHistoryList,
+    tripHistoryDetails,
     isLoading,
     error,
     refetch: fetchAndProcessTripHistories,
   };
 
-  return (
-    <TripHistoryContext.Provider value={value}>
-      {children}
-    </TripHistoryContext.Provider>
-  );
+  return <TripContext.Provider value={value}>{children}</TripContext.Provider>;
 };
 
 // Create a custom hook for easy consumption
-export const useTripHistories = () => {
-  const context = useContext(TripHistoryContext);
+export const useTrip = () => {
+  const context = useContext(TripContext);
   if (context === undefined) {
     throw new Error(
-      "[Context - TripHistory] useTripHistories must be used within a TripHistoryProvider",
+      "[Context - TripHistory] useTrip must be used within a TripHistoryProvider",
     );
   }
   return context;

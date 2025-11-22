@@ -5,16 +5,16 @@ import { Spacing, Colors } from "@constants/theme";
 import HeaderHistory from "@components/history/Header.History";
 import TabHistory from "@components/history/Tab.History";
 import ItemHistory from "@/src/components/history/Item.History";
-import { useTripHistories } from "@/src/context/TripHistoryContext";
+import { useTrip } from "@/src/context/TripHistoryContext";
 
 type ActiveTab = "Tất cả" | "Hoàn thành" | "Đã hủy";
 
 const HistoryScreen = () => {
   const [searchText, setSearchText] = useState("");
   const [activeTab, setActiveTab] = useState<ActiveTab>("Tất cả");
-  const { tripHistories, isLoading, error, refetch } = useTripHistories();
+  const { tripHistoryList, isLoading, error, refetch } = useTrip();
 
-  const filteredHistory = tripHistories.filter((item) => {
+  const filteredHistory = tripHistoryList.filter((item) => {
     // Filter by active tab
     if (activeTab === "Hoàn thành" && item.status !== "Hoàn thành")
       return false;
@@ -24,9 +24,9 @@ const HistoryScreen = () => {
     const searchLower = searchText.toLowerCase();
     if (
       searchText &&
-      !item.route.toLowerCase().includes(searchLower) &&
-      !item.start.toLowerCase().includes(searchLower) &&
-      !item.bus.toLowerCase().includes(searchLower)
+      !item.routeName.toLowerCase().includes(searchLower) &&
+      !item.created.toLowerCase().includes(searchLower) &&
+      !item.busName.toLowerCase().includes(searchLower)
     ) {
       return false;
     }
