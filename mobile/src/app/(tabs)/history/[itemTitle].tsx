@@ -8,77 +8,12 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { ArrowLeft } from "lucide-react-native";
-import Mapbox, {
-  Camera,
-  MapView,
-  ShapeSource,
-  LineLayer,
-  PointAnnotation,
-} from "@rnmapbox/maps";
-import { Position, Point, Feature, LineString } from "geojson";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
 import { useTrip } from "@/src/context/TripHistoryContext";
-
-// Mapbox configuration
-Mapbox.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_PUBLIC_TOKEN!);
-
-// Helper function to calculate duration
-const calculateDuration = (start: string, end: string) => {
-  const startDate = new Date(start);
-  const endDate = new Date(end);
-  const diff = endDate.getTime() - startDate.getTime();
-  const minutes = Math.floor(diff / 60000);
-  return `${minutes} phút`;
-};
-
-// Helper to get styles based on status
-const getStatusStyles = (status: string) => {
-  if (status === "Hoàn thành") {
-    return {
-      badge: { backgroundColor: Colors.success[900] },
-      text: { color: Colors.success[50] },
-    };
-  }
-  if (status === "Đã hủy") {
-    return {
-      badge: { backgroundColor: Colors.error[900] },
-      text: { color: Colors.error[50] },
-    };
-  }
-  // Default/fallback style
-  return {};
-};
-
-// Mock GeoJSON data for the route, start, and end points
-const MOCK_ROUTE_COORDINATES: Position[] = [
-  [108.2104, 16.0617],
-  [108.2115, 16.0612],
-  [108.212, 16.0605],
-  [108.2128, 16.059],
-  [108.2135, 16.058],
-  [108.215, 16.0555],
-  [108.2158, 16.054],
-];
-
-const MOCK_START_POINT: Point = {
-  type: "Point",
-  coordinates: MOCK_ROUTE_COORDINATES[0],
-};
-
-const MOCK_END_POINT: Point = {
-  type: "Point",
-  coordinates: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
-};
-
-const MOCK_ROUTE_GEOJSON: Feature<LineString> = {
-  type: "Feature",
-  geometry: {
-    type: "LineString",
-    coordinates: MOCK_ROUTE_COORDINATES,
-  },
-  properties: {},
-} as const;
+import getStatusStyles from "@/src/utils/status-style";
+import calculateDuration from "@/src/utils/duration-calculation";
+import MapDetailHistory from "@/src/components/history/detail/Map.Detail.History";
 
 // Helper component for rendering detail rows
 const DetailRow = ({ label, value }: { label: string; value: string }) => (
@@ -130,59 +65,7 @@ const HistoryDetailScreen = () => {
         <View style={{ width: 40 }} />
       </View>
 
-      {/* --- Map --- */}
-      <View style={styles.mapContainer}>
-        <MapView
-          style={styles.map}
-          logoEnabled={false}
-          scaleBarEnabled={false}
-          attributionEnabled={false}
-        >
-          <Camera
-            bounds={{
-              ne: MOCK_ROUTE_COORDINATES[0],
-              sw: MOCK_ROUTE_COORDINATES[MOCK_ROUTE_COORDINATES.length - 1],
-            }}
-            padding={{
-              paddingLeft: 40,
-              paddingRight: 40,
-              paddingTop: 40,
-              paddingBottom: 40,
-            }}
-            animationMode="flyTo"
-            animationDuration={0}
-          />
-
-          {/* Route Line */}
-          <ShapeSource id="route-source" shape={MOCK_ROUTE_GEOJSON}>
-            <LineLayer
-              id="route-line"
-              style={{
-                lineCap: "round",
-                lineJoin: "round",
-                lineColor: "red",
-                lineWidth: 4,
-              }}
-            />
-          </ShapeSource>
-
-          {/* Start Point Marker */}
-          <PointAnnotation
-            id="start-point"
-            coordinate={MOCK_START_POINT.coordinates}
-          >
-            <View style={styles.mapMarker} />
-          </PointAnnotation>
-
-          {/* End Point Marker */}
-          <PointAnnotation
-            id="end-point"
-            coordinate={MOCK_END_POINT.coordinates}
-          >
-            <View style={styles.mapMarker} />
-          </PointAnnotation>
-        </MapView>
-      </View>
+      <MapDetailHistory />
 
       {/* --- Info Details --- */}
       <View style={styles.infoContainer}>
@@ -254,25 +137,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.lg,
     fontWeight: "bold",
     color: Colors.info[50],
-  },
-  mapContainer: {
-    width: "100%",
-    aspectRatio: 1,
-    marginVertical: Spacing.md,
-    borderRadius: BorderRadius.md,
-    overflow: "hidden",
-    backgroundColor: Colors.secondary[950],
-  },
-  map: {
-    flex: 1,
-  },
-  mapMarker: {
-    width: 20,
-    height: 20,
-    borderRadius: 6,
-    backgroundColor: "black",
-    borderWidth: 2,
-    borderColor: "white",
   },
   infoContainer: {
     marginBottom: 20,

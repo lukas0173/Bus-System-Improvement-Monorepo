@@ -5,26 +5,9 @@ import { Clock, Bus } from "lucide-react-native";
 
 import { UITripHistory } from "@/src/types/UI/trip-history";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
+import getStatusStyles from "@/src/utils/status-style";
 
 const ItemHistory = ({ item }: { item: UITripHistory }) => {
-  // Helper to get styles based on status
-  const getStatusStyles = (status: UITripHistory["status"]) => {
-    if (status === "Hoàn thành") {
-      return {
-        badge: { backgroundColor: Colors.success[900] },
-        text: { color: Colors.success[50] },
-      };
-    }
-    if (status === "Đã hủy") {
-      return {
-        badge: { backgroundColor: Colors.error[900] },
-        text: { color: Colors.error[50] },
-      };
-    }
-    // Default/fallback style
-    return {};
-  };
-
   const statusStyle = getStatusStyles(item.status);
 
   return (

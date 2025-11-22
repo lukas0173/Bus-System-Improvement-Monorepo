@@ -4,26 +4,9 @@ import { Clock, MapPin, Box, IdCard } from "lucide-react-native";
 
 import { Bus as BusType } from "@/src/types/bus";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
+import getStatusStyles from "@/src/utils/status-style";
 
 const ItemBusHome = ({ item }: { item: BusType }) => {
-  // Helper to get styles based on status
-  const getStatusStyles = (status: BusType["status"]) => {
-    if (status === "Hoạt động") {
-      return {
-        badge: { backgroundColor: Colors.success[900] },
-        text: { color: Colors.success[50] },
-      };
-    }
-    if (status === "Tạm dừng") {
-      return {
-        badge: { backgroundColor: Colors.error[900] },
-        text: { color: Colors.error[50] },
-      };
-    }
-    // Default/fallback style
-    return {};
-  };
-
   const statusStyle = getStatusStyles(item.status);
 
   return (
