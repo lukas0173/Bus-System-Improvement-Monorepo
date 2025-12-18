@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
-import { useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { useRoutes } from "@/src/context/RouteContext";
+import { useSelection } from "@/src/context/SelectionContext";
 import getStatusStyles from "@/src/utils/status-style";
 import HeaderDetailRoute from "@/src/components/home/route/detail/Header.Detail.Route";
 import MapDetailRoute from "@/src/components/home/route/detail/Map.Detail.Route";
@@ -23,8 +24,10 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 );
 
 const RouteDetailScreen = () => {
+  const router = useRouter();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { routes, isLoading } = useRoutes();
+  const { addItem } = useSelection();
 
   const route = routes.find((r) => r.id === id);
 
@@ -43,6 +46,12 @@ const RouteDetailScreen = () => {
       </View>
     );
   }
+
+  const handleSelect = () => {
+    addItem("route", route);
+    router.dismissAll();
+    router.navigate("/home");
+  };
 
   const statusStyle = getStatusStyles(route.status);
 
@@ -83,7 +92,7 @@ const RouteDetailScreen = () => {
 
       <TouchableOpacity 
         style={styles.selectButton}
-        onPress={() => {}}
+        onPress={handleSelect}
       >
         <Text style={styles.selectButtonText}>Chọn tuyến</Text>
       </TouchableOpacity>

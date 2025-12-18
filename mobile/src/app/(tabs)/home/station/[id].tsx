@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
-import { useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { useStations } from "@/src/context/StationContext";
+import { useSelection } from "@/src/context/SelectionContext";
 import getStatusStyles from "@/src/utils/status-style";
 import HeaderDetailStation from "@/src/components/home/station/detail/Header.Detail.Station";
 import MapDetailStation from "@/src/components/home/station/detail/Map.Detail.Station";
@@ -23,8 +24,10 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 );
 
 const StationDetailScreen = () => {
+  const router = useRouter();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { stations, isLoading } = useStations();
+  const { addItem } = useSelection();
 
   const station = stations.find((s) => s.id === id);
 
@@ -43,6 +46,12 @@ const StationDetailScreen = () => {
       </View>
     );
   }
+
+  const handleSelect = () => {
+    addItem("station", station);
+    router.dismissAll();
+    router.navigate("/home");
+  };
 
   const statusStyle = getStatusStyles(station.status);
 
@@ -74,7 +83,7 @@ const StationDetailScreen = () => {
 
       <TouchableOpacity 
         style={styles.selectButton}
-        onPress={() => {}}
+        onPress={handleSelect}
       >
         <Text style={styles.selectButtonText}>Chọn trạm</Text>
       </TouchableOpacity>

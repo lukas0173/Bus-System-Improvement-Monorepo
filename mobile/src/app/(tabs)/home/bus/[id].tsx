@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
-import { useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { useBuses } from "@/src/context/BusContext";
+import { useSelection } from "@/src/context/SelectionContext";
 import getStatusStyles from "@/src/utils/status-style";
 import HeaderDetailBus from "@/src/components/home/bus/detail/Header.Detail.Bus";
 import MapDetailBus from "@/src/components/home/bus/detail/Map.Detail.Bus";
@@ -23,8 +24,10 @@ const DetailRow = ({ label, value }: { label: string; value: string }) => (
 );
 
 const BusDetailScreen = () => {
+  const router = useRouter();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { buses, isLoading } = useBuses();
+  const { addItem } = useSelection();
 
   const bus = buses.find((b) => b.id === id);
 
@@ -43,6 +46,12 @@ const BusDetailScreen = () => {
       </View>
     );
   }
+
+  const handleSelect = () => {
+    addItem("bus", bus);
+    router.dismissAll();
+    router.navigate("/home");
+  };
 
   const statusStyle = getStatusStyles(bus.status);
 
@@ -77,7 +86,7 @@ const BusDetailScreen = () => {
 
       <TouchableOpacity 
         style={styles.selectButton}
-        onPress={() => {}}
+        onPress={handleSelect}
       >
         <Text style={styles.selectButtonText}>Chọn xe</Text>
       </TouchableOpacity>

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ScrollView } from "react-native";
 import { List, Shuffle, Pause, Bus } from "lucide-react-native";
 import { useRouter } from "expo-router";
 import HeaderHome from "@components/home/Header.Home";
@@ -8,6 +8,8 @@ import SearchBarHome from "@/src/components/home/SearchBar.Home";
 import ActionButtonHome from "@components/home/ActionButton.Home";
 import MapHome from "@components/home/Map.Home";
 import { updateNotificationLed } from "@/src/api/pocketbase.update";
+import { useSelection } from "@/src/context/SelectionContext";
+import SelectionCard from "@/src/components/home/SelectionCard";
 
 const ActionButtons = () => {
   const router = useRouter();
@@ -40,10 +42,27 @@ const ActionButtons = () => {
 };
 
 const HomeScreen = () => {
+  const { selectedItems } = useSelection();
+
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <HeaderHome />
+        
+        {/* Selected Items List - Limited Height */}
+        {selectedItems.length > 0 && (
+          <View style={styles.selectionListContainer}>
+            <ScrollView 
+              style={styles.selectionList}
+              showsVerticalScrollIndicator={false}
+            >
+              {selectedItems.map((item) => (
+                <SelectionCard key={item.id} item={item} />
+              ))}
+            </ScrollView>
+          </View>
+        )}
+
         <SearchBarHome />
         <ActionButtons />
         <MapHome />
@@ -63,6 +82,13 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: Spacing.md,
     marginBottom: Spacing.md,
+  },
+  selectionListContainer: {
+    maxHeight: 150, // Limit height to show map still
+    marginBottom: Spacing.sm,
+  },
+  selectionList: {
+    flexGrow: 0,
   },
   actionsContainer: {
     flexDirection: "row",
