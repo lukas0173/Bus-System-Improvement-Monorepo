@@ -1,11 +1,39 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Alert } from "react-native";
 import { Bus, Shuffle, MapPin, Check } from "lucide-react-native";
 import { Colors, Spacing, BorderRadius, FontSize } from "@constants/theme";
 import { SelectedItem, useSelection } from "@/src/context/SelectionContext";
+import { createTripHistory } from "@/src/api/pocketbase.create";
 
 const SelectionCard = ({ item }: { item: SelectedItem }) => {
   const { removeItem } = useSelection();
+
+  const handleCompleteTrip = async () => {
+    try {
+      // Hardcoded values as requested
+      const FIXED_BUS_ID = "jtllrwa207xa1p7";
+      const FIXED_ROUTE_ID = "jwf62a5j8g2ty3j";
+
+      const startTime = new Date();
+      const endTime = new Date(startTime.getTime() + 30 * 60000); // +30 mins
+
+      const payload = {
+        start: startTime.toISOString(),
+        end: endTime.toISOString(),
+        bus: FIXED_BUS_ID,
+        route: FIXED_ROUTE_ID,
+        status: "Hoàn thành",
+        locations: undefined, // Using the selected item ID as location
+      };
+
+      await createTripHistory(payload);
+      Alert.alert("Thành công", "Chuyến đi đã được ghi lại!");
+      removeItem(item.id);
+    } catch (error) {
+      console.error("Failed to save trip history", error);
+      Alert.alert("Lỗi", "Không thể lưu chuyến đi. Vui lòng thử lại.");
+    }
+  };
 
   const getIcon = () => {
     switch (item.type) {
@@ -49,10 +77,7 @@ const SelectionCard = ({ item }: { item: SelectedItem }) => {
               : (item.data as any).address}
         </Text>
       </View>
-      <TouchableOpacity
-        style={styles.closeButton}
-        onPress={() => removeItem(item.id)}
-      >
+      <TouchableOpacity style={styles.closeButton} onPress={handleCompleteTrip}>
         <View
           style={{
             alignItems: "center",
