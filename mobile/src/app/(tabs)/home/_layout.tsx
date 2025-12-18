@@ -10,13 +10,25 @@ export default function HomeStackLayout() {
         }}
       />
       <Stack.Screen
-        name="Bus.Home.Screen"
+        name="bus/Bus.Home.Screen"
         options={{
           headerShown: false,
         }}
       />
       <Stack.Screen
         name="bus/[id]"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="route/Route.Home.Screen"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="route/[id]"
         options={{
           headerShown: false,
         }}

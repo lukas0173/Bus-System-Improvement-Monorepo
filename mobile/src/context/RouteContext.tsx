@@ -8,15 +8,7 @@ import React, {
 } from "react";
 import { fetchRoutes } from "@api/pocketbase.read";
 import { Route as PBRoute } from "@/src/types/pocketbase-types";
-
-// Define the shape of the UI Route (can be moved to types/UI later)
-export interface UIRoute {
-  id: string;
-  name: string;
-  description: string;
-  status: string;
-  pathJson: any; // Or specific type if known (e.g., GeoJSON or array of points)
-}
+import { UIRoute } from "../types/UI/route";
 
 // Define the shape of the context state
 interface RouteContextType {
@@ -48,11 +40,17 @@ export const RouteProvider = ({ children }: { children: ReactNode }) => {
       const processedRoutes = rawRoutes.map((route: PBRoute) => {
         let parsedPath = [];
         try {
-            // Check if route.path_json is a string or already an object (PB SDK behavior varies)
-            // Assuming it's a JSON string as per schema
-             parsedPath = typeof route.path_json === 'string' ? JSON.parse(route.path_json) : route.path_json;
+          // Check if route.path_json is a string or already an object (PB SDK behavior varies)
+          // Assuming it's a JSON string as per schema
+          parsedPath =
+            typeof route.path_json === "string"
+              ? JSON.parse(route.path_json)
+              : route.path_json;
         } catch (e) {
-            console.warn(`[Context - Route] Failed to parse path_json for route ${route.id}`, e);
+          console.warn(
+            `[Context - Route] Failed to parse path_json for route ${route.id}`,
+            e,
+          );
         }
 
         return {
@@ -61,6 +59,7 @@ export const RouteProvider = ({ children }: { children: ReactNode }) => {
           description: route.description,
           status: route.status,
           pathJson: parsedPath,
+          code: route.code,
         };
       });
 

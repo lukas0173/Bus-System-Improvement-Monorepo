@@ -51,7 +51,7 @@ const MapHome = () => {
       scaleBarEnabled={false}
       attributionEnabled={false}
     >
-      <Camera zoomLevel={13} centerCoordinate={[108.2022, 16.0544]} />
+      <Camera zoomLevel={14} centerCoordinate={[108.2022, 16.0544]} />
 
       {stations.length > 0 && (
         <ShapeSource id="busStationsSource" shape={busStationsGeoJSON}>

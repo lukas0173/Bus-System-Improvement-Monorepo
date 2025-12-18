@@ -13,6 +13,12 @@ const getStatusStyles = (status: string) => {
       text: { color: Colors.error[50] },
     };
   }
+  if (status === "maintenance") {
+    return {
+      badge: { backgroundColor: "#fff4ed" },
+      text: { color: "#6c3813" },
+    };
+  }
   // Default/fallback style
   return {};
 };

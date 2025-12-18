@@ -23,17 +23,17 @@ const ActionButtons = () => {
       <ActionButtonHome
         icon={<Shuffle color="white" size={28} />}
         label="Tuyến đường"
-        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+        navigation={() => router.navigate("/home/route/Route.Home.Screen")}
       />
       <ActionButtonHome
         icon={<Pause color="white" size={28} />}
         label="Trạm"
-        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+        navigation={() => router.navigate("/home/bus/Bus.Home.Screen")}
       />
       <ActionButtonHome
         icon={<Bus color="white" size={28} />}
         label="Xe buýt"
-        navigation={() => router.navigate("/home/Bus.Home.Screen")}
+        navigation={() => router.navigate("/home/bus/Bus.Home.Screen")}
       />
     </View>
   );
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingHorizontal: Spacing.md,
+    marginBottom: Spacing.md,
   },
   actionsContainer: {
     flexDirection: "row",

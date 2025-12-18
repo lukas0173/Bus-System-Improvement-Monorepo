@@ -53,7 +53,10 @@ export interface RouteStation extends BaseRecord {
 export interface Route extends BaseRecord {
   name: string;
   description: string;
-  created_at: string;
+  code: string;
+  path_json: string;
+  created: string;
+  status: "active" | "stopped";
 }
 
 // Collection: stations
