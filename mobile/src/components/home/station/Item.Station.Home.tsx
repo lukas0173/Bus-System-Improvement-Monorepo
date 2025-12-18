@@ -1,20 +1,20 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { MapPin, Navigation } from "lucide-react-native";
-// import { useRouter } from "expo-router"; // Use when Detail screen is ready
+import { useRouter } from "expo-router";
 
 import { UIStation } from "@/src/types/UI/station";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 import getStatusStyles from "@/src/utils/status-style";
 
 const ItemStationHome = ({ item }: { item: UIStation }) => {
-  // const router = useRouter(); 
+  const router = useRouter(); 
   const statusStyle = getStatusStyles(item.status);
 
   return (
     <TouchableOpacity 
       style={styles.card}
-      // onPress={() => router.push(`/home/station/${item.id}`)} // Uncomment when detail screen exists
+      onPress={() => router.push(`/home/station/${item.id}`)}
     >
       <View style={styles.cardTopRow}>
         <Text style={styles.cardTitle}>{item.name}</Text>

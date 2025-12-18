@@ -133,7 +133,7 @@ export const fetchRouteStations = () =>
   fetchAllRecords<RouteStation>(CollectionsName.RouteStations);
 export const fetchRoutes = () => fetchAllRecords<Route>(CollectionsName.Routes);
 export const fetchStations = () =>
-  fetchAllRecords<Station>(CollectionsName.Stations);
+  fetchAllRecords<Station>(CollectionsName.Stations, { requestKey: null });
 export const fetchSystemLogs = () =>
   fetchAllRecords<SystemLog>(CollectionsName.SystemLogs);
 export const fetchTrips = () => fetchAllRecords<Trip>(CollectionsName.Trips);
