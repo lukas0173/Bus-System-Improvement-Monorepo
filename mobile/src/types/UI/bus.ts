@@ -4,6 +4,7 @@ export interface UIBus {
   licensePlate: string;
   lastUpdate: string;
   position: string;
-  status: "Hoạt động" | "Tạm dừng";
+  current_route: string;
+  status: "active" | "stopped";
   capacity: string;
 }

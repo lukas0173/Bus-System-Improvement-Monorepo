@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-export default function HistoryStackLayout() {
+export default function HomeStackLayout() {
   return (
     <Stack>
       <Stack.Screen
@@ -11,6 +11,12 @@ export default function HistoryStackLayout() {
       />
       <Stack.Screen
         name="Bus.Home.Screen"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="bus/[id]"
         options={{
           headerShown: false,
         }}

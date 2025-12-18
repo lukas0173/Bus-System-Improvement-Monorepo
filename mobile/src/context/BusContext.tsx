@@ -40,15 +40,15 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
       const processedBusesPromises = rawBuses.map(async (bus: PBBus) => {
         try {
           const latestLocation = await fetchFirstBusLocationById(bus.id, {
-            sort: "-created_at",
+            sort: "-created",
           });
           // If a location is found, map the data
           return {
             id: bus.id,
             name: bus.name,
             licensePlate: bus.license_plate,
-            status: "Hoạt động",
-            lastUpdate: latestLocation.created_at,
+            status: bus.status,
+            lastUpdate: latestLocation.created,
             capacity: `Sức chứa: ${bus.capacity}`,
             position: `${latestLocation.longitude}, ${latestLocation.latitude}`,
           } as UIBus;
@@ -61,10 +61,11 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
             id: bus.id,
             name: bus.name,
             licensePlate: bus.license_plate,
-            status: "Tạm dừng",
+            status: "stopped",
             lastUpdate: "N/A",
             capacity: `Sức chứa: ${bus.capacity}`,
             position: "Unknown",
+            current_route: "Unknown",
           } as UIBus;
         }
       });

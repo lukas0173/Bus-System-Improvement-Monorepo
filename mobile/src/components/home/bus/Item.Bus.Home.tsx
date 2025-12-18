@@ -1,16 +1,21 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Clock, MapPin, Box, IdCard } from "lucide-react-native";
+import { useRouter } from "expo-router";
 
-import { Bus as BusType } from "@/src/types/bus";
+import { UIBus } from "@/src/types/UI/bus";
 import { BorderRadius, Colors, FontSize, Spacing } from "@constants/theme";
 import getStatusStyles from "@/src/utils/status-style";
 
-const ItemBusHome = ({ item }: { item: BusType }) => {
+const ItemBusHome = ({ item }: { item: UIBus }) => {
+  const router = useRouter();
   const statusStyle = getStatusStyles(item.status);
 
   return (
-    <View style={styles.card}>
+    <TouchableOpacity 
+      style={styles.card} 
+      onPress={() => router.push(`/home/bus/${item.id}`)}
+    >
       <View style={styles.cardTopRow}>
         <Text style={styles.cardTitle}>{item.name}</Text>
         <View style={[styles.statusBadge, statusStyle.badge]}>
@@ -46,7 +51,7 @@ const ItemBusHome = ({ item }: { item: BusType }) => {
           </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 export default ItemBusHome;

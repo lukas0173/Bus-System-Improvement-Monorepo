@@ -4,6 +4,6 @@ export interface Bus {
   licensePlate: string;
   lastUpdate: string;
   position: string;
-  status: "Hoạt động" | "Tạm dừng";
+  status: "active" | "stopped";
   capacity: string;
 }

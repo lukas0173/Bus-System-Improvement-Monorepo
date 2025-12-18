@@ -10,13 +10,14 @@ export interface BaseRecord {
 export interface BusLocation extends BaseRecord {
   latitude: number;
   longitude: number;
-  created_at: string;
+  created: string;
   buses: string; // Relation to 'buses'
 }
 
 // Collection: buses
 export interface Bus extends BaseRecord {
   license_plate: string;
+  current_route: string;
   capacity: number;
   status: string;
   name: string;

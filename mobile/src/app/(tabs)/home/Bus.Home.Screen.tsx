@@ -17,8 +17,8 @@ const BusHomeScreen = () => {
 
   const filteredHistory = buses.filter((item) => {
     // Filter by active tab
-    if (activeTab === "Hoạt động" && item.status !== "Hoạt động") return false;
-    if (activeTab === "Tạm dừng" && item.status !== "Tạm dừng") return false;
+    if (activeTab === "Hoạt động" && item.status !== "active") return false;
+    if (activeTab === "Tạm dừng" && item.status !== "stopped") return false;
 
     // Filter by search text (checks title, route, and date)
     const searchLower = searchText.toLowerCase();
