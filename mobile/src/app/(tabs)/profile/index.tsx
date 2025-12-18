@@ -11,9 +11,9 @@ import { Feather, Ionicons } from "@expo/vector-icons";
 
 const ProfileScreen = () => {
   const user = {
-    name: "Võ Tứng Kiệc",
+    name: "John Smith",
     email: "vuwin24680@gmail.com",
-    phone: "0392527932",
+    phone: "0392527933",
     avatar: require("@assets/images/home/User.jpeg"),
   };
 

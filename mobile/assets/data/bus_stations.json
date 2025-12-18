@@ -1,0 +1,7836 @@
+[
+  {
+    "type": "node",
+    "id": 2634883858,
+    "lat": 16.0312621,
+    "lon": 108.2227497,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "582 Núi Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2987516133,
+    "lat": 16.0622041,
+    "lon": 108.2241829,
+    "tags": {
+      "bus": "yes",
+      "covered": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 256 Bạch Đằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2987529134,
+    "lat": 16.0680649,
+    "lon": 108.2250231,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ Hàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2988994145,
+    "lat": 16.0670258,
+    "lon": 108.22366,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 155 Trần Phú",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4196908590,
+    "lat": 16.0696105,
+    "lon": 108.2101995,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "312 Lê Duẩn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4475252092,
+    "lat": 16.0660603,
+    "lon": 108.2038544,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Công viên 29/3",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4564834190,
+    "lat": 16.084216,
+    "lon": 108.2214775,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "24 Đường 3/2",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4572683792,
+    "lat": 16.0704056,
+    "lon": 108.2147549,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "155 Lê Duẩn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4820574121,
+    "lat": 16.0447639,
+    "lon": 108.2098486,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "128 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4830934821,
+    "lat": 16.0685454,
+    "lon": 108.2218698,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Hùng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4830935021,
+    "lat": 16.0680003,
+    "lon": 108.2178454,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "103 Hùng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912280122,
+    "lat": 16.092957,
+    "lon": 108.2323493,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "210 Khúc Hạo",
+      "name:ru": "8, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912280723,
+    "lat": 16.090665,
+    "lon": 108.2330283,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khu chung cư Trần Thánh Tông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912280724,
+    "lat": 16.0881566,
+    "lon": 108.2199516,
+    "tags": {
+      "highway": "bus_stop",
+      "name:ru": "12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912284621,
+    "lat": 16.09674,
+    "lon": 108.2305717,
+    "tags": {
+      "highway": "bus_stop",
+      "name:ru": "8, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912284721,
+    "lat": 16.0999281,
+    "lon": 108.2302724,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Chân cầu Thuận Phước",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4912284722,
+    "lat": 16.0894933,
+    "lon": 108.215205,
+    "tags": {
+      "highway": "bus_stop",
+      "name:ru": "12"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129421,
+    "lat": 16.0824504,
+    "lon": 108.2208533,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "20 Đống Đa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129422,
+    "lat": 16.07731,
+    "lon": 108.2163817,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:ru": "4, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129423,
+    "lat": 16.0758868,
+    "lon": 108.2177283,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:ru": "4, 9, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129424,
+    "lat": 16.0674398,
+    "lon": 108.2146273,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chợ Cồn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129425,
+    "lat": 16.0629262,
+    "lon": 108.2108003,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bờ hồ Hàm Nghi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129426,
+    "lat": 16.058313,
+    "lon": 108.2113686,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:ru": "6,12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129427,
+    "lat": 16.0542148,
+    "lon": 108.2115301,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Toyota 155 Lê Đình Lý",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129521,
+    "lat": 16.0808905,
+    "lon": 108.2187761,
+    "tags": {
+      "highway": "bus_stop",
+      "name:ru": "4, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129522,
+    "lat": 16.0522456,
+    "lon": 108.2103666,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:ru": "11,12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129621,
+    "lat": 16.0690706,
+    "lon": 108.2190098,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:ru": "4, 9, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129622,
+    "lat": 16.048522,
+    "lon": 108.2153066,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bus 12 and 1 (to Hoi An)",
+      "name:ru": "6,12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129721,
+    "lat": 16.0680094,
+    "lon": 108.2173656,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "190 Hùng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914129821,
+    "lat": 16.0496646,
+    "lon": 108.21037,
+    "tags": {
+      "highway": "bus_stop",
+      "name:ru": "12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914130021,
+    "lat": 16.0491838,
+    "lon": 108.2214511,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4914148721,
+    "lat": 16.0847125,
+    "lon": 108.2206707,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "49 Đường 3/2",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4939752422,
+    "lat": 16.0452637,
+    "lon": 108.2396807,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Quân sự Quân khu 5",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4939774521,
+    "lat": 16.045448,
+    "lon": 108.2391324,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "240 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4939774522,
+    "lat": 16.0393594,
+    "lon": 108.2426384,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện UBND Phường Mỹ An",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4939774621,
+    "lat": 16.0403623,
+    "lon": 108.2417027,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "370 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4949016324,
+    "lat": 16.0742501,
+    "lon": 108.219937,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "128 Lê Lợi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5116306624,
+    "lat": 16.0029312,
+    "lon": 108.2598085,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Non Nước",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5274491023,
+    "lat": 16.0027873,
+    "lon": 108.2594371,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "754 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5276547022,
+    "lat": 16.0518303,
+    "lon": 108.2375278,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "29 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5281374331,
+    "lat": 16.0994424,
+    "lon": 108.2550375,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 39 Hoàng Sa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5317505621,
+    "lat": 16.065598,
+    "lon": 108.2200171,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "92 Phan Châu Trinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5340748522,
+    "lat": 16.0620343,
+    "lon": 108.2231874,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "270 Trần Phú",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5485454821,
+    "lat": 16.0599904,
+    "lon": 108.224173,
+    "tags": {
+      "amenity": "ferry_terminal",
+      "bus": "yes",
+      "ferry": "yes",
+      "highway": "bus_stop",
+      "name:en": "Dragon Ship Han River",
+      "public_transport": "station"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5540465622,
+    "lat": 16.047932,
+    "lon": 108.238686,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Đại học Kinh tế, Đại học Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5540465623,
+    "lat": 16.0477443,
+    "lon": 108.2383351,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "180 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5725525722,
+    "lat": 16.0447641,
+    "lon": 108.173963,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5725525723,
+    "lat": 16.0725919,
+    "lon": 108.1890389,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "xe bãi cá maxa thảo anh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5893704689,
+    "lat": 16.0685163,
+    "lon": 108.2197739,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 59 Hùng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6254923785,
+    "lat": 16.0729538,
+    "lon": 108.2128998,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:en": "Dung Xe Buyt (Dá nang- hoi an)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270769686,
+    "lat": 16.0746222,
+    "lon": 108.2303924,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Mầm non ABC",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270777385,
+    "lat": 16.0744094,
+    "lon": 108.2307627,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "733 Ngô Quyền - Đối diện Trường Mầm non ABC",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270793285,
+    "lat": 16.0699473,
+    "lon": 108.2314012,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Gần Vincom Plaza Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270793385,
+    "lat": 16.0662395,
+    "lon": 108.2327353,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "926 Ngô Quyền - Công ty Điên lực Sơn Trà",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270793386,
+    "lat": 16.0581456,
+    "lon": 108.2351737,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trung tâm Y tế Quận Sơn Trà",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270793585,
+    "lat": 16.0543244,
+    "lon": 108.2363351,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1122 Ngô Quyền - Subaru Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270906592,
+    "lat": 16.0763213,
+    "lon": 108.2242469,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trung tâm hành chính Thành phố Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270906593,
+    "lat": 16.0775134,
+    "lon": 108.221085,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "7, 9, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270906594,
+    "lat": 16.0775619,
+    "lon": 108.2166435,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "4, 5, 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6270937385,
+    "lat": 16.0711512,
+    "lon": 108.219235,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đại học Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6271153385,
+    "lat": 16.0542646,
+    "lon": 108.2396826,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6271153386,
+    "lat": 16.0549219,
+    "lon": 108.2418161,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "12",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6271153387,
+    "lat": 16.057951,
+    "lon": 108.2468908,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện DLG Hotel",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6271153485,
+    "lat": 16.0656189,
+    "lon": 108.2455589,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Nhà hàng Mỹ Thạnh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273427986,
+    "lat": 16.0655953,
+    "lon": 108.2451455,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà hàng Mỹ Thạnh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273427987,
+    "lat": 16.061475,
+    "lon": 108.2328775,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cầu Rồng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273427988,
+    "lat": 16.0610433,
+    "lon": 108.2211042,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 31 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273468887,
+    "lat": 16.0661735,
+    "lon": 108.2082265,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "85 Lý Thái Tổ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273470985,
+    "lat": 16.0658755,
+    "lon": 108.2051924,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên 29/3",
+      "network": "DanaBus",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273656685,
+    "lat": 16.0686262,
+    "lon": 108.215591,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name:en": "Da Nang - Hoi An",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273711585,
+    "lat": 16.0713286,
+    "lon": 108.219844,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Đối diện Đại học Đà Nẵng",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6273727187,
+    "lat": 16.0704772,
+    "lon": 108.2143434,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "166 Lê Duẩn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6275708885,
+    "lat": 16.0647975,
+    "lon": 108.2031237,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cầu đi bộ Công viên 29/3",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6275733685,
+    "lat": 16.0733904,
+    "lon": 108.2019349,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "613 Nguyễn Tất Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6466087786,
+    "lat": 15.9660382,
+    "lon": 108.2111809,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đại lý ô tô Hồng Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6881848885,
+    "lat": 16.0086358,
+    "lon": 108.1518143,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Bệnh viện Hòa Vang",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6976178442,
+    "lat": 16.0146219,
+    "lon": 108.2614154,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bãi tắm Sơn Thủy",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7030411286,
+    "lat": 16.052724,
+    "lon": 108.2033633,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ga Quốc nội Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7158188357,
+    "lat": 16.0808786,
+    "lon": 108.2112124,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "219 Nguyễn Tất Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7158198121,
+    "lat": 16.0856655,
+    "lon": 108.2140547,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "61 Nguyễn Tất Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7215749385,
+    "lat": 16.0857533,
+    "lon": 108.2186626,
+    "tags": {
+      "highway": "bus_stop",
+      "name:en": "Queen bus - from Hue",
+      "name:fr": "Queen bus - depuis Hue",
+      "office": "travel_agent"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7814737267,
+    "lat": 16.0639281,
+    "lon": 108.2083631,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "70B Phan Thanh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7814737268,
+    "lat": 16.0612181,
+    "lon": 108.2092449,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "132 Phan Thanh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7814799866,
+    "lat": 16.1084388,
+    "lon": 108.1321979,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chung cư Hòa Hiệp Nam",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8234373173,
+    "lat": 16.0823898,
+    "lon": 108.2445204,
+    "tags": {
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8474742718,
+    "lat": 16.055813,
+    "lon": 108.1729876,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "Xe Đà Nẵng đi Quảng Bình",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8474743018,
+    "lat": 16.0556025,
+    "lon": 108.1727932,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "Xe Đà Nẵng đi Tam Kỳ Quảng Nam",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9467560261,
+    "lat": 16.0592129,
+    "lon": 108.2072541,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "336-338 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9921292791,
+    "lat": 16.0845058,
+    "lon": 108.2139033,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "highway": "bus_stop",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10829564704,
+    "lat": 16.0896517,
+    "lon": 108.2323014,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bến xe Bùi Dương Lịch",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10829641598,
+    "lat": 16.0968611,
+    "lon": 108.231968,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện chung cư 4A Chu Huy Mân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11363536979,
+    "lat": 15.9827049,
+    "lon": 108.2557869,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "324 Trần Đại Nghĩa",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11363572147,
+    "lat": 16.0250571,
+    "lon": 108.2495258,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "376 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11363572613,
+    "lat": 15.9945635,
+    "lon": 108.258452,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện sân tập lái ô tô",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11363576394,
+    "lat": 15.9780336,
+    "lon": 108.2465709,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Đại học Kỹ thuật Y dược Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11363578173,
+    "lat": 15.9735166,
+    "lon": 108.2545682,
+    "tags": {
+      "description": "To Hoi An: 5:30, 6:30, 8:30, 14:45, 17:00",
+      "highway": "bus_stop",
+      "name": "Viet Han (to Hoi An)"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11555672069,
+    "lat": 16.0659991,
+    "lon": 108.1889939,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "416 Điện Biên Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11558491072,
+    "lat": 16.0711365,
+    "lon": 108.2359262,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Đối diện 124 Phạm Văn Đồng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11559036070,
+    "lat": 16.0703427,
+    "lon": 108.2407452,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Vòng xuyến Phạm Văn Đồng - Chính Hữu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562457269,
+    "lat": 16.0327539,
+    "lon": 108.2210862,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "52 Xô Viết Nghệ Tĩnh - Đối diện Đại học Kiến trúc Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562653969,
+    "lat": 16.0323489,
+    "lon": 108.2195414,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Ô tô Đại Thống",
+      "name:en": "Bus 8",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562663069,
+    "lat": 16.0327145,
+    "lon": 108.2224383,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đại học Kiến trúc Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562713369,
+    "lat": 16.0336128,
+    "lon": 108.2277312,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Siêu thị Lotte",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562713370,
+    "lat": 16.0428219,
+    "lon": 108.2409222,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "141 Ngũ Hành Sơn - Công ty Công viên Cây xanh Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562713870,
+    "lat": 16.0510214,
+    "lon": 108.2377631,
+    "tags": {
+      "highway": "bus_stop",
+      "name:en": "Bus 8"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562713871,
+    "lat": 16.0566102,
+    "lon": 108.2360541,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1093 Ngô Quyền - Trung tâm Giáo dục thường xuyên số 1",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11562719669,
+    "lat": 16.0604622,
+    "lon": 108.234923,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1011 Ngô Quyền - Ngân hàng OCB",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11597369769,
+    "lat": 16.0693059,
+    "lon": 108.2211487,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà hát Trưng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11597370771,
+    "lat": 16.0733049,
+    "lon": 108.2208807,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Tân Ninh (Đối diện 76 Nguyễn Chí Thanh)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11606543169,
+    "lat": 16.0627026,
+    "lon": 108.2342305,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "967 Ngô Quyền - Công an Phường An Hải Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11630269669,
+    "lat": 16.0593284,
+    "lon": 108.2060139,
+    "tags": {
+      "highway": "bus_stop",
+      "name:en": "Bus 03 to Ba Na Hills"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11825843280,
+    "lat": 15.9824402,
+    "lon": 108.2618678,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11826233610,
+    "lat": 15.9781405,
+    "lon": 108.2657736,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093504,
+    "lat": 16.1012608,
+    "lon": 108.1397813,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Nguyễn Tất Thành - Đào Công Soạn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093505,
+    "lat": 16.0950048,
+    "lon": 108.1459926,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Mikazuki Water Park",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093506,
+    "lat": 16.0905919,
+    "lon": 108.1481977,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 136 Phan Văn Định",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093507,
+    "lat": 16.0864598,
+    "lon": 108.1442954,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "421 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093508,
+    "lat": 16.0830776,
+    "lon": 108.1457202,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cổng KCN Hòa Khánh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093509,
+    "lat": 16.0795826,
+    "lon": 108.147096,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Tâm thần Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093510,
+    "lat": 16.0763059,
+    "lon": 108.1484408,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cao đẳng Kinh tế - Kế hoạch Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093512,
+    "lat": 16.0726662,
+    "lon": 108.1499258,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học cơ sở Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093513,
+    "lat": 16.0714086,
+    "lon": 108.1504259,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "755 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093514,
+    "lat": 16.0703306,
+    "lon": 108.1538205,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "46 Ngô Thì Nhậm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093515,
+    "lat": 16.0732357,
+    "lon": 108.1572046,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 318 Hồ Tùng Mậu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093516,
+    "lat": 16.0746965,
+    "lon": 108.1582919,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Tường rào Công an Hồ Tùng Mậu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093517,
+    "lat": 16.0714074,
+    "lon": 108.1641741,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Ung bướu Đà Nẵng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093518,
+    "lat": 16.0731692,
+    "lon": 108.1665809,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 92 Phùng Hưng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093519,
+    "lat": 16.0748446,
+    "lon": 108.1691673,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Đối diện 200 Kinh Dương Vương",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093520,
+    "lat": 16.0725203,
+    "lon": 108.1727261,
+    "tags": {
+      "bench": "no",
+      "bin": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "35 Kinh Dương Vương",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093521,
+    "lat": 16.0744931,
+    "lon": 108.1753799,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "59 Lý Thái Tông",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093522,
+    "lat": 16.0740899,
+    "lon": 108.1767512,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Da liễu Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093523,
+    "lat": 16.0718558,
+    "lon": 108.1787575,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cao đẳng Thương mại",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093524,
+    "lat": 16.0705977,
+    "lon": 108.1800115,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Đại học Thể dục Thể thao Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093525,
+    "lat": 16.0684272,
+    "lon": 108.183282,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học phổ thông Thái Phiên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093526,
+    "lat": 16.0713136,
+    "lon": 108.1880375,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "583 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093527,
+    "lat": 16.0711825,
+    "lon": 108.1923835,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "UBND Phường Xuân Hà",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093528,
+    "lat": 16.0710554,
+    "lon": 108.1984144,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "301 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093529,
+    "lat": 16.0711214,
+    "lon": 108.2020583,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "189 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093530,
+    "lat": 16.0723678,
+    "lon": 108.208244,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 156 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093531,
+    "lat": 16.0733765,
+    "lon": 108.2132412,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Quang Trung",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093532,
+    "lat": 16.0741076,
+    "lon": 108.2169258,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Chỉnh hình và Phục hồi Chức năng Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093533,
+    "lat": 16.0721702,
+    "lon": 108.220237,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "154 Lê Lợi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093534,
+    "lat": 16.0715839,
+    "lon": 108.2229683,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cầu Sông Hàn - 5 Lê Duẩn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093535,
+    "lat": 16.0723728,
+    "lon": 108.2320646,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Bãi xe Phú Duy",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093536,
+    "lat": 16.070927,
+    "lon": 108.235588,
+    "tags": {
+      "bench": "no",
+      "bin": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Ngân hàng Techcombank - 124 Phạm Văn Đồng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093537,
+    "lat": 16.0699749,
+    "lon": 108.2405731,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Vòng xuyến Phạm Văn Đồng - Chính Hữu",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093538,
+    "lat": 16.0731858,
+    "lon": 108.2455601,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Biển Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093541,
+    "lat": 16.0728569,
+    "lon": 108.2318407,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Bãi xe Phú Duy",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093542,
+    "lat": 16.0716732,
+    "lon": 108.2222865,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "14 Lê Duẩn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093543,
+    "lat": 16.0740693,
+    "lon": 108.216007,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học cơ sở Nguyễn Huệ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093544,
+    "lat": 16.0733016,
+    "lon": 108.2122232,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chi cục Kiểm lâm Thành phố Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093547,
+    "lat": 16.0711673,
+    "lon": 108.1990103,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "398 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093548,
+    "lat": 16.0712866,
+    "lon": 108.1932265,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "570 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093549,
+    "lat": 16.0713518,
+    "lon": 108.1889231,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "674 Trần Cao Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093550,
+    "lat": 16.0704471,
+    "lon": 108.1803483,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Đại học Thể dục Thể thao Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093551,
+    "lat": 16.0744775,
+    "lon": 108.1765721,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "154 Dũng Sĩ Thanh Khê",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093553,
+    "lat": 16.0725231,
+    "lon": 108.1730328,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "26 Kinh Dương Vương",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093555,
+    "lat": 16.0736404,
+    "lon": 108.1667859,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "76 Phùng Hưng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093557,
+    "lat": 16.0739248,
+    "lon": 108.157585,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bảo hiểm xã hội Quận Liên Chiểu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093558,
+    "lat": 16.0720575,
+    "lon": 108.1562147,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngân hàng chính sách xã hội Đà Nẵng (PGD Quận Liên Chiểu)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093559,
+    "lat": 16.0707934,
+    "lon": 108.154423,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "52 Ngô Thì Nhậm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093560,
+    "lat": 16.0712067,
+    "lon": 108.1507993,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "900 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093562,
+    "lat": 16.076882,
+    "lon": 108.1484689,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bưu điện Hòa Khánh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093563,
+    "lat": 16.0807158,
+    "lon": 108.1469073,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "234 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093566,
+    "lat": 16.0877506,
+    "lon": 108.145196,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "16 Phan Văn Định",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093567,
+    "lat": 16.0951362,
+    "lon": 108.1462522,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cầu vượt đi bộ Mikazuki",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881093568,
+    "lat": 16.1015029,
+    "lon": 108.1399307,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Nguyễn Tất Thành - Đào Công Soạn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362045,
+    "lat": 16.0812103,
+    "lon": 108.2226706,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "6 Trần Phú",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362046,
+    "lat": 16.0758341,
+    "lon": 108.2233549,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện sân tennis đường Bạch Đằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362047,
+    "lat": 16.0751475,
+    "lon": 108.2214661,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "28 Quang Trung",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362048,
+    "lat": 16.0708847,
+    "lon": 108.2204437,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 189 Lê Lợi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362049,
+    "lat": 16.0690081,
+    "lon": 108.220296,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà hát Trưng Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362050,
+    "lat": 16.0621441,
+    "lon": 108.219691,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "174-176 Phan Châu Trinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362051,
+    "lat": 16.060898,
+    "lon": 108.2178218,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Phước Ninh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362052,
+    "lat": 16.0582001,
+    "lon": 108.2170369,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "310 Hoàng Diệu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362053,
+    "lat": 16.0533059,
+    "lon": 108.2186547,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "233 Trưng Nữ Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362054,
+    "lat": 16.0528905,
+    "lon": 108.2202706,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "60 Núi Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362055,
+    "lat": 16.0477057,
+    "lon": 108.2208365,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 161 Núi Thành (Đối diện Trường Trung học cơ sở Tây Sơn)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362056,
+    "lat": 16.042545,
+    "lon": 108.2174855,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "62 Lê Thanh Nghị",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362057,
+    "lat": 16.0371957,
+    "lon": 108.2180929,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 213 Lê Thanh Nghị",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362058,
+    "lat": 16.0304593,
+    "lon": 108.2188511,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ đầu mối Hòa Cường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362059,
+    "lat": 16.0258161,
+    "lon": 108.2199099,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Siêu thị Mega Market Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362060,
+    "lat": 16.022998,
+    "lon": 108.2147092,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "52-54 Cách Mạng Tháng 8 (Gần Bệnh viện Tâm Trí Đà Nẵng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362061,
+    "lat": 16.010278,
+    "lon": 108.2174334,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Chân cầu Nguyễn Tri Phương (6 Võ Chí Công)",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362062,
+    "lat": 16.0074784,
+    "lon": 108.2187806,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 593 Đường 29/3",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362063,
+    "lat": 16.0040859,
+    "lon": 108.2205697,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 213-215 Võ An Ninh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362064,
+    "lat": 16.0024575,
+    "lon": 108.2220953,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "18-20 Mẹ Thứ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362065,
+    "lat": 16.0000794,
+    "lon": 108.2169335,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "224-226 Mẹ Thứ (Trường Mầm non Búp Sen Hồng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362066,
+    "lat": 15.9999456,
+    "lon": 108.2140421,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "290-292 Mẹ Thứ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362067,
+    "lat": 15.999727,
+    "lon": 108.2097539,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "388-390 Mẹ Thứ (Đối diện Hội truyền giáo Cơ đốc Việt Nam)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881362068,
+    "lat": 15.9993076,
+    "lon": 108.2070715,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "182 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377370,
+    "lat": 15.9914337,
+    "lon": 108.207489,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "340 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377371,
+    "lat": 15.9855369,
+    "lon": 108.2078268,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "548 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377372,
+    "lat": 15.981615,
+    "lon": 108.2080214,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "A3-7 Khu đô thị Nam Cẩm Lệ (Đối diện 461 Phạm Hùng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377373,
+    "lat": 15.9768177,
+    "lon": 108.2082319,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bưu điện Miếu Bông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377374,
+    "lat": 15.9684735,
+    "lon": 108.2100412,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Isuzu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377375,
+    "lat": 15.9574884,
+    "lon": 108.2152845,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cửa hàng xăng dầu Petrolimex số 12",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377376,
+    "lat": 15.9521676,
+    "lon": 108.2178933,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trạm Cảnh sát giao thông Cửa Ô, Hòa Phước",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377377,
+    "lat": 15.9474937,
+    "lon": 108.2201579,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Tứ Câu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377380,
+    "lat": 15.9532062,
+    "lon": 108.2176688,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bãi đỗ xe kỹ thuật (sát Trạm kiểm dịch Hòa Phước)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377381,
+    "lat": 15.9588657,
+    "lon": 108.2149075,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "UBND Xã Hòa Phước",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377382,
+    "lat": 15.9639732,
+    "lon": 108.2124324,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kho đá Đông Ấn Đà Nẵng (Đối diện Chợ Hòa Phước)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377383,
+    "lat": 15.9672423,
+    "lon": 108.2108465,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bến xe Phía Nam",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377386,
+    "lat": 15.9916974,
+    "lon": 108.2076512,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "167 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377387,
+    "lat": 15.9965334,
+    "lon": 108.2073941,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện trạm xe buýt Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377388,
+    "lat": 15.9985264,
+    "lon": 108.2072692,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "121 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377390,
+    "lat": 15.9997979,
+    "lon": 108.2136908,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "331-333 Mẹ Thứ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377391,
+    "lat": 16.0000012,
+    "lon": 108.2174062,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "235-237 Mẹ Thứ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377392,
+    "lat": 16.0020483,
+    "lon": 108.2219014,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "43-45 Mẹ Thứ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377394,
+    "lat": 16.0071836,
+    "lon": 108.2190281,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "593 Đường 29/3",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377395,
+    "lat": 16.0101937,
+    "lon": 108.217863,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Chân cầu Nguyễn Tri Phương (19 Võ Chí Công)",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377396,
+    "lat": 16.0227285,
+    "lon": 108.214682,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "23-25 Cách Mạng Tháng 8 (Đối diện Bệnh viện Tâm Trí Đà Nẵng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377397,
+    "lat": 16.0255414,
+    "lon": 108.2199075,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Siêu thị Mega Market Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377398,
+    "lat": 16.0312,
+    "lon": 108.2189366,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chợ đầu mối Hòa Cường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377401,
+    "lat": 16.0480761,
+    "lon": 108.2209665,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "149 Núi Thành (Trường Trung học cơ sở Tây Sơn)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377403,
+    "lat": 16.0529812,
+    "lon": 108.2181405,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "298 Trưng Nữ Vương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377404,
+    "lat": 16.0565346,
+    "lon": 108.217175,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "315 Hoàng Diệu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377405,
+    "lat": 16.0598075,
+    "lon": 108.2170859,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "UBND Phường Nam Dương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377406,
+    "lat": 16.0626774,
+    "lon": 108.2178511,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "131 Hoàng Diệu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377407,
+    "lat": 16.0668104,
+    "lon": 108.2209625,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "241 Nguyễn Chí Thanh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377408,
+    "lat": 16.0709577,
+    "lon": 108.2212237,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "175 Nguyễn Chí Thanh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377409,
+    "lat": 16.0751518,
+    "lon": 108.2220984,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "15 Quang Trung",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11881377410,
+    "lat": 16.0796381,
+    "lon": 108.2238615,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 20 Bạch Đằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946574,
+    "lat": 16.0852928,
+    "lon": 108.2361109,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "32 Trần Thánh Tông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946575,
+    "lat": 16.0836226,
+    "lon": 108.2373801,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "574 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946576,
+    "lat": 16.0812522,
+    "lon": 108.2350882,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "694 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946577,
+    "lat": 16.0773265,
+    "lon": 108.2313804,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "864 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946578,
+    "lat": 16.0627326,
+    "lon": 108.233791,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1042 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946579,
+    "lat": 16.0524069,
+    "lon": 108.2369568,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "34 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946580,
+    "lat": 16.0426979,
+    "lon": 108.2405,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "312 Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946581,
+    "lat": 16.0374649,
+    "lon": 108.2416528,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Bà Đa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946582,
+    "lat": 16.03389,
+    "lon": 108.2280819,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khu sân bóng đá Tuyên Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946583,
+    "lat": 16.0321578,
+    "lon": 108.2157441,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "270 Xô Viết Nghệ Tĩnh - Đối diện Tổng công ty phát điện EVNGENCO2",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946584,
+    "lat": 16.0304277,
+    "lon": 108.2084994,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "460 Nguyễn Hữu Thọ - Viettronimex",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946585,
+    "lat": 16.0243919,
+    "lon": 108.2076418,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "40-42 Lê Đại Hành",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946586,
+    "lat": 16.0233971,
+    "lon": 108.2040672,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "86 Lê Đại Hành - Nhà tang lễ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946587,
+    "lat": 16.0201111,
+    "lon": 108.2031135,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Dệt may Hòa Thọ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946588,
+    "lat": 16.0164188,
+    "lon": 108.204815,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "58 Ông Ích Đường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946589,
+    "lat": 16.0122823,
+    "lon": 108.205476,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "164 Ông Ích Đường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946590,
+    "lat": 16.0028844,
+    "lon": 108.2069726,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "50 Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946592,
+    "lat": 16.0035159,
+    "lon": 108.2073023,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Toyota Phạm Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946594,
+    "lat": 16.0160973,
+    "lon": 108.2050848,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "171 Ông Ích Đường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946595,
+    "lat": 16.0197768,
+    "lon": 108.2034574,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học phổ thông Hòa Vang",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946597,
+    "lat": 16.023964,
+    "lon": 108.2070876,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "60 Lê Đại Hành - Công ty Vận tải Tân Minh Toàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946598,
+    "lat": 16.0262483,
+    "lon": 108.2089835,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "773 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946599,
+    "lat": 16.0297757,
+    "lon": 108.208793,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Viettronimex",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946600,
+    "lat": 16.0314702,
+    "lon": 108.2117502,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Xô Viết Nghệ Tĩnh - Xuân Thủy",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946603,
+    "lat": 16.0665138,
+    "lon": 108.2330794,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "849 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946604,
+    "lat": 16.0707943,
+    "lon": 108.2314855,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "741 Ngô Quyền - Đối diện Vincom Plaza",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946605,
+    "lat": 16.0781794,
+    "lon": 108.2326462,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "575 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946606,
+    "lat": 16.0806203,
+    "lon": 108.2350112,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "461 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946607,
+    "lat": 16.0832155,
+    "lon": 108.2375899,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Ngô Quyền - Vương Thừa Vũ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946608,
+    "lat": 16.0856349,
+    "lon": 108.2361226,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 32 Trần Thánh Tông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946610,
+    "lat": 16.0870197,
+    "lon": 108.2164535,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "159 Đường 3/2",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946611,
+    "lat": 16.0779261,
+    "lon": 108.2118674,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 36 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946612,
+    "lat": 16.0745346,
+    "lon": 108.2125349,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "81 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946613,
+    "lat": 16.0713549,
+    "lon": 108.2111907,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "196 Hải Phòng",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946614,
+    "lat": 16.0633403,
+    "lon": 108.2104777,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bờ hồ Hàm Nghi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946616,
+    "lat": 16.0517598,
+    "lon": 108.2099339,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diên 159 Lê Đình Lý - Nhà khách Vạn Tường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946617,
+    "lat": 16.0491558,
+    "lon": 108.2092426,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "38 Nguyễn Hữu Thọ (Nhà khách Quốc phòng 206)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946618,
+    "lat": 16.0359714,
+    "lon": 108.2134019,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "183 Phan Đăng Lưu (Trước Cảnh sát PCCC Thành phố Đà Nẵng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946619,
+    "lat": 16.0359715,
+    "lon": 108.2159122,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "128 Phan Đăng Lưu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946620,
+    "lat": 16.0368264,
+    "lon": 108.2191386,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học phổ thông Nguyễn Hiền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946621,
+    "lat": 16.0375728,
+    "lon": 108.2227546,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "6 Phan Đăng Lưu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946622,
+    "lat": 16.0378049,
+    "lon": 108.2258719,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Châu Á",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946623,
+    "lat": 16.0345274,
+    "lon": 108.2287285,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Siêu thị Lotte",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946624,
+    "lat": 16.03666,
+    "lon": 108.2436625,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "40 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946625,
+    "lat": 16.0325449,
+    "lon": 108.2457424,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "160 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946626,
+    "lat": 16.0295853,
+    "lon": 108.2472413,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "256 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946627,
+    "lat": 16.0227558,
+    "lon": 108.2506904,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Phụ sản nhi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946628,
+    "lat": 16.0229164,
+    "lon": 108.2510106,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "125 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946629,
+    "lat": 16.025205,
+    "lon": 108.2498726,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 380 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946630,
+    "lat": 16.0293097,
+    "lon": 108.2477978,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 270 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946631,
+    "lat": 16.0337507,
+    "lon": 108.2455101,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "61 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946632,
+    "lat": 16.036352,
+    "lon": 108.2441869,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 50 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946634,
+    "lat": 16.0381534,
+    "lon": 108.225404,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Châu Á",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946636,
+    "lat": 16.0371143,
+    "lon": 108.2195756,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Mắt Đà Nẵng (Đối diện 53 Phan Đăng Lưu)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946637,
+    "lat": 16.0362004,
+    "lon": 108.2166212,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "123-125 Phan Đăng Lưu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946639,
+    "lat": 16.037732,
+    "lon": 108.2103452,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Bệnh viện Vinmec (323 Nguyễn Hữu Thọ)",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946641,
+    "lat": 16.0492706,
+    "lon": 108.2095054,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "113 Nguyễn Hữu Thọ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946643,
+    "lat": 16.0539179,
+    "lon": 108.2115726,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Toyota 155 Lê Đình Lý",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946644,
+    "lat": 16.0592496,
+    "lon": 108.2113252,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1 Lê Đình Lý (Bưu điện Đà Nẵng)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946646,
+    "lat": 16.0750058,
+    "lon": 108.2125774,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "162-164 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11882946649,
+    "lat": 16.0856235,
+    "lon": 108.2143354,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "39 Nguyễn Tất Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892097,
+    "lat": 16.0788199,
+    "lon": 108.2193321,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "40 Lê Lợi",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892098,
+    "lat": 16.0667308,
+    "lon": 108.207097,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "456 Lê Duẩn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892099,
+    "lat": 16.0652424,
+    "lon": 108.2026479,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "8 Nguyễn Tri Phương",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892100,
+    "lat": 16.0620161,
+    "lon": 108.2041879,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "88 Nguyễn Tri Phương",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892101,
+    "lat": 16.0577511,
+    "lon": 108.2063382,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "222 Nguyễn Tri Phương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892102,
+    "lat": 16.0568257,
+    "lon": 108.2028661,
+    "tags": {
+      "bench": "yes",
+      "bin": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Ga Quốc tế Đà Nẵng",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892103,
+    "lat": 16.0534886,
+    "lon": 108.208656,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "2 Nguyễn Hữu Thọ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892104,
+    "lat": 16.036242,
+    "lon": 108.2097314,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "300 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892105,
+    "lat": 16.0346942,
+    "lon": 108.2093172,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "356 Nguyễn Hữu Thọ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892106,
+    "lat": 16.0281528,
+    "lon": 108.2086143,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "538 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892107,
+    "lat": 16.0212914,
+    "lon": 108.2104125,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "676 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892108,
+    "lat": 16.0091702,
+    "lon": 108.2144869,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Đinh Gia Trinh - Thanh Hóa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892109,
+    "lat": 16.0081162,
+    "lon": 108.2129487,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Đinh Gia Trinh - Văn Tiến Dũng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892110,
+    "lat": 16.0059132,
+    "lon": 108.2127392,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "55-57 Văn Tiến Dũng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892111,
+    "lat": 16.0037717,
+    "lon": 108.2128325,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Văn Tiến Dũng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892112,
+    "lat": 15.9985573,
+    "lon": 108.2131215,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khu chung cư Hòa Xuân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892113,
+    "lat": 15.9946817,
+    "lon": 108.2129568,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Nguyễn Xuân Lâm - Đô Đốc Tuyết",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892115,
+    "lat": 15.9945323,
+    "lon": 108.2101487,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công viên Nguyễn Xuân Lâm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892117,
+    "lat": 15.994469,
+    "lon": 108.2121427,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Nguyễn Xuân Lâm - Đô Đức Tuyết",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892119,
+    "lat": 16.0024782,
+    "lon": 108.2130374,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Tiểu học Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892121,
+    "lat": 16.0082489,
+    "lon": 108.2133583,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Đinh Gia Trinh - Đô Đốc Lộc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892122,
+    "lat": 16.0096781,
+    "lon": 108.2154283,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Đinh Gia Trinh - Võ An Ninh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892123,
+    "lat": 16.0216735,
+    "lon": 108.2105377,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Công ty Nissan Đà Nẵng",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892124,
+    "lat": 16.0327035,
+    "lon": 108.209106,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "513-515 Nguyễn Hữu Thọ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892125,
+    "lat": 16.0531247,
+    "lon": 108.208993,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Gia Đình (91 Nguyễn Hữu Thọ)",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892126,
+    "lat": 16.057674,
+    "lon": 108.2066151,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "31 Nguyễn Tri Phương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892128,
+    "lat": 16.0671097,
+    "lon": 108.2076177,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "435 Lê Duẩn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892129,
+    "lat": 16.0790807,
+    "lon": 108.2201142,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "17 Nguyễn Chí Thanh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892130,
+    "lat": 16.0801401,
+    "lon": 108.2183691,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "75 Đống Đa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892133,
+    "lat": 16.0600745,
+    "lon": 108.1718197,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Khách sạn Thành Hoa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892134,
+    "lat": 16.065649,
+    "lon": 108.1707946,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Đối diện 148 Nam Trân",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892135,
+    "lat": 16.0681638,
+    "lon": 108.1710357,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "255 Lý Thái Tông",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892136,
+    "lat": 16.0744656,
+    "lon": 108.1817526,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1315 Nguyễn Tất Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892137,
+    "lat": 16.106125,
+    "lon": 108.2535886,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "28 Lê Đức Thọ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892139,
+    "lat": 16.0854038,
+    "lon": 108.2481747,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "16 Hoàng Sa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892140,
+    "lat": 16.069817,
+    "lon": 108.2449948,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Võ Nguyên Giáp - Phạm Văn Đồng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892141,
+    "lat": 16.062439,
+    "lon": 108.2461674,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khách sạn DTC",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892143,
+    "lat": 16.0481707,
+    "lon": 108.249176,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 51 Võ Nguyên Giáp - Tu viện Phaolo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892144,
+    "lat": 16.0395978,
+    "lon": 108.2494912,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Resort Pullman",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892145,
+    "lat": 16.0274383,
+    "lon": 108.2552036,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Crown Plaza",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892147,
+    "lat": 16.0036737,
+    "lon": 108.2664532,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Xưởng đá Xuất Ánh - KOI Resort",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892148,
+    "lat": 15.9794335,
+    "lon": 108.2728634,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Nhà công vụ Bệnh viện 199",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892149,
+    "lat": 15.9781224,
+    "lon": 108.2614728,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "FPT Complex",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892150,
+    "lat": 15.9762795,
+    "lon": 108.2545304,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "438 Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892152,
+    "lat": 15.9757766,
+    "lon": 108.2549427,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "271 Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892157,
+    "lat": 16.0299049,
+    "lon": 108.2543325,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Olalani Resort",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892159,
+    "lat": 16.0698425,
+    "lon": 108.2453995,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Võ Nguyên Giáp - Phạm Văn Đồng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11883892167,
+    "lat": 16.059231,
+    "lon": 108.1717684,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "37 Nam Trân",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977632,
+    "lat": 16.0657987,
+    "lon": 108.1992579,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "130 Điện Biện Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977633,
+    "lat": 16.0660023,
+    "lon": 108.1929368,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "336 Điện Biên Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977634,
+    "lat": 16.0656837,
+    "lon": 108.1842728,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "570 Điện Biên Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977635,
+    "lat": 16.0590601,
+    "lon": 108.1742896,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "128 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977636,
+    "lat": 16.0562884,
+    "lon": 108.1660847,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "12 Hoàng Văn Thái",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977637,
+    "lat": 16.0552456,
+    "lon": 108.1626916,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện đa khoa Nam Liên Chiểu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977638,
+    "lat": 16.0521371,
+    "lon": 108.1521887,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "294 Hoàng Văn Thái",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977639,
+    "lat": 16.0310463,
+    "lon": 108.1170563,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đình Đại La",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977640,
+    "lat": 16.0214287,
+    "lon": 108.0540633,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Sân Golf Bà Nà Hills",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977641,
+    "lat": 16.0258471,
+    "lon": 108.0362621,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bãi đỗ xe Bà Nà Hills",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977644,
+    "lat": 16.0221089,
+    "lon": 108.1030775,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Thôn Trước Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977646,
+    "lat": 16.03075,
+    "lon": 108.1170027,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Đình Đại La",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977647,
+    "lat": 16.0520634,
+    "lon": 108.1525449,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "229 Hoàng Văn Thái",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977650,
+    "lat": 16.0583474,
+    "lon": 108.173631,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "171 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977651,
+    "lat": 16.0653437,
+    "lon": 108.1845316,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "563 Điện Biên Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977652,
+    "lat": 16.0656834,
+    "lon": 108.1929047,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "309 Điện Biên Phủ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977653,
+    "lat": 16.0657051,
+    "lon": 108.1889999,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "441 Điện Biên Phủ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977654,
+    "lat": 16.0654606,
+    "lon": 108.1990089,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "135 Điện Biên Phủ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977657,
+    "lat": 16.0723594,
+    "lon": 108.1597834,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trung tâm hành chính Quận Liên Chiểu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977658,
+    "lat": 16.0666368,
+    "lon": 108.1557988,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khu ký túc xá phía Tây",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977659,
+    "lat": 16.0647741,
+    "lon": 108.1557328,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "525 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977660,
+    "lat": 16.0625287,
+    "lon": 108.1591262,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Đại học Sư phạm - Đại học Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977661,
+    "lat": 16.0599903,
+    "lon": 108.1629472,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Hải Auto - 405 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977662,
+    "lat": 16.0572384,
+    "lon": 108.1665531,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Điện Máy Xanh - 341 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977663,
+    "lat": 16.0514375,
+    "lon": 108.1598561,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "64 Hoàng Minh Thảo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977664,
+    "lat": 16.0497517,
+    "lon": 108.1603569,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đại học Duy Tân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977665,
+    "lat": 16.0463332,
+    "lon": 108.1655611,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "31 Lê Sao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977666,
+    "lat": 16.0458586,
+    "lon": 108.1673172,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "102 Bùi Tấn Diên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977667,
+    "lat": 16.0428574,
+    "lon": 108.170608,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "256 Bùi Tấn Diên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886977668,
+    "lat": 16.0405879,
+    "lon": 108.1703702,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 131 Lê Đình Kỵ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983269,
+    "lat": 16.0372136,
+    "lon": 108.1729241,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "233 Lê Trọng Tấn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983270,
+    "lat": 16.0346944,
+    "lon": 108.1788686,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "185 Lê Trọng Tấn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983271,
+    "lat": 16.0353445,
+    "lon": 108.1813193,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "151 Lê Trọng Tấn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983272,
+    "lat": 16.0350067,
+    "lon": 108.1844954,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "634 Tôn Đản",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983273,
+    "lat": 16.0320813,
+    "lon": 108.1851223,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Chợ Hòa Phát",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983274,
+    "lat": 16.0269852,
+    "lon": 108.1888298,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "40 Vũ Lăng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983275,
+    "lat": 16.0272311,
+    "lon": 108.1902411,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1016 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983276,
+    "lat": 16.0217925,
+    "lon": 108.1932865,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1120 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983277,
+    "lat": 16.0203854,
+    "lon": 108.1957647,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "303 Lê Đại Hành",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983278,
+    "lat": 16.0222,
+    "lon": 108.2011383,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "205 Lê Đại Hành",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983282,
+    "lat": 16.0221429,
+    "lon": 108.1933904,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "593 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983283,
+    "lat": 16.0269117,
+    "lon": 108.1906432,
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "555C Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983284,
+    "lat": 16.0268977,
+    "lon": 108.1885243,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "41 Vũ Lăng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983286,
+    "lat": 16.0345417,
+    "lon": 108.1847143,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "711 Tôn Đản",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983287,
+    "lat": 16.0355302,
+    "lon": 108.1816029,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "202 Lê Trọng Tấn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983290,
+    "lat": 16.0403015,
+    "lon": 108.1702967,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "131 Lê Đình Kỵ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983293,
+    "lat": 16.0465888,
+    "lon": 108.1656733,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "74 Lê Sao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983296,
+    "lat": 16.0581426,
+    "lon": 108.1659133,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 399 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983297,
+    "lat": 16.0605108,
+    "lon": 108.1625748,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "428 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983298,
+    "lat": 16.0629831,
+    "lon": 108.1588462,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "552 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983299,
+    "lat": 16.064843,
+    "lon": 108.1561147,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "650 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983300,
+    "lat": 16.0661522,
+    "lon": 108.1559067,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Khu kí túc xá phía Tây",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11886983302,
+    "lat": 16.0720418,
+    "lon": 108.1600514,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "233 Nguyễn Sinh Sắc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349387,
+    "lat": 16.0684256,
+    "lon": 108.1687313,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Ngã ba Hoàng Thị Loan - Đặng Minh Khiêm",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349388,
+    "lat": 16.0573285,
+    "lon": 108.1802324,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "120 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349389,
+    "lat": 16.0514226,
+    "lon": 108.1821954,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "314 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349390,
+    "lat": 16.0447377,
+    "lon": 108.1844248,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện cây xăng dầu số 375 Trường Chinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349391,
+    "lat": 16.0341195,
+    "lon": 108.1879534,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "860 Trường Chinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349392,
+    "lat": 16.006494,
+    "lon": 108.2204927,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Công ty Hữu Toàn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349393,
+    "lat": 16.0039716,
+    "lon": 108.2238411,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "98 Võ Chí Công",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349394,
+    "lat": 15.9925988,
+    "lon": 108.2363819,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Cây xăng Tấn Thanh Toàn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349395,
+    "lat": 15.9852802,
+    "lon": 108.2413656,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Nghĩa trang liệt sĩ Phường Hòa Quý",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349396,
+    "lat": 15.9830708,
+    "lon": 108.2525659,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện 100 Võ Chí Công",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349397,
+    "lat": 15.9791998,
+    "lon": 108.25502,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "384 Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349399,
+    "lat": 15.9790051,
+    "lon": 108.2553347,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "239 Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349400,
+    "lat": 15.9820825,
+    "lon": 108.256005,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Ngã tư Trần Đại Nghĩa  - Võ Quý Huân",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349401,
+    "lat": 15.98332,
+    "lon": 108.2522546,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "100 Võ Chí Công",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349404,
+    "lat": 16.0041232,
+    "lon": 108.224117,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "101 Võ Chí Công",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349405,
+    "lat": 16.006393,
+    "lon": 108.2208982,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Công ty Hữu Toàn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349406,
+    "lat": 16.0338343,
+    "lon": 108.1883021,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "517 Trường Chinh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349410,
+    "lat": 16.0826883,
+    "lon": 108.2236446,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bãi đỗ xe Cảng Sông Hàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349419,
+    "lat": 16.0657928,
+    "lon": 108.173188,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Thiền viện Bồ Đề",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349420,
+    "lat": 16.0668128,
+    "lon": 108.1531392,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "758 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349421,
+    "lat": 16.068541,
+    "lon": 108.1519034,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "808-810 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349422,
+    "lat": 16.0708943,
+    "lon": 108.1484357,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ Hòa Khánh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349423,
+    "lat": 16.0710419,
+    "lon": 108.1434345,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "240-242 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349424,
+    "lat": 16.0744369,
+    "lon": 108.1345957,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 415 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349425,
+    "lat": 16.0759801,
+    "lon": 108.1323744,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 519 Âu Cơ - Chợ Thanh Vinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349426,
+    "lat": 16.0785773,
+    "lon": 108.1228953,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Tiểu học Âu Cơ - 548 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349427,
+    "lat": 16.0778195,
+    "lon": 108.1202231,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "586 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349428,
+    "lat": 16.0768315,
+    "lon": 108.1146406,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Giáo xứ An Ngãi Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349429,
+    "lat": 16.0732168,
+    "lon": 108.1105526,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Trạm y tế Xã Hòa Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349430,
+    "lat": 16.0689655,
+    "lon": 108.1069951,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "UBND Xã Hòa Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349431,
+    "lat": 16.0702145,
+    "lon": 108.1048194,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Tạp hóa Thủy Đoàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349432,
+    "lat": 16.0770862,
+    "lon": 108.0990589,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà văn hóa Thôn Hướng Phước",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349433,
+    "lat": 16.0790981,
+    "lon": 108.0982208,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ Hòa Liên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349434,
+    "lat": 16.0811235,
+    "lon": 108.0787542,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Foxlink - Đường số 14 Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349435,
+    "lat": 16.0837956,
+    "lon": 108.0752282,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Dentium - Đường số 12 Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349436,
+    "lat": 16.090357,
+    "lon": 108.0721102,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Trung Nam - Đường số 9 Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349437,
+    "lat": 16.0920597,
+    "lon": 108.0737114,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Niwa - Đường Trung tâm Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349438,
+    "lat": 16.0908266,
+    "lon": 108.0842143,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bến xe buýt Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349442,
+    "lat": 16.0923583,
+    "lon": 108.0735088,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Công ty Niwa - Đường Trung tâm Khu Công nghệ Cao",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349446,
+    "lat": 16.0788112,
+    "lon": 108.0983363,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chợ Hòa Liên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349454,
+    "lat": 16.0760776,
+    "lon": 108.1316918,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ Thanh Vinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349455,
+    "lat": 16.0740705,
+    "lon": 108.1349368,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "403 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349456,
+    "lat": 16.0710929,
+    "lon": 108.1431124,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "159-161 Âu Cơ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349457,
+    "lat": 16.0709754,
+    "lon": 108.1488681,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chợ Hòa Khánh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349458,
+    "lat": 16.0688044,
+    "lon": 108.1515296,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "655 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349459,
+    "lat": 16.0661949,
+    "lon": 108.1536107,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "573 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11891349460,
+    "lat": 16.0654967,
+    "lon": 108.1732224,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Thiền viện Bồ Đề",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149715,
+    "lat": 16.0427314,
+    "lon": 108.2114427,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "56 Lương Nhữ Hộc - Chợ Nguyễn Tri Phương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149716,
+    "lat": 16.0407515,
+    "lon": 108.2116763,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "120 Lương Nhữ Hộc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149717,
+    "lat": 16.0344579,
+    "lon": 108.2110727,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "172 Lương Nhữ Hộc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149718,
+    "lat": 16.0333265,
+    "lon": 108.2108816,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học phổ thông Hiển Nhân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149719,
+    "lat": 16.0288793,
+    "lon": 108.2129635,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "84 Xuân Thủy",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149720,
+    "lat": 16.0266741,
+    "lon": 108.2131773,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "18 Trịnh Đình Thảo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149721,
+    "lat": 16.0252681,
+    "lon": 108.2106822,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "140 Trịnh Đình Thảo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149722,
+    "lat": 16.0042857,
+    "lon": 108.2064159,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Ngã ba Nguyễn Hồng Ánh - Hoàng Đạo Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149723,
+    "lat": 15.9975739,
+    "lon": 108.2002439,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Ngã ba Nguyễn Hồng Ánh - Âu Dương Lân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149724,
+    "lat": 15.9955699,
+    "lon": 108.1965093,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã tư Nguyễn Hồng Ánh - Phan Văn Đáng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149725,
+    "lat": 15.9927697,
+    "lon": 108.1938003,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Cây xăng Hòa Hiệp 2",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149726,
+    "lat": 15.9858436,
+    "lon": 108.2017217,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "UBND Xã Hòa Châu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149730,
+    "lat": 15.9814753,
+    "lon": 108.2070418,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Bảo Minh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149736,
+    "lat": 16.0253254,
+    "lon": 108.2111702,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "113 Trịnh Đình Thảo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149738,
+    "lat": 16.0286714,
+    "lon": 108.2133242,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Thành đoàn Đà Nẵng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149743,
+    "lat": 16.0569356,
+    "lon": 108.1713555,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "210 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149744,
+    "lat": 16.0565137,
+    "lon": 108.1682083,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "294 Tôn Đức Thắng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149745,
+    "lat": 16.0903003,
+    "lon": 108.1429411,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "436 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149746,
+    "lat": 16.1002593,
+    "lon": 108.1353757,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "546 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149747,
+    "lat": 16.1053072,
+    "lon": 108.1329185,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "636 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149748,
+    "lat": 16.110849,
+    "lon": 108.1296927,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "788 Nguyễn Lương Bằng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149749,
+    "lat": 16.1150991,
+    "lon": 108.1267945,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "922 Nguyễn Lương Bằng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149750,
+    "lat": 16.125583,
+    "lon": 108.1200598,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "52 Nguyễn Văn Cừ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149751,
+    "lat": 16.1280229,
+    "lon": 108.1163246,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà máy Sản xuất Tà Vẹt Đường Tạ Quang Bửu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149752,
+    "lat": 16.1296007,
+    "lon": 108.10586,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kề ngã ba vào Hầm Hải Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149753,
+    "lat": 16.1324873,
+    "lon": 108.1071538,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trạm trung chuyển xe mô tô đường Hầm Hải Vân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149756,
+    "lat": 16.1241842,
+    "lon": 108.1207351,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "19 Nguyễn Văn Cừ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149757,
+    "lat": 16.1131085,
+    "lon": 108.1281964,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "957 Nguyễn Lương Bằng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149758,
+    "lat": 16.1110265,
+    "lon": 108.1294164,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "915 Nguyễn Lương Bằng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149759,
+    "lat": 16.1049853,
+    "lon": 108.1328356,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "817 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149760,
+    "lat": 16.1005495,
+    "lon": 108.1349683,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "767 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149761,
+    "lat": 16.0900459,
+    "lon": 108.1428227,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "497 Nguyễn Lương Bằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149764,
+    "lat": 15.9681402,
+    "lon": 108.2545731,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "158 Trần Hưng Đạo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149765,
+    "lat": 15.9630159,
+    "lon": 108.2545313,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "292 Trần Hưng Đạo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149766,
+    "lat": 15.9580674,
+    "lon": 108.254489,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "584 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149767,
+    "lat": 15.9490508,
+    "lon": 108.2544712,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "700 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894149768,
+    "lat": 15.9449048,
+    "lon": 108.2544734,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "828 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187969,
+    "lat": 15.9393402,
+    "lon": 108.2544564,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "974 Trần Hưng Đạo",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187970,
+    "lat": 15.9304197,
+    "lon": 108.2556337,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "126 Trần Thủ Độ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187971,
+    "lat": 15.926446,
+    "lon": 108.2586684,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "304 Trần Thủ Độ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187972,
+    "lat": 15.9215159,
+    "lon": 108.262531,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "488 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187973,
+    "lat": 15.9179236,
+    "lon": 108.2648146,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "588 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187974,
+    "lat": 15.9140766,
+    "lon": 108.2690511,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bể bơi Vùng Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187975,
+    "lat": 15.9103795,
+    "lon": 108.2707125,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "832 Trần Thủ Độ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187976,
+    "lat": 15.906069,
+    "lon": 108.2759048,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "990 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187977,
+    "lat": 15.9045872,
+    "lon": 108.2813677,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "1138 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894187978,
+    "lat": 15.9010738,
+    "lon": 108.2888556,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1322 Trần Thủ Độ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188007,
+    "lat": 15.9004048,
+    "lon": 108.2921861,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "1563 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188011,
+    "lat": 15.9013845,
+    "lon": 108.2885639,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "1455 Trần Thủ Độ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188012,
+    "lat": 15.9046511,
+    "lon": 108.2820598,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "1271 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188013,
+    "lat": 15.9061107,
+    "lon": 108.2766261,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Cụm Công nghiệp An Lưu",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188014,
+    "lat": 15.9111709,
+    "lon": 108.2706233,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "863 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188015,
+    "lat": 15.9144067,
+    "lon": 108.2691543,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Bể bơi Vùng Đông",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188016,
+    "lat": 15.9193506,
+    "lon": 108.2641958,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "572 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188017,
+    "lat": 15.9273687,
+    "lon": 108.2580507,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "285 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188018,
+    "lat": 15.9302415,
+    "lon": 108.2559686,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "171 Trần Thủ Độ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188019,
+    "lat": 15.9371217,
+    "lon": 108.2546722,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "955 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188020,
+    "lat": 15.9429702,
+    "lon": 108.2547058,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Đối diện Trường Tiểu học Lê Hồng Phong",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188021,
+    "lat": 15.9475175,
+    "lon": 108.2547165,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "677 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188022,
+    "lat": 15.9526481,
+    "lon": 108.2547495,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "553 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11894188023,
+    "lat": 15.9620869,
+    "lon": 108.2548458,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "333 Trần Hưng Đạo",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898021846,
+    "lat": 15.942236,
+    "lon": 108.222713,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung cấp Quảng Đông",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898021847,
+    "lat": 15.9250353,
+    "lon": 108.231307,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đầu cầu Thanh Quýt",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898021848,
+    "lat": 15.9092651,
+    "lon": 108.2389474,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bến xe Bắc Quảng Nam",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898042438,
+    "lat": 15.9094982,
+    "lon": 108.2391229,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bệnh viện Đa khoa Vĩnh Đức",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898042439,
+    "lat": 15.9269503,
+    "lon": 108.2305975,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Gần Trạm thu phí Điện Bàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898042440,
+    "lat": 15.9335875,
+    "lon": 108.2273556,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Nghĩa trang liệt sĩ Điện Bàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898042441,
+    "lat": 15.9426029,
+    "lon": 108.2228336,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Lầu Sụp",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11898042442,
+    "lat": 15.9479215,
+    "lon": 108.2202227,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ngã ba Tứ Câu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103122,
+    "lat": 16.0503311,
+    "lon": 108.2228614,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Bãi đỗ xe Cầu Trần Thị Lý",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103124,
+    "lat": 16.0512405,
+    "lon": 108.2220761,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "154 Đường 2/9",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103125,
+    "lat": 16.0472604,
+    "lon": 108.2224447,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "214 Đường 2/9",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103126,
+    "lat": 16.0427261,
+    "lon": 108.2230065,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Quảng trường 2/9",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103127,
+    "lat": 16.0359899,
+    "lon": 108.2238211,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Rạp chiếu phim Metiz",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103128,
+    "lat": 16.0167982,
+    "lon": 108.2036964,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "296 Cách Mạng Tháng 8",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103129,
+    "lat": 16.0128547,
+    "lon": 108.1986191,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Trường mầm non Bông Sen",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103130,
+    "lat": 16.0092518,
+    "lon": 108.1974054,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "60 Đinh Châu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103131,
+    "lat": 16.0065307,
+    "lon": 108.1965305,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Khu chung cư Nguyễn Hữu Tiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103132,
+    "lat": 16.0061818,
+    "lon": 108.1935711,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học cơ sở Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103133,
+    "lat": 16.0045389,
+    "lon": 108.1907957,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Trung tâm Giáo dục Thường xuyên Cẩm Lệ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103134,
+    "lat": 15.9953514,
+    "lon": 108.1920304,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Tạp hóa Xuân Thu",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103135,
+    "lat": 15.9812952,
+    "lon": 108.1864764,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện trụ điện 238",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103136,
+    "lat": 15.9779028,
+    "lon": 108.1853713,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Honda Bá Hùng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103137,
+    "lat": 15.9688255,
+    "lon": 108.1814918,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Tiểu học Số 2 Hòa Tiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103138,
+    "lat": 15.9626871,
+    "lon": 108.1793436,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kiệt 12 Thôn Lệ Sơn Bắc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103139,
+    "lat": 15.9595834,
+    "lon": 108.1797525,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Nhà thuốc số 1 thôn Lệ Sơn Bắc",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103140,
+    "lat": 15.9526114,
+    "lon": 108.1786002,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Nghĩa trang Lệ Trạch",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103143,
+    "lat": 15.9685188,
+    "lon": 108.1816249,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Trường Tiểu học Số 2 Hòa Tiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103144,
+    "lat": 15.9785686,
+    "lon": 108.1856735,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kế Công ty Thuận Lực",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103145,
+    "lat": 15.980631,
+    "lon": 108.186402,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kế Xưởng Gỗ Vinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103146,
+    "lat": 15.9960862,
+    "lon": 108.1920268,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Café Relax - Đối Diện Honda Thiện Hồng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103147,
+    "lat": 16.0048928,
+    "lon": 108.1911877,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trung tâm Giáo dục Thường xuyên Cẩm Lệ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103154,
+    "lat": 16.0340323,
+    "lon": 108.2240414,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "518 Đường 2/9",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103157,
+    "lat": 16.0477319,
+    "lon": 108.2226771,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Nhà hàng Phì Lũ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103158,
+    "lat": 16.0508603,
+    "lon": 108.2223814,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 146 Đường 2/9",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103162,
+    "lat": 16.058925,
+    "lon": 108.2070889,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "389 Nguyễn Văn Linh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103163,
+    "lat": 16.0596944,
+    "lon": 108.2102458,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Bệnh viện Hoàn Mỹ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103164,
+    "lat": 16.060398,
+    "lon": 108.2151219,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "155 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103166,
+    "lat": 16.0609019,
+    "lon": 108.2217269,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "11 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103167,
+    "lat": 16.0612784,
+    "lon": 108.2336153,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cầu Rồng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900103168,
+    "lat": 16.0621265,
+    "lon": 108.2392664,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Vườn cây cảnh Công Thuấn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176969,
+    "lat": 16.0630182,
+    "lon": 108.2426952,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trụ điện CS08T3",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176970,
+    "lat": 16.0296511,
+    "lon": 108.2542141,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Olalani Resort",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176976,
+    "lat": 16.0633486,
+    "lon": 108.2427237,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "10 Võ Văn Kiệt",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176977,
+    "lat": 16.0623641,
+    "lon": 108.2390442,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Quán nhậu Bé Hằng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176978,
+    "lat": 16.0605672,
+    "lon": 108.2148689,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "100 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176979,
+    "lat": 16.0598391,
+    "lon": 108.209742,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "248 Nguyễn Văn Linh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176980,
+    "lat": 16.0681459,
+    "lon": 108.205024,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "461 Hải Phòng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176981,
+    "lat": 16.0707963,
+    "lon": 108.2088834,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "305 Hải Phòng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176982,
+    "lat": 16.0722589,
+    "lon": 108.2179139,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "39 Hải Phòng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176983,
+    "lat": 16.071722,
+    "lon": 108.218483,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "102 Nguyễn Thị Minh Khai",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176984,
+    "lat": 16.0907692,
+    "lon": 108.2383678,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "95 Chu Huy Mân",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176985,
+    "lat": 16.0895363,
+    "lon": 108.2423973,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "253 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176986,
+    "lat": 16.0927245,
+    "lon": 108.2438429,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "187 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176987,
+    "lat": 16.0952673,
+    "lon": 108.2449382,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "113 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176988,
+    "lat": 16.1006128,
+    "lon": 108.2473437,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "33 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176989,
+    "lat": 16.1014137,
+    "lon": 108.2488578,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "4 Nguyễn Phan Vinh",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176991,
+    "lat": 16.1016261,
+    "lon": 108.2486503,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Giáo xứ Sơn Trà",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176992,
+    "lat": 16.1005799,
+    "lon": 108.2468751,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 35 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176993,
+    "lat": 16.0960458,
+    "lon": 108.2448957,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "118 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176994,
+    "lat": 16.0926811,
+    "lon": 108.2434116,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "206 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176995,
+    "lat": 16.0897328,
+    "lon": 108.2420556,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "310 Ngô Quyền",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176997,
+    "lat": 16.0911439,
+    "lon": 108.2331792,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chung cư 12T1",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176998,
+    "lat": 16.0714906,
+    "lon": 108.2186513,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "89-91 Nguyễn Thị Minh Khai",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900176999,
+    "lat": 16.072276,
+    "lon": 108.2171292,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "140 Hải Phòng",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11900177001,
+    "lat": 16.0677579,
+    "lon": 108.2049001,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "352 Hải Phòng",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085984,
+    "lat": 16.1407899,
+    "lon": 108.119834,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "CSGT Hòa Hiệp",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085986,
+    "lat": 16.1355471,
+    "lon": 108.1195543,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "Chùa Kim Quang",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085987,
+    "lat": 16.1330102,
+    "lon": 108.1194288,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "101 Nguyễn Văn Cừ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085988,
+    "lat": 16.1295631,
+    "lon": 108.1193146,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "no",
+      "name": "Công ty Xi măng Ngũ Hành Sơn",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085990,
+    "lat": 16.0665733,
+    "lon": 108.2107008,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "333 Hùng Vương",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085991,
+    "lat": 16.0671731,
+    "lon": 108.2144302,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Chợ Cồn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085992,
+    "lat": 16.0184673,
+    "lon": 108.2529101,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "470A Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085993,
+    "lat": 16.010306,
+    "lon": 108.2568921,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "542 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085994,
+    "lat": 16.0070324,
+    "lon": 108.25859,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "620 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085996,
+    "lat": 15.9893687,
+    "lon": 108.2572581,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "148 Trần Đại Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903085997,
+    "lat": 15.9777663,
+    "lon": 108.252354,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đại học Việt Hàn - Nam Kỳ Khởi Nghĩa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086001,
+    "lat": 15.9943713,
+    "lon": 108.2588308,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Sân tập lái ô tô",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086002,
+    "lat": 15.9893835,
+    "lon": 108.2576571,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Nhà hàng Hương Tích",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086003,
+    "lat": 16.0065194,
+    "lon": 108.2592048,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "415 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086004,
+    "lat": 16.0103303,
+    "lon": 108.257287,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "307 Lê Văn Hiến",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086005,
+    "lat": 16.0168285,
+    "lon": 108.2541309,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện UBND Quận Ngũ Hành Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086006,
+    "lat": 16.0665404,
+    "lon": 108.2099452,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "14 Lý Thái Tổ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086007,
+    "lat": 16.0662317,
+    "lon": 108.2073345,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "130 Lý Thái Tổ",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086008,
+    "lat": 16.129278,
+    "lon": 108.11952,
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "lit": "yes",
+      "name": "126 Nguyễn Văn Cừ",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086011,
+    "lat": 16.0773193,
+    "lon": 108.2240841,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cảng Sông Hàn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086014,
+    "lat": 16.0730841,
+    "lon": 108.2135027,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 297-299 Đống Đa",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086015,
+    "lat": 16.0659439,
+    "lon": 108.2143002,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "438-440 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086016,
+    "lat": 16.063921,
+    "lon": 108.2152562,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "522 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086017,
+    "lat": 16.0612627,
+    "lon": 108.2165507,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "618 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086018,
+    "lat": 16.0430836,
+    "lon": 108.2214454,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "264 Núi Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086019,
+    "lat": 16.0391703,
+    "lon": 108.2218775,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "382 Núi Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086020,
+    "lat": 16.0339225,
+    "lon": 108.2225518,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Chùa Hòa Tiên",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086021,
+    "lat": 16.0196155,
+    "lon": 108.2097798,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "180 Cách Mạng Tháng 8",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086022,
+    "lat": 16.0140485,
+    "lon": 108.1970919,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "496 Cách Mạng Tháng 8",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086023,
+    "lat": 16.0123222,
+    "lon": 108.1878436,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 9 Trường Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086024,
+    "lat": 16.0120294,
+    "lon": 108.1741191,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "172 Trường Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086025,
+    "lat": 16.011805,
+    "lon": 108.1692518,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Trường Quân sự Quân khu 5",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086026,
+    "lat": 16.0106571,
+    "lon": 108.1632337,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "322 Trường Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086028,
+    "lat": 15.9998573,
+    "lon": 108.1432169,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trụ CS24",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086029,
+    "lat": 15.9961029,
+    "lon": 108.1367048,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Cửa hàng Thiên Thanh Trường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086030,
+    "lat": 15.9915765,
+    "lon": 108.1379457,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Gần Chợ Túy Loan",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086031,
+    "lat": 15.9907487,
+    "lon": 108.140483,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Lô 115 Chợ Túy Loan",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086032,
+    "lat": 15.9877264,
+    "lon": 108.1408121,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trung tâm Hành chính Huyện Hòa Vang",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086033,
+    "lat": 15.981564,
+    "lon": 108.1385819,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Bảng hiệu CT01",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086034,
+    "lat": 15.9752553,
+    "lon": 108.1393735,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện trụ CS84",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086035,
+    "lat": 15.9694825,
+    "lon": 108.1392923,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Tiểu học Hòa Khương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086036,
+    "lat": 15.9625002,
+    "lon": 108.1392764,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện trụ CS119",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086037,
+    "lat": 15.9432407,
+    "lon": 108.137869,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kề Cây xăng số 5",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086038,
+    "lat": 15.9332075,
+    "lon": 108.1334693,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Hòa Khương",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086039,
+    "lat": 15.943037,
+    "lon": 108.1380832,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Cây xăng số 5",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086040,
+    "lat": 15.9607509,
+    "lon": 108.1394462,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Trung học cơ sở Đỗ Thúc Tịnh",
+      "public_transport": "platform",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086041,
+    "lat": 15.9700993,
+    "lon": 108.1394913,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kề trụ CS98",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086042,
+    "lat": 15.9756204,
+    "lon": 108.139534,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kề trụ CS84",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086043,
+    "lat": 15.981945,
+    "lon": 108.1386649,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Kề Bảng hiệu CT01",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086047,
+    "lat": 15.9957889,
+    "lon": 108.136756,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Cửa hàng Thiên Thanh Trường",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086048,
+    "lat": 15.9997639,
+    "lon": 108.1436236,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện Cây xăng Vạn Phú",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086050,
+    "lat": 16.0116292,
+    "lon": 108.1689038,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Trường Quân sự Quân khu 5",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086052,
+    "lat": 16.0120104,
+    "lon": 108.1878412,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "9 Trường Sơn",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086053,
+    "lat": 16.0137548,
+    "lon": 108.1979153,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "419 Cách Mạng Tháng 8",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086057,
+    "lat": 16.0438453,
+    "lon": 108.221507,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "257 Núi Thành",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086058,
+    "lat": 16.0629623,
+    "lon": 108.2158368,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "419 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11903086060,
+    "lat": 16.0678363,
+    "lon": 108.2140103,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Đối diện 328 Ông Ích Khiêm",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12619881901,
+    "lat": 16.0552483,
+    "lon": 108.2473543,
+    "tags": {
+      "highway": "bus_stop",
+      "name": "Futa bus to Hoi An"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13031658287,
+    "lat": 16.1032984,
+    "lon": 108.1316839,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13031658288,
+    "lat": 16.1003073,
+    "lon": 108.1288235,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13031658289,
+    "lat": 16.0982518,
+    "lon": 108.1347375,
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "public_transport": "platform"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13293581909,
+    "lat": 16.0588359,
+    "lon": 108.2230059,
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "departures_board": "no",
+      "description:en": "Stop for minibus that runs Route LK02, going to Hoi An",
+      "highway": "bus_stop",
+      "operator:website": "https://danangbus.vn",
+      "public_transport": "platform",
+      "route_ref": "LK02;02",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13294075508,
+    "lat": 15.9737802,
+    "lon": 108.2542628,
+    "tags": {
+      "bus": "yes",
+      "departures_board": "no",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "route_ref": "02;LK02",
+      "shelter": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13294104898,
+    "lat": 16.0585103,
+    "lon": 108.2230063,
+    "tags": {
+      "bus": "yes",
+      "departures_board": "no",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "route_ref": "02;LK02",
+      "shelter": "no"
+    }
+  }
+]

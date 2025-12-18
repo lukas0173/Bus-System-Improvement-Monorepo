@@ -58,6 +58,7 @@ export interface Route extends BaseRecord {
 // Collection: stations
 export interface Station extends BaseRecord {
   name: string;
+  address: string;
   longitude: number;
   latitude: number;
   status: string;

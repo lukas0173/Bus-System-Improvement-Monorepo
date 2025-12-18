@@ -112,10 +112,10 @@ export const fetchFirstListItem = async <T>(
     );
     return record;
   } catch (error) {
-    console.error(
-      `[API - READ] Error fetching the first record from ${collectionName}:\n`,
-      error,
-    );
+    // console.error(
+    //   `[API - READ] Error fetching the first record from ${collectionName}:\n`,
+    //   error,
+    // );
     throw error;
   }
 };

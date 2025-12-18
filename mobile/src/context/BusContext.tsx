@@ -53,10 +53,10 @@ export const BusProvider = ({ children }: { children: ReactNode }) => {
             position: `${latestLocation.longitude}, ${latestLocation.latitude}`,
           } as UIBus;
         } catch (error) {
-          console.error(
-            `[Context - Bus] No location found for bus ${bus.id}.`,
-            error,
-          );
+          // console.error(
+          //   `[Context - Bus] No location found for bus ${bus.id}.`,
+          //   error,
+          // );
           return {
             id: bus.id,
             name: bus.name,
