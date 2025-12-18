@@ -28,7 +28,7 @@ const ActionButtons = () => {
       <ActionButtonHome
         icon={<Pause color="white" size={28} />}
         label="Trạm"
-        navigation={() => router.navigate("/home/bus/Bus.Home.Screen")}
+        navigation={() => router.navigate("/home/station/Station.Home.Screen")}
       />
       <ActionButtonHome
         icon={<Bus color="white" size={28} />}

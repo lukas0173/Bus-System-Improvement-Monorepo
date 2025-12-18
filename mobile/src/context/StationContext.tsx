@@ -8,16 +8,7 @@ import React, {
 } from "react";
 import { fetchStations } from "@api/pocketbase.read";
 import { Station as PBStation } from "@/src/types/pocketbase-types";
-
-// Define the shape of the UI Station (can be moved to types/UI later)
-export interface UIStation {
-  id: string;
-  name: string;
-  address: string;
-  latitude: number;
-  longitude: number;
-  status: string;
-}
+import { UIStation } from "../types/UI/station";
 
 // Define the shape of the context state
 interface StationContextType {
