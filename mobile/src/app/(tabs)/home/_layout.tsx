@@ -33,6 +33,12 @@ export default function HomeStackLayout() {
           headerShown: false,
         }}
       />
+      <Stack.Screen
+        name="station/Station.Home.Screen"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }

@@ -14,15 +14,8 @@ const ActionButtons = () => {
   return (
     <View style={styles.actionsContainer}>
       <ActionButtonHome
-        icon={<List color="white" size={28} />}
-        label="Tra cứu"
-        navigation={() =>
-          updateNotificationLed("4mmd7x25iuo3z3s", { logic: false })
-        }
-      />
-      <ActionButtonHome
         icon={<Shuffle color="white" size={28} />}
-        label="Tuyến đường"
+        label="Tuyến"
         navigation={() => router.navigate("/home/route/Route.Home.Screen")}
       />
       <ActionButtonHome
@@ -34,6 +27,13 @@ const ActionButtons = () => {
         icon={<Bus color="white" size={28} />}
         label="Xe buýt"
         navigation={() => router.navigate("/home/bus/Bus.Home.Screen")}
+      />
+      <ActionButtonHome
+        icon={<List color="white" size={28} />}
+        label="Hỗ trợ"
+        navigation={() =>
+          updateNotificationLed("4mmd7x25iuo3z3s", { logic: false })
+        }
       />
     </View>
   );
