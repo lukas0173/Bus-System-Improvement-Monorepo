@@ -5,6 +5,7 @@ import {
   StyleSheet,
   ScrollView,
   ActivityIndicator,
+  TouchableOpacity,
 } from "react-native";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
 import { useLocalSearchParams } from "expo-router";
@@ -79,6 +80,13 @@ const RouteDetailScreen = () => {
             </View>
         </View>
       </View>
+
+      <TouchableOpacity 
+        style={styles.selectButton}
+        onPress={() => {}}
+      >
+        <Text style={styles.selectButtonText}>Chọn tuyến</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
@@ -148,5 +156,18 @@ const styles = StyleSheet.create({
   detailValue: {
     fontSize: FontSize.sm,
     color: Colors.secondary[700],
+  },
+  selectButton: {
+    backgroundColor: Colors.info[400],
+    paddingVertical: Spacing.md,
+    borderRadius: BorderRadius.md,
+    alignItems: "center",
+    marginTop: Spacing.md,
+    marginBottom: Spacing.xl,
+  },
+  selectButtonText: {
+    color: "white",
+    fontSize: FontSize.md,
+    fontWeight: "bold",
   },
 });

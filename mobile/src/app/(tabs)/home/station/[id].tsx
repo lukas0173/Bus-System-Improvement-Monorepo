@@ -5,6 +5,7 @@ import {
   StyleSheet,
   ScrollView,
   ActivityIndicator,
+  TouchableOpacity,
 } from "react-native";
 import { BorderRadius, Colors, FontSize, Spacing } from "@/src/constants/theme";
 import { useLocalSearchParams } from "expo-router";
@@ -70,6 +71,13 @@ const StationDetailScreen = () => {
           <DetailRow label="Vĩ độ" value={station.latitude.toFixed(6)} />
         </View>
       </View>
+
+      <TouchableOpacity 
+        style={styles.selectButton}
+        onPress={() => {}}
+      >
+        <Text style={styles.selectButtonText}>Chọn trạm</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
@@ -141,5 +149,18 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'right',
     marginLeft: Spacing.sm,
+  },
+  selectButton: {
+    backgroundColor: Colors.info[400],
+    paddingVertical: Spacing.md,
+    borderRadius: BorderRadius.md,
+    alignItems: "center",
+    marginTop: Spacing.md,
+    marginBottom: Spacing.xl,
+  },
+  selectButtonText: {
+    color: "white",
+    fontSize: FontSize.md,
+    fontWeight: "bold",
   },
 });
